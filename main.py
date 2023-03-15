@@ -4,7 +4,7 @@ import json
 
 import testing
 import formatting
-
+import os
 
 def get_topic(filename):
     with open(filename, 'r') as f:
@@ -195,16 +195,26 @@ def find_amount_of_questions(filename):
     return question_count
 
 
+def find_md_files(folder):
+    md_files = []
+    for root, dirs, files in os.walk(folder):
+        for file in files:
+            if file.endswith(".md"):
+                md_files.append(os.path.join(root, file))
+    return md_files
+
+
 def write_to_json(md_filename):
+    print(md_filename)
     output = {"questions": []}
-    output_filename = md_filename.split("/")[-1][:-3]
-    amount_of_questions = find_amount_of_questions(fileLocation)
+    output_filename = md_filename.split("\\")[-1][:-3]
+    amount_of_questions = find_amount_of_questions(md_filename)
     for i in range(1, amount_of_questions):
-        choices = get_choices_array(fileLocation, i)
-        question = get_question(fileLocation, i)
-        answer = get_answer(fileLocation, i)
-        reasoning = get_explanation(fileLocation, i)
-        topic = get_topic(fileLocation)
+        choices = get_choices_array(md_filename, i)
+        question = get_question(md_filename, i)
+        answer = get_answer(md_filename, i)
+        reasoning = get_explanation(md_filename, i)
+        topic = get_topic(md_filename)
 
         question_dict = {
             "question": question.strip(),
@@ -219,7 +229,13 @@ def write_to_json(md_filename):
         json.dump(output, outfile, indent=4)
 
 
-# the location of the file
-fileLocation = "res/aws-lambda-quiz.md"
+# TODO: Section for code samples
+# TODO: Section for images
+# TODO: section for question number
 
-write_to_json(fileLocation)
+# the location of the file
+# fileLocation = "res/aws-lambda-quiz.md"
+md_files = find_md_files("res")
+for md_file in md_files:
+    write_to_json(md_file)
+# write_to_json(fileLocation)
