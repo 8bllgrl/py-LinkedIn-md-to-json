@@ -11,8 +11,7 @@
                 "ease of maintenance vs. granularity of control",
                 "all of these answers",
                 "the current storage engine used by the application, such as InnoDB or MyISAM"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -25,8 +24,7 @@
                 "Neptune",
                 "RDS for MySQL",
                 "DynamoDB"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -39,8 +37,7 @@
                 "The server running the .NET utilities is caching the DNS lookup on the database cluster address. Flush the DNS cache of the server and force the C# utilities to open new connections to the database.",
                 "A.NET application will retain the IP address of a connection string until the host machine is rebooted.",
                 "The NET utilities need to change the SQL Server endpoint in the connection strings to read from the secondary database server using a try/catch."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -53,8 +50,7 @@
                 "CodeDeploy",
                 "all of these answers",
                 "CodeBuild"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -67,8 +63,7 @@
                 "all of these answers",
                 "Simple Queue Service (SQS)",
                 "Kinesis Data Streams"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -81,8 +76,7 @@
                 "Snowball",
                 "OEBS",
                 "S3 Glacier"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -95,8 +89,7 @@
                 "Store your randomly generated password in your organizational secrets database using a service such as 1Password or LastPass, and only grant access to this secret to the DevOps team.",
                 "Create IAM accounts for your administrators and attach the AdministratorAccess policy to their accounts. Disable the root account in the user settings.",
                 "Create an IAM role for the account administrator with the highest privileges and do not use the root account in day-today operations. Enable two-factor authentication on the root account"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -109,8 +102,7 @@
                 "Lambda can not be called directly by incoming web requests. You must use API Gateway.",
                 "Classic Load Balancer",
                 "Application Load Balancer"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -123,8 +115,7 @@
                 "Use a VPN or VPC peering to establish a connection between the VPCs in each region. Install SQL Server Enterprise Edition on EC2 instances in each region and configure an Always On availability group.",
                 "Use RDS for SQL Server 2016 or 2017 Enterprise Edition. Enable Multi-AZ support and select the Mirroring/Always On option. Select another region for the mirroring option.",
                 "You can not set up an active-active architecture for SQL Server that spans geographic regions."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -137,8 +128,7 @@
                 "You can only launch images that were created by other users on your AWS account, so you pay only for the instance size you select and the S3 storage costs for the base image.",
                 "Each image has its own pricing that could either be free, or include charges for software licensing costs. You will also pay for the instance the image runs on",
                 "All images in the AWS Marketplace contain only open-source software with no additional fees and are created by other AWS users. You will pay only for the instance size you select."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -151,8 +141,7 @@
                 "Refresh the cluster with instances built from the latest ECS AMI.",
                 "ECS clusters do not use EC2 instances.",
                 "You should not directly manipulate the EC2 instances created by ECS. AWS will automatically update these instances."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -165,8 +154,7 @@
                 "Memcached",
                 "Elasticsearch",
                 "Redis 3"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -179,8 +167,7 @@
                 "DocumentDB",
                 "Print out the AWS Compliance summary and keep it with your required documentation for an audit.",
                 "Secrets Manager"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -193,8 +180,7 @@
                 "Using the root AWS account, activate IAM access to the billing information for the account. Make sure your IAM users have the Billing FullAccessGroup policy. Then from the billing dashboard, check the accrued charges once a day.",
                 "If you are using the AWS free tier, you will have to confirm the usage of any service that goes over the AWS free tier limits.",
                 "Using the root AWS account enable Billing Alerts in the user preferences. Then use CloudWatch to create a billing alarm and set a threshold to a specific dollar amount for your estimated monthly charges."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -207,8 +193,7 @@
                 "The primary key should be the title field and the partition key should be the genres field.",
                 "The primary key should be a composite key comprised of a partition key on the title field and a sort key on the year field.",
                 "The primary key should be created as a completely unique value, such a sequential numerical list of movie IDs. The partition key should be title field for fast lookup."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -221,8 +206,7 @@
                 "Redshift",
                 "Neptune",
                 "DynamoDB"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -235,8 +219,7 @@
                 "Aurora",
                 "Redshift",
                 "DynamoDB"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -249,8 +232,7 @@
                 "push notification",
                 "email",
                 "automated phone call"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -263,8 +245,7 @@
                 "Lambda only allows you to write functions in JavaScript.",
                 "Lambda does not use servers, so it can only return the same request to every user.",
                 "Lambda is stateless, so it won't remember who a user is in between requests."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -277,8 +258,7 @@
                 "CloudFormation",
                 "AWS Config",
                 "AWS Service Catalog"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -291,8 +271,7 @@
                 "Verify that the assigned security groups allow TCP port 1433 traffic from your current IP address.",
                 "Check the policies within Windows Firewall.",
                 "Verify that you are connecting to the instance using a user that is not sa."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -305,8 +284,7 @@
                 "The first security group rule allows all traffic into this instance. Exposing your entire instance to the whole internet leaves the server open to various attacks of the other services running on different port numbers.",
                 "Verify that the AWS account owners actually control the entire CIDR C block for 12.228.11.0-255 and these are secured IPs for RDP access into this instance.",
                 "There are no recommendations to make."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -319,8 +297,7 @@
                 "Front-end web servers should allow HTTPS. Assign another group to all of the instances that allows all traffic to pass between instances using that group.",
                 "Create a security group that allows inbound NFS, HTTP, and HTTPS traffic from all IP addresses. Apply this group to all of the servers.",
                 "Create a security group that allows inbound HTTP and HTTPS traffic from all IP addresses and apply this to the web servers. Create a second security group for the NFS filestore that allows outbound NFS traffic to the private IP range of the front-end web servers."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -333,8 +310,7 @@
                 "Stop and start the instance. This will move the instance to another host.",
                 "Contact AWS support. Failing a system status check indicates a failure in the underlying hardware and must be addressed by an AWS representative.",
                 "Reboot the instance. This will stop and start the instance and move it to another host."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -347,8 +323,7 @@
                 "Use Storage Gateway.",
                 "Sync files directly to S3 with the AWS CLI.",
                 "Use the RDS console to force a reboot of the database instance so that the primary server becomes the master server again."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -361,8 +336,7 @@
                 "Create Read Replicas in other AWS regions. You can designate a new master database from any of the read replicas until the regional failure is resolved.",
                 "Verify that your instance is configured for Multi-AZ support. Database changes will be automatically synced to another region in the event of a failure and RDS will automatically select a new master until the regional failure is resolved.",
                 "Create Read Replicas in other AWS regions. Ensure read operations against the database occur on an available Read Replica, and send write operations to another region if you need to promote a Read Replica to a standalone database if the master is down."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -375,8 +349,7 @@
                 "Verify that the assigned security groups allow traffic from your IP address to port 5432. Verify that PostgreSQL is configured to listen to external traffic and is bound to the public interface.",
                 "Make sure that you are using an Elastic IP and that it is included within the `postgresql.conf` configuration file.",
                 "Stop and start the instance. New security group rules will only take effect after a restart."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -389,8 +362,7 @@
                 "bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to access objects in the userreports bucket and denies access to 68.249.108.128.",
                 "bucketpolicy1 allows any user to perform any action on the objects in the userreports bucket - except anyone coming from the IP of 68.249.108.128.",
                 "bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to 68.249.108.255 to access objects in the userreports bucket-except anyone coming from the IP of 68.249.108.128."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -403,8 +375,7 @@
                 "Create a IAM user for the new developer. Manually assign policies to the new IAM user account.",
                 "Do not give the new developer access to the AWS console. Using the IAM user that is assigned to the development group, generate a new set of access keys and label these with the name of the developer.",
                 "Create a IAM user for the new developer. Assign the new developer the a developer group you already created for the other developers."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -417,8 +388,7 @@
                 "Use the instance storage to handle files uploaded by your users. Since it is more secure than an EBS volume, you can isolate any malicious files from infecting your server.",
                 "Instance storage is faster than EBS volumes, so install the root of the operating system on this volume to speed up server performance.",
                 "Instance storage is a deprecated option for storage and should not be used."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -431,8 +401,7 @@
                 "Launch a new EC2 with the latest version of Windows Server and install the application again. Use Application Load Balancer and sticky sessions to balance between both servers.",
                 "Create a clone of the server using an AMI image and user Application Load Balancer to balance the traffic between both instances using sticky sessions.",
                 "Horizontal scaling is not the best practice in this situation. Increase the size of the existing EC2 instance and vertically scale the application."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -445,8 +414,7 @@
                 "It logs all of the network traffic within a VPC except Instance IDs defined by LogVpcID and logs it to the CloudWatch FlowLogsGroup log group.",
                 "It logs all the network traffic going to and from a single EC2 instance into the CloudWatch FlowLogsGroup log group. You could use this to inspect suspicious network traffic coming into an EC2 instance.",
                 "It logs all of the DNS requests made by resources within a VPC and logs them to the CloudWatch FlowLogsGroup. Use this to diagnose DNS lookup errors within your environment."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -459,8 +427,7 @@
                 "The instance health of each EC2 instance in your cluster from within CloudWatch.",
                 "Monitor the EC2 service dashboard. Watch for posted outages to the ECS service.",
                 "The memory consumption of each EC2 instance in your cluster from within CloudWatch."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -473,8 +440,7 @@
                 "Source IPs matching 192.0.2.0/24 on a listener port of 1433 can be routed to a target group for an RDS for SQL Server cluster.",
                 "A path of /signup\\* can be routed to a target group for a Lambda function that processes new user registrations.",
                 "An Http POST query string of ? action=createuser can be routed to a target group for an ECS service."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -487,8 +453,7 @@
                 "creates a secure tunnel between two networks",
                 "creates a shared storage plane for application data to be shared across multiple instances.",
                 "creates a private network that is completely isolated from the public internet."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -501,8 +466,7 @@
                 "Yes, you can lose it if you stop and start the instance.",
                 "No, you will never lose the public IP address for your instance.",
                 "Yes, you can lose it when you edit the instance properties and release the IP address."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -515,8 +479,7 @@
                 "EBS volume attached to the instance",
                 "instance attached to the instance",
                 "instance storage, with a script that replicates the database backups to another instance in a different availability zone."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -529,8 +492,7 @@
                 "You can have only 10 VPCs per region on a new AWS account",
                 "You cannot create a CIDR block with a netmask larger than /16",
                 "You can have only 10 subnets within a VPC"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -543,8 +505,7 @@
                 "Create an AMI image of the instance, and choose the option to take the image without restarting the instance.",
                 "Edit the instance properties and increase the instance size.",
                 "Contact AWS support. Any further actions could corrupt the file system."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -557,8 +518,7 @@
                 "Software licensing costs are always included in services such as RDS, so factor the loss of use of your on-premise licenses in your budget.",
                 "New AWS accounts are limited to 20 on-demand EC2 instances. Submit a request to increase your rate limits before starting a migration.",
                 "The only way to transfer large amounts of database data up to AWS is via S3, which can have a slow upload speed. Plan for this delay and cost in your migration plan."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -571,8 +531,7 @@
                 "PRTG",
                 "New Relic",
                 "Datadog"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -583,8 +542,7 @@
             "choices": [
                 "Turn on CloudWatch Auto Recovery and put monitors on the System Status and Instance Status checks for the instance to notify you when either is in alarm.",
                 "Use CloudWatch to put monitors on the remaining CPU credits. If you run out of CPU credit the instance will be stopped."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -597,8 +555,7 @@
                 "AWS Shield Advanced",
                 "RDS Read Replicas",
                 "all of these answers"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -611,8 +568,7 @@
                 "Use the AWS Client VPN.",
                 "Install a OpenVPN server on an instance that is located within the subnet with an elastic IP.",
                 "All of these options can establish a connection to a private subnet."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -629,8 +585,7 @@
                 "```\naws ec2 stop-instances --instance-ids i-8b953\nwait 30\naws ec2 disassociate-address --association-id eipassoc-2bebb712\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\naws ec2 start-instances --instance-ids i-8b953\n```",
                 "D",
                 "```\naws ec2 release-address --association-id eipassoc-2bebb712\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\n```"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -643,8 +598,7 @@
                 "Elastic Container Service (ECS)",
                 "Elastic Compute Cloud (EC2)",
                 "All of these services can host a Docker container."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -657,8 +611,7 @@
                 "All objects within this bucket are writable, which means that the public internet has the ability to upload any file directly to your S3 bucket. Your S3 bucket could be used to serve malware.",
                 "Some objects within this bucket are assigned public access. Verify that any publicly shared objects within this bucket contain no sensitive data.",
                 "Objects within this bucket can be made public, if the ACL on that object is set to allow everyone access. Private buckets do not allow you to set public permissions on any object."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -671,8 +624,7 @@
                 "Create a new hosted zone in Route 53.",
                 "Delete the AWS account.",
                 "Modify the billing details."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -685,8 +637,7 @@
                 "Configure SES to no longer send to email addresses that are on your bounce list.",
                 "Configure SES to send the logs of all delivery attempts through Kinesis Firehose. Process each event and look for bounce types and remove these emails from your list.",
                 "Send all emails through SES with a custom reply-to header. Configure SES to listen for events on this email address and flag any email address that replies to this account as a bounced message and remove it from your email list."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -699,8 +650,7 @@
                 "Use Application Load Balancer to create a new routing rule that looks at source IP address. Add an IP block for the countries that have access.",
                 "Host the front end of your website in CloudFront and configure a geo restriction on the distribution.",
                 "Use CloudTrail to monitor the IP addresses of the bad requests. Use Lambda to add these IP addresses to an Application Load Balancer rule that blocks the IPs."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -713,8 +663,7 @@
                 "Create a maintenance schedule that an employee must fill out each week confirming a visual inspection of each instance was conducted and which patches were applied.",
                 "Use AWS Systems Manager Patch Manager to find an patch instances that require updates during a set maintenance window.",
                 "Install Window Server Update Services on your primary Active Directory controller."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -727,8 +676,7 @@
                 "Ansible",
                 "Puppet",
                 "Vagrant"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -741,8 +689,7 @@
                 "The database instance will report a STORAGE_FULL status and become inaccessible if the instance does not have enough remaining storage to operate. Allocate more space to the instance.",
                 "SQL Server will close all existing connections to the databases and attempt to shrink its log files to reclaim storage space.",
                 "RDS will automatically increase the allocated space by 5% and will continue to allocate new space up to 50% of the orginal allocated space. When storage space has increase 50%, RDS will automatically stop the instance to preserve data integrity."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -755,8 +702,7 @@
                 "Use Route 53 with HTTP health checks. Create an application on the server to report the readiness status of the vendor-provided server software to Route 53 via HTTP.",
                 "Use Route 53 with UDP health checks. As you scale up, Route 53 wiwll route the traffic to the new servers if they pass the health checks.",
                 "Use Application Load Balancer to distribute the traffic across your servers."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -769,8 +715,7 @@
                 "The outbound rules do not allow for HTTP traffic to leave the instance, so inbound HTTP requests will fail because the clients will never get HTTP responses.",
                 "The incoming SSH port should not be open to the public. Limit SSH to a single IP address or IP range of controlled addressed, or use a VPN to access the VPC for this server.",
                 "The all incoming TCP ports are exposed, which overrides the HTTP and SSH rules and exposes all TCP ports to the public internet."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -783,8 +728,7 @@
                 "GuardDuty",
                 "Shield",
                 "Security Advisor"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -797,8 +741,7 @@
                 "An EC2 instance launched from the official WordPress AMI",
                 "S3",
                 "Lightsail"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -811,8 +754,7 @@
                 "S3 Intelligent-Tiering",
                 "S3 Glacier",
                 "S3 One Zone-Infrequent Access"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -825,8 +767,7 @@
                 "Aurora",
                 "RDS for SQL Server",
                 "Redshift"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -839,8 +780,7 @@
                 "manual scaling",
                 "scale based on demand",
                 "maintain current levels at all times"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -853,8 +793,7 @@
                 "Launch a RabbitMQ cluster with EC2 instances using a supported AMI.",
                 "Rewrite the parts of your application that use RabbitMQ to use Kinesis.",
                 "Rewrite the parts of your application that use RabbitMQ to use Amazon MQ."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -867,8 +806,7 @@
                 "creates a second passive database instance within the same region that will become the primary database during a failover",
                 "creates a highly available database cluster that will host your database cluster in at least two regions",
                 "creates another database instance in another region and keeps a hot standby active to failover to during regional failures"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -881,8 +819,7 @@
                 "T2",
                 "R5",
                 "H1"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -899,8 +836,7 @@
                 "```\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\nwait 30\naws ec2 start-instance --instance-ids i-0b263919b6498b123\n```",
                 "D",
                 "```\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\naws ec2 start-instances --instance-ids i-0b263919b6498b123\n```"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -913,8 +849,7 @@
                 "The instance was launched with the default security group, but there is no way for an administrator to SSH into the instance.",
                 "There is nothing wrong with this security group rule. Assuming that sg-269afc5e is applied to other resources that are properly",
                 "All traffic on all ports are allowed into this instance. This exposes the instance to all public internet traffic and"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -931,8 +866,7 @@
                 "```\nDestination 1: 10.0.0.0/24, Target 1: subnet-1948ba2;\nDestination 2: 0.0.0.0/0, Target 2: nat-09b4832\n```",
                 "D",
                 "```\nDestination 1: 10.0.0.0/16, Target 1: vpc-12bd09ac2;\nDestination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6\n```"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -945,8 +879,7 @@
                 "CloudWatch",
                 "AWS Audit and Compliance Tool",
                 "GuardDuty"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -959,8 +892,7 @@
                 "Create a public S3 bucket. Use a hash of the user's email address and the date and time the report was requested to generate a",
                 "Create a private S3 bucket. The link in the email should take the user to your application, where you can verify the active user",
                 "Create a private S3 bucket. The link in the email should take the user to your application, where you can verify the active user"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -973,8 +905,7 @@
                 "opens and clicks",
                 "clicks and deliveries",
                 "sending volume over the past 15 minutes and over one day to watch for billing spikes"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -987,8 +918,7 @@
                 "Aurora",
                 "RDS for MySQL",
                 "Redshift"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1003,8 +933,7 @@
                 "```\nIF (all match)\nPath is /sign/new/&\nQuery request method is POST\nThen\nForward to ecs-cluse-service\n```",
                 "C ...One more with POST",
                 "D ...Only one with Get"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1017,8 +946,7 @@
                 "Elastic BeanStalk",
                 "ElasticCache",
                 "CloudFront"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1031,8 +959,7 @@
                 "creates a cluster called **production** and launches two containers into Fargate with the **rest-api** task definition",
                 "launches two containers onto Fargate into the existing **production** cluster using the **rest-api** task definition",
                 "creates a service definition for the **rest-api** task; put two containers on the production cluster when launched **ecs-cli** up command"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1045,8 +972,7 @@
                 "Create a private API gateway endpoint for each region.",
                 "Create a regional API gateway endpoint for each region.",
                 "Create edge-optimized API gateway endpoints and deploy them to a CloudFront network."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1059,8 +985,7 @@
                 "AWS Lake Formation",
                 "Amazon Redshift",
                 "Amazon Aurora"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1073,8 +998,7 @@
                 "Application Load Balancer does not preserve the original source IP address. The analytics software needs to be configured to look at the 'X-Forwarded-For' HTTP request header for the correct source IP address.",
                 "Application Load Balencer has to be configured to retain the source IP address of the traffic it is forwarding. Create a policy that enables ProxyProtocol support and attach it to the ALB using the AWS CLI.",
                 "Configure the web server EC2 instances to only have private IP addresses. The public IP addresses of the instances are being recorded into the web server logs, bug only ALB should have a public interface and it will route traffic to instances via the private interface."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1087,8 +1011,7 @@
                 "system-user",
                 "ec2-user",
                 "admin"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1101,8 +1024,7 @@
                 "Create a WAF redirection rule that redirects traffic at the EU data center if the source IP comes from certain countries.",
                 "Purchase a country domain extension and direct your users to the correct site, such as example.com and example.co",
                 "Have your front-end application test the latency between each data center and use the data center that is responding the fastest."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1115,8 +1037,7 @@
                 "Take an AMI image of a front-end server to save your configuration and then add more servers to your cluster pror to the conference. Remove the servers from the cluster after the spike from the conference.",
                 "Test to determine your throughput and how many users you can support. Develop a scaling plan for your front end, microservices, and database based on CloudWatch metrics that align with the tested bottlenecks.",
                 "Use Auto Scaling groups to create more front-end servers when the CloudWatch metrics for CPU usage on a single instance rise above 80% for five minutes."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1129,8 +1050,7 @@
                 "Contact AWS support. A support specialist can remotely restore access to your instance and send you a new key pair.",
                 "You can not connect to this EC2 instance. The key pair is displayed only one time. If you lose it, you have lost all access to this instance. Connect the EBS volume to another instance to recover your files.",
                 "Attach the EBS volume to a temporary instance launched with a new key pair, and overwrite ~/.ssh/authorized_keys using the same file from the new instance."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1143,8 +1063,7 @@
                 "Create a second customer gateway and configure your VPN client at your second data center to connect to the virtual private gateway.",
                 "Create a second virtual private gateway (VPG) and attach it to the VPC. Create a customer gateway for the new virtual private gateway and use your VPN client at your second data center to establish a connection to the VPG.",
                 "You can not have more than one customer gateway per VPC, so the proposed solution will not work. Create a second VPC with a virtual private gateway and a customer gateway. Bridge the two VPCs using VPC peering."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1157,8 +1076,7 @@
                 "Use Database Migration Service to replicate the database to RDS and keep it in sync during the migration. Repoint your applications to use the new RDS endpoint.",
                 "Detach the SQL Server database during the migration. Take a backup of the database and use SQ with Accelerated Transfer to upload the backups to S3. Restore the backups to the RDS instance.",
                 "Use the Import and Export wizard within SQL Server Enterprise Manager to create an export task and export the tables to the RDS instance."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1171,8 +1089,7 @@
                 "An email will be sent to the email address on file to verify ownership of the account. You will then need to provide the phone number on the account.",
                 "An email will be sent to the email address on file. After clicking in the link in your email, provide one of the MFA recovery codes that were created when MFA was enabled.",
                 "Use the AWS CLI with the root account access token to disable MFA on the root account. Then use the CLI to set a new password on the root account."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1185,8 +1102,7 @@
                 "In the EC2 dashboard, click on EC2 instance. Under Actions, select networking > Manage IP Addresses. click to add a new IP address and type in the address of the Elastic IP. Repeat the process for each EC2 instance you want to assign this Elastic IP to.",
                 "Use the AWS CLI and pass in several '--instance-id' options to hte aws ec2 assosiate-address command.",
                 "An elastic IP cannot be assigned to multiple EC2 instances. It can only be assosiated to a single EC2 instance."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1199,8 +1115,7 @@
                 "The database server needs to be assigned a public address from the pool, or assigned an Elastic IP similar to the instance 10.0.0.2.",
                 "The router is not configured properly on the VPC. Add a route to route table for the VPC that routes all traffic for 0.0.0.0/0 to the ID of the internet gateway.",
                 "There is no egress-only internet gateway attached to the private subnet of the VPC."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1213,8 +1128,7 @@
                 "store for small duration",
                 "cost",
                 "cross-region"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1227,8 +1141,7 @@
                 "amplify configure",
                 "amplify connect",
                 "amplify init"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1241,8 +1154,7 @@
                 "You can not limit access to an S3 bucket by IP address.",
                 "In the preperties of the S3 bucket, add an access control option that limit access to the bucket by source IP address. Input the list of IPs into dialog.",
                 "Create a bucket policy with a condition that limit access to a list of approved IP addresses. Attach this policy to the bucket."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1255,8 +1167,7 @@
                 "cross-region caching",
                 "speed of access",
                 "cost"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1269,8 +1180,7 @@
                 "SNS, SQS",
                 "all of these answers",
                 "SQS, DynamoDB"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1283,8 +1193,7 @@
                 "AppSync",
                 "CloudAPI",
                 "API Gateway"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1297,8 +1206,7 @@
                 "ElastiCache",
                 "none of these answers",
                 "Step Functions"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1311,8 +1219,7 @@
                 "The Auto Scaling group will be automatically terminated.",
                 "In a separate region Auto Scaling will start an instance",
                 "Auto Scaling will remove the scaling process"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1325,8 +1232,7 @@
                 "The metrics obtained by CloudWatch may be used to enable a feature called Auto Scaling",
                 "A number of tools are used to support EC2 services",
                 "None of the mentioned"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1339,8 +1245,7 @@
                 "A serverless application",
                 "A microservice application",
                 "A multi-tier application"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1353,8 +1258,7 @@
                 "No, it retains only the public IP addresses",
                 "No, it retains only the Elastic IP addresses",
                 "No, it does not retain its private IP addresses"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1367,8 +1271,7 @@
                 "protected",
                 "public",
                 "private"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1381,8 +1284,7 @@
                 "You receive an error message notifying you that you must set your instance's tenancy attribute to dedicated",
                 "Your instance launch fails, but AWS prompts you to launch a new one with the tenancy attribute set to dedicated",
                 "Your instance launch fails immediately"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1395,8 +1297,7 @@
                 "SSL",
                 "TCP",
                 "UDP"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1409,8 +1310,7 @@
                 "Ec2user",
                 "ec2-user",
                 "linux"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1423,8 +1323,7 @@
                 "State Manager",
                 "Documents",
                 "Inventory"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1437,8 +1336,7 @@
                 "consistency",
                 "reliability",
                 "redundancy"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1451,8 +1349,7 @@
                 "Execute the AWS-ApplyPatchBaseline command.",
                 "Allow State Manager to automatically fix it on batch.",
                 "Use Run Command to execute the AWS-InstallApplication document."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1465,8 +1362,7 @@
                 "Manager",
                 "Baselines",
                 "Policy"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1479,8 +1375,7 @@
                 "When a submitted job has been evaluated",
                 "When a submitted, evaluated job has zero dependencies outstanding",
                 "When a submitted job is next in the job queue"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1493,8 +1388,7 @@
                 "Each job is provided a single job attempt by default, but the AWS Batch job scheduler may modify this after evaluating the submitted job.",
                 "Each job is provided a single job attempt by default, but a user can modify this to as many as 10 attempts if desired.",
                 "Each job is limited to a single attempt before being classified as succeeded or failed."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1507,8 +1401,7 @@
                 "A resource expenditure cap",
                 "The number of automated job retries",
                 "An AWS Batch job agent"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1521,8 +1414,7 @@
                 "Within the job itself",
                 "Within the job definition",
                 "Within a job queue"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1535,8 +1427,7 @@
                 "5,000",
                 "1,000",
                 "500"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1549,8 +1440,7 @@
                 "Analyze all the log files line by line.",
                 "Combine all the log files you receive for a given period into one file.",
                 "Compare log files with Amazon CloudWatch results."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1563,8 +1453,7 @@
                 "HTML files and cannot be changed",
                 "HTML files and can be changed",
                 "`*` (all files) and can be changed"
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1577,8 +1466,7 @@
                 "False, you cannot add a CNAME to your distribution.",
                 "False, you should add a CNAME record with your CloudWatch metrics and not the DNS.",
                 "False, it is not necessary to create a CNAME record with your DNS service as it is done automatically by Amazon."
-            ],
-            "reasoning": ""
+            ]
         },
         {
             "topic": "Amazon Web Services (AWS)",
@@ -1591,8 +1479,7 @@
                 "Reducing the duration allows you to serve dynamic content.",
                 "Increasing the duration means your customers get better performance.",
                 "A longer duration also reduces the load on your origin."
-            ],
-            "reasoning": ""
+            ]
         }
     ]
 }

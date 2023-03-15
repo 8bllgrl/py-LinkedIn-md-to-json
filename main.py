@@ -150,6 +150,7 @@ def get_answer(filename, question_number):
         return "\"" + answer + "\""
 
 
+# TODO: make it so that if a link is found (https:// or http://) then make that entire line that explanation
 def get_explanation(filename, question_number):
     with open(filename, 'r') as f:
         lines = f.readlines()
@@ -181,6 +182,9 @@ def get_explanation(filename, question_number):
         elif '**Reasoning**' in line:
             found_explanation = True
             start_index = start_index + i + 1
+
+
+
 
     else:
         # If we didn't find a '####' line after the current question,
@@ -325,7 +329,7 @@ def write_to_json(md_filename):
             "code": code.strip(),
             "answer": answer.strip(),
             "choices": choices,
-            "reasoning": reasoning.strip()
+            # "reasoning": reasoning.strip()
 
         }
         output["questions"].append(question_dict)
