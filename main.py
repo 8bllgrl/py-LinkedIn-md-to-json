@@ -6,6 +6,7 @@ import testing
 import formatting
 import os
 
+
 def get_topic(filename):
     with open(filename, 'r') as f:
         lines = f.readlines()
@@ -25,7 +26,7 @@ def get_choices_array(filename, question_number):
 
     question_count = 0
     start_index = None
-
+    choicesHasBeenReached = False
     for i, line in enumerate(lines):
         if '####' in line:
             if f'Q{question_number}' in line:
@@ -36,12 +37,17 @@ def get_choices_array(filename, question_number):
 
     if start_index is None:
         print(f'Question {question_number} not found.')
-        return
+        return []
 
     choices = []
+    recording = False
+
     for line in lines[start_index + 1:]:
         if '####' in line:
             break
+        if '- [' in line:
+            choicesHasBeenReached = True
+            # break
         if '- [ ] ' in line:
             choice_start_index = line.find('- [ ] ') + len('- [ ] ')
             choice_end_index = line.find('\n', choice_start_index)
@@ -51,7 +57,17 @@ def get_choices_array(filename, question_number):
             start_index = line.find('- [x] ') + len('- [x] ')
             end_index = line.find('\n', start_index)
             text = line[start_index:end_index].strip()
-            choices.append(text.strip())
+            choices.append(text)
+
+        if choicesHasBeenReached:
+            if recording:
+                contents.append(line.strip())
+                if "```" in line:
+                    recording = False
+                    choices.append('\n'.join(contents))
+            elif "```" in line:
+                recording = True
+                contents = [line.strip()]
 
     return choices
 
@@ -177,6 +193,91 @@ def get_explanation(filename, question_number):
         return ""
 
 
+def get_code(filename, question_number):
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+
+    codeblock = ""
+
+    question_count = 0
+    start_index = None
+    end_index = None
+
+    for i, line in enumerate(lines):
+        if '####' in line or '- [' in line:
+            if f'Q{question_number}' in line:
+                start_index = i
+            elif start_index is not None and end_index is None:
+                end_index = i
+                break
+
+    if start_index is None:
+        print(f'Question {question_number} not found.')
+        return
+
+    recording = False
+    for line in lines[start_index:end_index]:
+        if line.startswith("```"):
+            if not recording:
+                recording = True
+            else:
+                break
+        if recording:
+            codeblock += line
+
+    # print(codeblock)
+    return codeblock
+
+
+def print_specific_questions_choices(filename, question_number):
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+
+    question_count = 0
+    start_index = None
+
+    for i, line in enumerate(lines):
+        if '####' in line:
+            if f'Q{question_number}' in line:
+                start_index = i
+                break
+            else:
+                question_count += 1
+
+    if start_index is None:
+        print(f'Question {question_number} not found.')
+        return
+
+    choices = []
+    recording = False
+    for line in lines[start_index + 1:]:
+        if '####' in line:
+            break
+        if '- [ ] ' in line:
+            choice_start_index = line.find('- [ ] ') + len('- [ ] ')
+            choice_end_index = line.find('\n', choice_start_index)
+            text = line[choice_start_index:choice_end_index].strip()
+            choices.append(text)
+        elif '- [x] ' in line:
+            start_index = line.find('- [x] ') + len('- [x] ')
+            end_index = line.find('\n', start_index)
+            text = line[start_index:end_index].strip()
+            choices.append(text)
+
+        if recording:
+            contents.append(line.strip())
+            if "```" in line:
+                recording = False
+                choices.append('\n'.join(contents))
+        elif "```" in line:
+            recording = True
+            contents = [line.strip()]
+
+    print(f'Question {question_number} choices:' + '\n')
+    print('\n'.join(choices))
+    return '\n'.join(choices)
+
+
 def find_amount_of_questions(filename):
     with open(filename, 'r') as f:
         lines = f.readlines()
@@ -215,13 +316,17 @@ def write_to_json(md_filename):
         answer = get_answer(md_filename, i)
         reasoning = get_explanation(md_filename, i)
         topic = get_topic(md_filename)
+        code = get_code(md_filename, i)
 
         question_dict = {
+            "topic": topic.strip(),
+            "id": i,
             "question": question.strip(),
+            "code": code.strip(),
             "answer": answer.strip(),
             "choices": choices,
-            "reasoning": reasoning.strip(),
-            "topic": topic.strip()
+            "reasoning": reasoning.strip()
+
         }
         output["questions"].append(question_dict)
 
