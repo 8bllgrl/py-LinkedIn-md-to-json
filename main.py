@@ -1,14 +1,31 @@
+import json
+import os
 import io
 import csv
-import json
 
-import testing
-import formatting
-import os
+
+# print("Hello world")
+def makeArrayWithDoubleQuotes(my_array):
+    # check if array is None
+    if my_array is None:
+        print("Error: array is None")
+        return ""
+
+    # create a string buffer to hold the output
+    output = io.StringIO()
+
+    # create a CSV writer with quotechar='"'
+    writer = csv.writer(output, quoting=csv.QUOTE_ALL, quotechar='"')
+
+    # write the array to the output buffer
+    writer.writerow(my_array)
+
+    # return the output buffer as a string
+    return output.getvalue()
 
 
 def get_topic(filename):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     topic = ""
@@ -21,7 +38,7 @@ def get_topic(filename):
 
 
 def get_choices_array(filename, question_number):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     question_count = 0
@@ -37,6 +54,7 @@ def get_choices_array(filename, question_number):
 
     if start_index is None:
         print(f'Question {question_number} not found.')
+        print(filename)
         return []
 
     choices = []
@@ -73,7 +91,7 @@ def get_choices_array(filename, question_number):
 
 
 def get_question(filename, question_number):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     question_count = 0
@@ -90,7 +108,7 @@ def get_question(filename, question_number):
 
     if start_index is None:
         print(f'Question {question_number} not found.')
-        return
+        return ""
 
     for i, line in enumerate(lines[start_index + 1:]):
         if line == '\n':
@@ -104,7 +122,8 @@ def get_question(filename, question_number):
 
 
 def get_answer(filename, question_number):
-    with open(filename, 'r') as file:  # this line opens the file that is being passed in as the string 'filename' and
+    with open(filename, 'r',
+              encoding='utf-8') as file:  # this line opens the file that is being passed in as the string 'filename' and
         # reading it with 'r, and assigning it to the variable 'f'
 
         lines = file.readlines()  # this is reading all lines in the file and storing them in a list of strings
@@ -152,7 +171,7 @@ def get_answer(filename, question_number):
 
 # TODO: make it so that if a link is found (https:// or http://) then make that entire line that explanation
 def get_explanation(filename, question_number):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     question_count = 0
@@ -182,6 +201,10 @@ def get_explanation(filename, question_number):
         elif '**Reasoning**' in line:
             found_explanation = True
             start_index = start_index + i + 1
+        elif '[Reference]' in line:
+            found_explanation = True
+            start_index = start_index + i + 1
+
 
 
 
@@ -197,44 +220,43 @@ def get_explanation(filename, question_number):
         return ""
 
 
-def get_code(filename, question_number):
-    with open(filename, 'r') as f:
+def get_body(filename, question_number):
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-
-    codeblock = ""
 
     question_count = 0
     start_index = None
     end_index = None
+    line_one_contents = ""
 
     for i, line in enumerate(lines):
-        if '####' in line or '- [' in line:
+        if '####' in line:
             if f'Q{question_number}' in line:
+                line_one_contents = line
                 start_index = i
-            elif start_index is not None and end_index is None:
-                end_index = i
                 break
+            else:
+                question_count += 1
 
     if start_index is None:
         print(f'Question {question_number} not found.')
         return
 
-    recording = False
-    for line in lines[start_index:end_index]:
-        if line.startswith("```"):
-            if not recording:
-                recording = True
-            else:
-                break
-        if recording:
-            codeblock += line
+    for i, line in enumerate(lines[start_index + 1:]):
+        if line.startswith('- ['):
+            end_index = i + start_index + 1
+            break
 
-    # print(codeblock)
-    return codeblock
+    lineText = ''.join(lines[start_index:end_index])
+
+    question_num_digits = len(str(question_number))
+    output = f"{lines[start_index]}"
+    output += ''.join(lines[start_index + 1:end_index])
+    return output[len(line_one_contents) - 4 + question_num_digits + 2:]
 
 
 def print_specific_questions_choices(filename, question_number):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     question_count = 0
@@ -283,7 +305,7 @@ def print_specific_questions_choices(filename, question_number):
 
 
 def find_amount_of_questions(filename):
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     question_count = 0  # start at index 1
@@ -309,42 +331,57 @@ def find_md_files(folder):
     return md_files
 
 
+def question_exists(filename, question_number):
+    with open(filename, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    question_count = 0
+
+    for line in lines:
+        if '####' in line:
+            question_count += 1
+            if f'Q{question_number}' in line:
+                return True
+
+    return False
+
+
 def write_to_json(md_filename):
     print(md_filename)
     output = {"questions": []}
     output_filename = md_filename.split("\\")[-1][:-3]
     amount_of_questions = find_amount_of_questions(md_filename)
     for i in range(1, amount_of_questions):
-        choices = get_choices_array(md_filename, i)
-        question = get_question(md_filename, i)
-        answer = get_answer(md_filename, i)
-        reasoning = get_explanation(md_filename, i)
-        topic = get_topic(md_filename)
-        code = get_code(md_filename, i)
+        if question_exists(md_filename, i):
+            choices = get_choices_array(md_filename, i)
+            question = get_question(md_filename, i)
+            answer = get_answer(md_filename, i)
+            reasoning = get_explanation(md_filename, i)
+            topic = get_topic(md_filename)
+            body = get_body(md_filename, i)
 
-        question_dict = {
-            "topic": topic.strip(),
-            "id": i,
-            "question": question.strip(),
-            "code": code.strip(),
-            "answer": answer.strip(),
-            "choices": choices,
-            # "reasoning": reasoning.strip()
+            question_dict = {
+                "topic": topic.strip(),
+                "id": i,
+                "question": question.strip(),
+                "body": body.strip(),
+                "answer": answer.strip(),
+                "choices": choices,
+                # "reasoning": reasoning.strip()
 
-        }
-        output["questions"].append(question_dict)
+            }
+            output["questions"].append(question_dict)
+        else:
+            print("Question " + str(i) + " doesn't exist. Moving onto next question")
 
     with open("fileOutput/" + output_filename + ".json", "w") as outfile:
         json.dump(output, outfile, indent=4)
 
 
-# TODO: Section for code samples
-# TODO: Section for images
-# TODO: section for question number
-
 # the location of the file
 # fileLocation = "res/aws-lambda-quiz.md"
 md_files = find_md_files("res")
 for md_file in md_files:
+    # print("23123")
     write_to_json(md_file)
 # write_to_json(fileLocation)

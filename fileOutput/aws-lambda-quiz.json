@@ -4,7 +4,7 @@
             "topic": "AWS Lambda",
             "id": 1,
             "question": "\"How can you increase the CPU resources for your Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Increase the configured memory value\"",
             "choices": [
                 "Increase the configured CPU value",
@@ -17,7 +17,7 @@
             "topic": "AWS Lambda",
             "id": 2,
             "question": "\"How can additional code or content be provided for your Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"layers\"",
             "choices": [
                 "blocks",
@@ -30,7 +30,7 @@
             "topic": "AWS Lambda",
             "id": 3,
             "question": "\"How can Step Functions call Lambdas?\"",
-            "code": "",
+            "body": "",
             "answer": "\"both of these answers\"",
             "choices": [
                 "in sequence",
@@ -43,7 +43,7 @@
             "topic": "AWS Lambda",
             "id": 4,
             "question": "\"Which AWS CLI command invokes a function?\"",
-            "code": "",
+            "body": "",
             "answer": "\"aws lambda invoke --function-name ReturnBucketName outputfile.txt\"",
             "choices": [
                 "aws lambda invoke --function ReturnBucketName outputfile.txt",
@@ -56,7 +56,7 @@
             "topic": "AWS Lambda",
             "id": 5,
             "question": "\"What adds tracing capabilities to a Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"AWS X-Ray\"",
             "choices": [
                 "AWS Trace",
@@ -69,7 +69,7 @@
             "topic": "AWS Lambda",
             "id": 6,
             "question": "\"You need to build a continuous integration/deployment pipeline for a set of Lambdas. What should you do?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Create CloudFormation templates and deploy them using AWS CodePipeline.\"",
             "choices": [
                 "Create configuration files and deploy them using AWS CodePipeline.",
@@ -82,7 +82,7 @@
             "topic": "AWS Lambda",
             "id": 7,
             "question": "\"What can you use to monitor function invocations?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CloudTrail\"",
             "choices": [
                 "API Gateway",
@@ -95,7 +95,7 @@
             "topic": "AWS Lambda",
             "id": 8,
             "question": "\"It is AWS best practice to enable Lambda logging by which of these methods.\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use Lambda metrics and CloudWatch alarms.\"",
             "choices": [
                 "Use S3 metrics and CloudWatch alarms",
@@ -108,7 +108,7 @@
             "topic": "AWS Lambda",
             "id": 9,
             "question": "\"What may be provided for environment variables?\"",
-            "code": "",
+            "body": "",
             "answer": "\"an AWS KMS key\"",
             "choices": [
                 "an SSL certificate",
@@ -121,7 +121,7 @@
             "topic": "AWS Lambda",
             "id": 10,
             "question": "\"Lambdas allow for running of what other things?\"",
-            "code": "",
+            "body": "",
             "answer": "\"all of these answers\"",
             "choices": [
                 "binaries.",
@@ -134,7 +134,7 @@
             "topic": "AWS Lambda",
             "id": 11,
             "question": "\"In what style must you write Lambda code?\"",
-            "code": "",
+            "body": "",
             "answer": "\"stateless\"",
             "choices": [
                 "MVC",
@@ -147,7 +147,7 @@
             "topic": "AWS Lambda",
             "id": 12,
             "question": "\"How can a developer provide Lambda code?\"",
-            "code": "",
+            "body": "",
             "answer": "\"all of these answers\"",
             "choices": [
                 "by uploading a .zip file",
@@ -160,7 +160,7 @@
             "topic": "AWS Lambda",
             "id": 13,
             "question": "\"You are performance-testing your Lambda to verify that you set the memory size adequately. Where do you verify the execution overhead?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Lambda logs.\"",
             "choices": [
                 "CLoudWatch logs",
@@ -173,7 +173,7 @@
             "topic": "AWS Lambda",
             "id": 14,
             "question": "\"What facilitates continuous delivery of Lambdas?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CodeDeploy\"",
             "choices": [
                 "CodeStack",
@@ -186,7 +186,7 @@
             "topic": "AWS Lambda",
             "id": 15,
             "question": "\"How are computing resources allocated to Lambdas?\"",
-            "code": "",
+            "body": "",
             "answer": "\"proportionally\"",
             "choices": [
                 "proportionally",
@@ -199,7 +199,7 @@
             "topic": "AWS Lambda",
             "id": 16,
             "question": "\"You can restrict the scope of a user's permissions by specifying which two items in an IAM policy?\"",
-            "code": "",
+            "body": "",
             "answer": "\"resources and conditions\"",
             "choices": [
                 "resources and users",
@@ -212,7 +212,7 @@
             "topic": "AWS Lambda",
             "id": 17,
             "question": "\"What does Lambda logging include?\"",
-            "code": "",
+            "body": "",
             "answer": "\"logging streams\"",
             "choices": [
                 "logging streams",
@@ -225,7 +225,7 @@
             "topic": "AWS Lambda",
             "id": 18,
             "question": "\"What can AWS Amplify NOT do for a Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"be an event source\"",
             "choices": [
                 "create a Lambda",
@@ -238,7 +238,7 @@
             "topic": "AWS Lambda",
             "id": 19,
             "question": "\"How do you author a Lambda in a programming language that AWS does not support?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Create a Lambda layer with a custom runtime and reference the layer in your lambda\"",
             "choices": [
                 "Create a Lambda function with a custom runtime and reference the function in your Lambda",
@@ -251,7 +251,7 @@
             "topic": "AWS Lambda",
             "id": 20,
             "question": "\"What are listed downstream resources based on?\"",
-            "code": "",
+            "body": "",
             "answer": "\"the Lambda configuration\"",
             "choices": [
                 "the execution policy",
@@ -264,7 +264,7 @@
             "topic": "AWS Lambda",
             "id": 21,
             "question": "\"Which is an equivalent and valid tag for a pair of Lambdas?\"",
-            "code": "",
+            "body": "",
             "answer": "\"department:Sales,department:sales\"",
             "choices": [
                 "department:Sales,department:Sales",
@@ -277,7 +277,7 @@
             "topic": "AWS Lambda",
             "id": 22,
             "question": "\"Outbound connections from Lambdas must be `_`.\"",
-            "code": "",
+            "body": "",
             "answer": "\"both of these answers\"",
             "choices": [
                 "neither of these answers",
@@ -290,7 +290,7 @@
             "topic": "AWS Lambda",
             "id": 23,
             "question": "\"How are CloudWatch actions configured?\"",
-            "code": "",
+            "body": "",
             "answer": "\"manually\"",
             "choices": [
                 "automatically",
@@ -303,7 +303,7 @@
             "topic": "AWS Lambda",
             "id": 24,
             "question": "\"You are testing your stream-based application and the associated Lambda. AWS best practice advises you to test by varying what?\"",
-            "code": "",
+            "body": "",
             "answer": "\"batch and record sizes\"",
             "choices": [
                 "stream and record sizes",
@@ -316,7 +316,7 @@
             "topic": "AWS Lambda",
             "id": 25,
             "question": "\"You need to make your Lambda available to services in multiple VPCs. What do you do?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Configure all application VPCs to be peered.\"",
             "choices": [
                 "Place each subnet in a VPC. Associate all subnets to your Lambda.",
@@ -329,7 +329,7 @@
             "topic": "AWS Lambda",
             "id": 26,
             "question": "\"How is the cost associated with Lambda function calculated?\"",
-            "code": "",
+            "body": "",
             "answer": "\"compute time\"",
             "choices": [
                 "number of function calls",
@@ -342,7 +342,7 @@
             "topic": "AWS Lambda",
             "id": 27,
             "question": "\"What is the fastest way to get started with Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use a blueprint.\"",
             "choices": [
                 "Author a Lambda from scratch.",
@@ -355,7 +355,7 @@
             "topic": "AWS Lambda",
             "id": 28,
             "question": "\"Where is the disk space allocated for Lambda functions?\"",
-            "code": "",
+            "body": "",
             "answer": "\"/tmp\"",
             "choices": [
                 "/tmp",
@@ -368,7 +368,7 @@
             "topic": "AWS Lambda",
             "id": 29,
             "question": "\"How do you stop a running Lambda that is stuck in a recursive loop?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Set the function concurrent execution limit to 0 while you update the code.\"",
             "choices": [
                 "Delete the function.",
@@ -381,7 +381,7 @@
             "topic": "AWS Lambda",
             "id": 30,
             "question": "\"What is AWS best practice for Lambda configuration?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Overprovision memory to run your functions faster and reduce your costs. Do not overprovision your function timeout settings.\"",
             "choices": [
                 "Overprovision memory to run your functions faster and reduce your costs. Do not overprovision your function timeout settings.",
@@ -394,7 +394,7 @@
             "topic": "AWS Lambda",
             "id": 31,
             "question": "\"Basic Lambda permissions include permissions for what?\"",
-            "code": "",
+            "body": "",
             "answer": "\"updating log groups\"",
             "choices": [
                 "removing log groups",
@@ -407,7 +407,7 @@
             "topic": "AWS Lambda",
             "id": 32,
             "question": "\"How are environment variables stored?\"",
-            "code": "",
+            "body": "",
             "answer": "\"key-value pairs\"",
             "choices": [
                 "DynamoDB tables",
@@ -420,7 +420,7 @@
             "topic": "AWS Lambda",
             "id": 33,
             "question": "\"You need to use a Lambda to provide backend logic to your website. Which service do you use to make your Lambda available to your website?\"",
-            "code": "",
+            "body": "",
             "answer": "\"API Gateway\"",
             "choices": [
                 "S3",
@@ -433,7 +433,7 @@
             "topic": "AWS Lambda",
             "id": 34,
             "question": "\"You are creating a Lambda to trigger on change to files in an S3 bucket. Where should you put the bucket name?\"",
-            "code": "",
+            "body": "",
             "answer": "\"in a Lambda environment variable\"",
             "choices": [
                 "in the Lambda function code",
@@ -446,7 +446,7 @@
             "topic": "AWS Lambda",
             "id": 35,
             "question": "\"What action is needed before you can test a Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Configure a test event\"",
             "choices": [
                 "Deploy the Lambda",
@@ -459,7 +459,7 @@
             "topic": "AWS Lambda",
             "id": 36,
             "question": "\"What kind of packages can you use with Node.js for Lambdas?\"",
-            "code": "",
+            "body": "",
             "answer": "\"NPM\"",
             "choices": [
                 "Fleece",
@@ -472,7 +472,7 @@
             "topic": "AWS Lambda",
             "id": 37,
             "question": "\"Lambdas are monitored by default using which service?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CloudWatch\"",
             "choices": [
                 "CloudTrail",
@@ -485,7 +485,7 @@
             "topic": "AWS Lambda",
             "id": 38,
             "question": "\"What can trigger a Lambda function execution?\"",
-            "code": "",
+            "body": "",
             "answer": "\"an SNS topic\"",
             "choices": [
                 "a table definition",
@@ -498,7 +498,7 @@
             "topic": "AWS Lambda",
             "id": 39,
             "question": "\"You need to set an S3 event trigger on your Lambda to respond when data is added to your bucket from another S3 bucket. Which event type do you configure?\"",
-            "code": "",
+            "body": "",
             "answer": "\"PUT\"",
             "choices": [
                 "POST",
@@ -511,7 +511,7 @@
             "topic": "AWS Lambda",
             "id": 40,
             "question": "\"To make Lambdas more testable, it is AWS best practice to separate which of these?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Lambda handler from core logic\"",
             "choices": [
                 "Lambda configuration from logging code",
@@ -524,7 +524,7 @@
             "topic": "AWS Lambda",
             "id": 41,
             "question": "\"What is included in an exported Lambda deployment package?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Zip file of all related files\"",
             "choices": [
                 "YAML definition",
@@ -537,7 +537,7 @@
             "topic": "AWS Lambda",
             "id": 42,
             "question": "\"When can you change the execution role of a Lambda?\"",
-            "code": "",
+            "body": "",
             "answer": "\"anytime via configuration\"",
             "choices": [
                 "only at creation",
@@ -550,7 +550,7 @@
             "topic": "AWS Lambda",
             "id": 43,
             "question": "\"What is the relationship between SAM template and CloudFormation template files?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CloudFormation templates are a superset of SAM templates. CloudFormation templates include additional resource types.\"",
             "choices": [
                 "SAM templates are a superset of CloudFormation templates. SAM templates include additional resource types.",
@@ -563,7 +563,7 @@
             "topic": "AWS Lambda",
             "id": 44,
             "question": "\"What service deploys Lambdas regionally?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CloudFront\"",
             "choices": [
                 "EdgeCloud",
@@ -576,7 +576,7 @@
             "topic": "AWS Lambda",
             "id": 45,
             "question": "\"What programming language does AWS Lambda support?\"",
-            "code": "",
+            "body": "",
             "answer": "\"all of these answers\"",
             "choices": [
                 "custom",
@@ -589,7 +589,7 @@
             "topic": "AWS Lambda",
             "id": 46,
             "question": "\"You need to setup a mechanism to put controls in place to notify you when you have a spike in Lambda concurrency. What should you do?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Deploy a CloudWatch alarm that notifies you when function metrics exceed your threshold. Create an AWS budget to monitor costs.\"",
             "choices": [
                 "Deploy a CloudTrail alarm that notifies you when function metrics exceed your threshold. Create an AWS budget to monitor costs.",
@@ -602,7 +602,7 @@
             "topic": "AWS Lambda",
             "id": 47,
             "question": "\"You want to minimize cold start time for your Lambda. What do you do?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Add extra code to check if the transient cache, or the /tmp directory, has the data that you stored.\"",
             "choices": [
                 "Add extra code to check if the transient cache, or the /tmp directory, has the data that you stored.",
@@ -615,7 +615,7 @@
             "topic": "AWS Lambda",
             "id": 48,
             "question": "\"When is Lambda code stored encrypted?\"",
-            "code": "",
+            "body": "",
             "answer": "\"at rest\"",
             "choices": [
                 "at rest",
@@ -628,7 +628,7 @@
             "topic": "AWS Lambda",
             "id": 49,
             "question": "\"When you use a resource-based policy to give a service, resource, or account access to your function, how can you apply the scope of that permission??\"",
-            "code": "",
+            "body": "",
             "answer": "\"at the version, alias, or function level\"",
             "choices": [
                 "at the function level",
@@ -641,7 +641,7 @@
             "topic": "AWS Lambda",
             "id": 50,
             "question": "\"Lambda can read events from which other AWS services? (ref-https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html)\"",
-            "code": "",
+            "body": "",
             "answer": "\"Kinesis, DynamoDB, and SQS\"",
             "choices": [
                 "Kinesis, S3, and SQS",
@@ -654,7 +654,7 @@
             "topic": "AWS Lambda",
             "id": 51,
             "question": "\"Via what can a Lambda be called?\"",
-            "code": "",
+            "body": "",
             "answer": "\"all of these answers\"",
             "choices": [
                 "all of these answers",
@@ -667,7 +667,7 @@
             "topic": "AWS Lambda",
             "id": 52,
             "question": "\"which is use case of lambda ?\"",
-            "code": "",
+            "body": "",
             "answer": "\"both\"",
             "choices": [
                 "Image processing",
@@ -680,7 +680,7 @@
             "topic": "AWS Lambda",
             "id": 53,
             "question": "\"Events are AWS resources that trigger the Lambda function. What data type is the SAM file Events property?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Array\"",
             "choices": [
                 "Integer",
@@ -693,7 +693,7 @@
             "topic": "AWS Lambda",
             "id": 54,
             "question": "\"A company is using an API built using Amazon Lambda, Amazon API Gateway, and Amazon DynamoDB in production. The developer has observed high latency during peak periods. Which approach would best resolve the issue?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Enable API Gateway stage-level caching\"",
             "choices": [
                 "Increase the Lambda function timeout",
@@ -706,7 +706,7 @@
             "topic": "AWS Lambda",
             "id": 55,
             "question": "\"The AWS Serverless Application Model (AWS SAM) is a model that \\_\\_\\_\\_ .\"",
-            "code": "",
+            "body": "",
             "answer": "\"defines serverless applications\"",
             "choices": [
                 "defines serverless applications",
@@ -719,7 +719,7 @@
             "topic": "AWS Lambda",
             "id": 56,
             "question": "\"The code that you want AWS Lambda to invoke as per some defined triggers is known as **\\_**.\"",
-            "code": "",
+            "body": "",
             "answer": "\"the Lambda function\"",
             "choices": [
                 "the event source",
@@ -732,7 +732,7 @@
             "topic": "AWS Lambda",
             "id": 57,
             "question": "\"A developer has created a Lambda function to scrub real-time data of extraneous information and then send the scrubbed data to Kinesis for further processing and storage. Some of the data showing up in Kinesis seems to be inaccurate. What's the best way for the developer to debug this?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use AWS X-Ray to step through the function\"",
             "choices": [
                 "Look directly at the Lambda Logs in CloudWatch",
@@ -745,7 +745,7 @@
             "topic": "AWS Lambda",
             "id": 58,
             "question": "\"Lambdas can be created **\\_**.\"",
-            "code": "",
+            "body": "",
             "answer": "\"All of these answers\"",
             "choices": [
                 "All of these answers",
@@ -758,7 +758,7 @@
             "topic": "AWS Lambda",
             "id": 59,
             "question": "\"You need to quickly understand execution times for two different Lambda functions with different invocation types: asynchronous and synchronous. What do you do?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Enable tracing, rerun the lambdas, and view in the lambda console\"",
             "choices": [
                 "Enable tracing, rerun the lambdas, and view in the lambda console",
@@ -771,7 +771,7 @@
             "topic": "AWS Lambda",
             "id": 60,
             "question": "\"Which tool would you use to test a Lambda locally?\"",
-            "code": "",
+            "body": "",
             "answer": "\"AWS SAM CLI\"",
             "choices": [
                 "AWS SAM",
@@ -784,7 +784,7 @@
             "topic": "AWS Lambda",
             "id": 61,
             "question": "\"Your function failed to execute due to a timeout. What type of error is this?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Runtime\"",
             "choices": [
                 "Caller",
@@ -797,7 +797,7 @@
             "topic": "AWS Lambda",
             "id": 62,
             "question": "\"A company will be modernizing their application which is currently running on Amazon Elastic Cloud Compute (EC2) instances. They have experience with scaling this infrastructure using Amazon EC2 Autoscaling. They want to move to serverless infrastructure consisting of an Amazon API Gateway that triggers Lambda functions. They are consulting you about scaling this new infrastructure. What should the company consider in order to make sure the serverless infrastructure scales to their needs?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Look at service limits for Amazon API Gateway and Lambda functions used in order to identify potential bottlenecks and balance performance requirements, costs, and business impact\"",
             "choices": [
                 "Enable Auto Scaling Groups for AWS Lambda to ensure that enough Lambda functions are ready to handle the incoming requests",

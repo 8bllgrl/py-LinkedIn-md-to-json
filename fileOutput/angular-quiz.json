@@ -4,7 +4,7 @@
             "topic": "Angular",
             "id": 1,
             "question": "\"What is the purpose of the ViewChild decorator in this component class?\"",
-            "code": "```ts\n@Component({\n    ...\n    template: '<p #bio></p>'\n})\nexport class UserDetailsComponent {\n    @ViewChild('bio') bio;\n}",
+            "body": "```ts\n@Component({\n    ...\n    template: '<p #bio></p>'\n})\nexport class UserDetailsComponent {\n    @ViewChild('bio') bio;\n}\n```",
             "answer": "\"It provides access from within the component class to the ElementRef object for the `<p>` tag that has the bio template reference variable in the component's template view.\"",
             "choices": [
                 "It provides access from within the component class to the ElementRef object for the `<p>` tag that has the bio template reference variable in the component's template view.",
@@ -17,7 +17,7 @@
             "topic": "Angular",
             "id": 2,
             "question": "\"What method is used to wire up a FormControl to a native DOM input element in reactive forms?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use the formControlName directive and set the value equal to the string name given to the FormControl.\"",
             "choices": [
                 "Add the string name given to the FormControl to an attribute named controls on the <form> element to indicate what fields it should include.",
@@ -30,7 +30,7 @@
             "topic": "Angular",
             "id": 3,
             "question": "\"What is the difference between the `paramMap` and the `queryParamMap` on the `ActivatedRoute` class?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Both are Observables containing values from the requested route's URL string. The paramMap contains the parameter values that are in the URL path and the queryParamMap contains the URL query parameters.\"",
             "choices": [
                 "The paramMap is an object literal of the parameters in a route's URL path. The queryParamMap is an Observable of those same parameters.",
@@ -43,7 +43,7 @@
             "topic": "Angular",
             "id": 4,
             "question": "\"Based on the following usage of the async pipe, and assuming the users class field is an Observable, how many subscriptions to the users Observable are being made?\"",
-            "code": "```html\n<h2>Names</h2>\n<div *ngFor=\"let user of users | async\">{{ user.name }}</div>\n<h2>Ages</h2>\n<div *ngFor=\"let user of users | async\">{{ user.age }}</div>\n<h2>Genders</h2>\n<div *ngFor=\"let user of users | async\">{{ user.gender }}</div>",
+            "body": "```html\n<h2>Names</h2>\n<div *ngFor=\"let user of users | async\">{{ user.name }}</div>\n<h2>Ages</h2>\n<div *ngFor=\"let user of users | async\">{{ user.age }}</div>\n<h2>Genders</h2>\n<div *ngFor=\"let user of users | async\">{{ user.gender }}</div>\n```",
             "answer": "\"Three. There is one for each async pipe.\"",
             "choices": [
                 "None. The async pipe does not subscribe automatically.",
@@ -56,7 +56,7 @@
             "topic": "Angular",
             "id": 5,
             "question": "\"How can you use the HttpClient to send a POST request to an endpoint from within an addOrder function in this OrderService?\"",
-            "code": "```ts\nexport class OrderService {\n  constructor(private httpClient: HttpClient) {}\n\n  addOrder(order: Order) {\n    // Missing line\n  }\n}",
+            "body": "```ts\nexport class OrderService {\n  constructor(private httpClient: HttpClient) {}\n\n  addOrder(order: Order) {\n    // Missing line\n  }\n}\n```",
             "answer": "\"this.httpClient.post<Order>(this.orderUrl, order).subscribe();\"",
             "choices": [
                 "this.httpClient.url(this.orderUrl).post(order);",
@@ -69,7 +69,7 @@
             "topic": "Angular",
             "id": 6,
             "question": "\"What is the RouterModule.forRoot method used for?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Registering route definitions at the root application level.\"",
             "choices": [
                 "Registering any providers that you intend to use in routed components.",
@@ -82,7 +82,7 @@
             "topic": "Angular",
             "id": 7,
             "question": "\"Which DOM elements will this component metadata selector match on?\"",
-            "code": "```ts\n@Component({\n    selector: 'app-user-card',\n    . . .\n})",
+            "body": "```ts\n@Component({\n    selector: 'app-user-card',\n    . . .\n})\n```",
             "answer": "\"All instances of `<app-user-card></app-user-card>`.\"",
             "choices": [
                 "Any element with the attribute app-user-card, such as `<div app-user-card></div>`.",
@@ -95,7 +95,7 @@
             "topic": "Angular",
             "id": 8,
             "question": "\"What is the correct template syntax for using the built-in ngFor structural directive to render out a list of productNames?\"",
-            "code": "",
+            "body": "",
             "answer": "\"C\"",
             "choices": [
                 "A",
@@ -112,7 +112,7 @@
             "topic": "Angular",
             "id": 9,
             "question": "\"What are the two component decorator metadata properties used to set up CSS styles for a component?\"",
-            "code": "",
+            "body": "",
             "answer": "\"styles and styleUrls.\"",
             "choices": [
                 "viewEncapsulation and viewEncapsulationFiles.",
@@ -125,7 +125,7 @@
             "topic": "Angular",
             "id": 10,
             "question": "\"With the following component class, what template syntax would you use in the template to display the value of the title class field?\"",
-            "code": "```ts\n@Component({\n  selector: 'app-title-card',\n  template: '',\n})\nclass TitleCardComponent {\n  title = 'User Data';\n}",
+            "body": "```ts\n@Component({\n  selector: 'app-title-card',\n  template: '',\n})\nclass TitleCardComponent {\n  title = 'User Data';\n}\n```",
             "answer": "\"`{{ title }}`\"",
             "choices": [
                 "`{{ 'title' }}`",
@@ -138,7 +138,7 @@
             "topic": "Angular",
             "id": 11,
             "question": "\"What is the purpose of the valueChanges method on a FormControl?\"",
-            "code": "",
+            "body": "",
             "answer": "\"It is an observable that emits every time the value of the control changes, so you can react to new values and make logic decisions at that time.\"",
             "choices": [
                 "It is used to configure what values are allowed for the control.",
@@ -151,7 +151,7 @@
             "topic": "Angular",
             "id": 12,
             "question": "\"What directive is used to link an `<a>` tag to routing?\"",
-            "code": "",
+            "body": "",
             "answer": "\"routerLink\"",
             "choices": [
                 "routeTo",
@@ -164,7 +164,7 @@
             "topic": "Angular",
             "id": 13,
             "question": "\"What is the Output decorator used for in this component class?\"",
-            "code": "```ts\n@Component({\n    selector: 'app-shopping-cart',\n    . . .\n})\nexport class ShoppingCartComponent {\n    @Output() itemTotalChanged = new EventEmitter();\n}",
+            "body": "```ts\n@Component({\n    selector: 'app-shopping-cart',\n    . . .\n})\nexport class ShoppingCartComponent {\n    @Output() itemTotalChanged = new EventEmitter();\n}\n```",
             "answer": "\"It provides a way to bind events to the `itemTotalChanged` class field, like so: `<app-shopping-cart (itemTotalChanged)=\"logNewTotal($event)\"></app-shopping-cart>`.\"",
             "choices": [
                 "It makes the `itemTotalChanged` class field public.",
@@ -177,7 +177,7 @@
             "topic": "Angular",
             "id": 14,
             "question": "\"What is the difference between these two markup examples for conditionally handling display?\"",
-            "code": "```html\n<div *ngIf=\"isVisible\">Active</div>\n<div [hidden]=\"!isVisible\">Active</div>",
+            "body": "```html\n<div *ngIf=\"isVisible\">Active</div>\n<div [hidden]=\"!isVisible\">Active</div>\n```",
             "answer": "\"The `ngIf` directive does not render the div in the DOM if the expression is false. The `hidden` property usage hides the div content in the browser viewport, but the div is still in the DOM.\"",
             "choices": [
                 "The `ngIf` is shorthand for the other example. When Angular processes that directive, it writes a div element to the DOM with the hidden property.",
@@ -190,7 +190,7 @@
             "topic": "Angular",
             "id": 15,
             "question": "\"How can you disable the submit button when the form has errors in this template-driven forms example?\"",
-            "code": "```html\n<form #userForm=\"ngForm\">\n  <input type=\"text\" ngModel name=\"firstName\" required />\n  <input type=\"text\" ngModel name=\"lastName\" required />\n  <button (click)=\"submit(userForm.value)\">Save</button>\n</form>",
+            "body": "```html\n<form #userForm=\"ngForm\">\n  <input type=\"text\" ngModel name=\"firstName\" required />\n  <input type=\"text\" ngModel name=\"lastName\" required />\n  <button (click)=\"submit(userForm.value)\">Save</button>\n</form>\n```",
             "answer": "\"B\"",
             "choices": [
                 "A",
@@ -207,7 +207,7 @@
             "topic": "Angular",
             "id": 16,
             "question": "\"You want to see what files would be generated by creating a new contact-card component. Which command would you use?\"",
-            "code": "",
+            "body": "",
             "answer": "\"ng generate component contact-card --dry-run\"",
             "choices": [
                 "ng generate component contact-card --dry-run",
@@ -220,7 +220,7 @@
             "topic": "Angular",
             "id": 17,
             "question": "\"Based on the following component, what template syntax would you use to bind the TitleCardComponent's titleText field to the h1 element title property?\"",
-            "code": "```ts\n@Component({\n  selector: 'app-title-card',\n  template: '<h1 title=\"User Data\"> {{titleText}}</h1>',\n})\nexport class TitleCardComponent {\n  titleText = 'User Data';\n}",
+            "body": "```ts\n@Component({\n  selector: 'app-title-card',\n  template: '<h1 title=\"User Data\"> {{titleText}}</h1>',\n})\nexport class TitleCardComponent {\n  titleText = 'User Data';\n}\n```",
             "answer": "\"`<h1 [title]=\"titleText\">{{ titleText }}</h1>`\"",
             "choices": [
                 "`<h1 data-title=\"titleText\">{{ titleText }}</h1>`",
@@ -233,7 +233,7 @@
             "topic": "Angular",
             "id": 18,
             "question": "\"What are Angular lifecycle hooks?\"",
-            "code": "",
+            "body": "",
             "answer": "\"reserved named methods for components and directives that Angular will call during set times in its execution, and can be used to tap into those lifecycle moments\"",
             "choices": [
                 "loggers for tracking the health of an Angular app",
@@ -246,7 +246,7 @@
             "topic": "Angular",
             "id": 19,
             "question": "\"Pick the best description for this template syntax code:\"",
-            "code": "```html\n<span>Boss: {{job?.bossName}} </span>",
+            "body": "```html\n<span>Boss: {{job?.bossName}} </span>\n```",
             "answer": "\"It is using the safe navigation operator (?) on the job field. If the job field is undefined, the access to the bossName will be ignored and no error will occur.\"",
             "choices": [
                 "The ? is shorthand for the async pipe. The job value must be an Observable.",
@@ -259,7 +259,7 @@
             "topic": "Angular",
             "id": 20,
             "question": "\"How would you configure a route definition for a UserDetailComponent that supports the URL path user/23 (where 23 represents the id of the requested user)?\"",
-            "code": "",
+            "body": "",
             "answer": "\"`{ path: 'user/:id', component: UserDetailComponent }`\"",
             "choices": [
                 "`{ path: 'user/:id', component: UserDetailComponent }`",
@@ -272,7 +272,7 @@
             "topic": "Angular",
             "id": 21,
             "question": "\"What are the HostListener decorators and the HostBinding decorator doing in this directive?\"",
-            "code": "```ts\n@Directive({\n  selector: '[appCallout]',\n})\nexport class CalloutDirective {\n  @HostBinding('style.font-weight') fontWeight = 'normal';\n\n  @HostListener('mouseenter')\n  onMouseEnter() {\n    this.fontWeight = 'bold';\n  }\n\n  @HostListener('mouseleave')\n  onMouseLeave() {\n    this.fontWeight = 'normal';\n  }\n}",
+            "body": "```ts\n@Directive({\n  selector: '[appCallout]',\n})\nexport class CalloutDirective {\n  @HostBinding('style.font-weight') fontWeight = 'normal';\n\n  @HostListener('mouseenter')\n  onMouseEnter() {\n    this.fontWeight = 'bold';\n  }\n\n  @HostListener('mouseleave')\n  onMouseLeave() {\n    this.fontWeight = 'normal';\n  }\n}\n```",
             "answer": "\"They are setting the CalloutDirective.fontWeight field based on whether or not the mouse is over the DOM element. The HostListener then sets the font-weight CSS property to the fontWeight value.\"",
             "choices": [
                 "They are setting the CalloutDirective.fontWeight field based on whether or not the mouse is over the DOM element. The HostListener then sets the font-weight CSS property to the fontWeight value.",
@@ -285,7 +285,7 @@
             "topic": "Angular",
             "id": 22,
             "question": "\"What Angular template syntax can you use on this template-driven form field to access the field value and check for validation within the template markup?\"",
-            "code": "```html\n<input type=\"text\" ngModel name=\"firstName\" required minlength=\"4\" />\n<span *ngIf=\"\">Invalid field data</span>",
+            "body": "```html\n<input type=\"text\" ngModel name=\"firstName\" required minlength=\"4\" />\n<span *ngIf=\"\">Invalid field data</span>\n```",
             "answer": "\"You can make use of a template reference variable and the exportAs feature that the ngModel directive has.\"",
             "choices": [
                 "You can make use of a template reference variable and the exportAs feature that the ngModel directive has.",
@@ -298,7 +298,7 @@
             "topic": "Angular",
             "id": 23,
             "question": "\"What is the value type that will be stored in the headerText template reference variable in this markup?\"",
-            "code": "```html\n<h1 #headerText>User List</h1>",
+            "body": "```html\n<h1 #headerText>User List</h1>\n```",
             "answer": "\"an Angular ElementRef, a wrapper around a native element\"",
             "choices": [
                 "an Angular ElementRef, a wrapper around a native element",
@@ -311,7 +311,7 @@
             "topic": "Angular",
             "id": 24,
             "question": "\"What is the difference, if any, of the resulting code logic based on these two provider configurations?\"",
-            "code": "```ts\n[{ provide: FormattedLogger, useClass: Logger }][{ provide: FormattedLogger, useExisting: Logger }];",
+            "body": "```ts\n[{ provide: FormattedLogger, useClass: Logger }][{ provide: FormattedLogger, useExisting: Logger }];\n```",
             "answer": "\"The useClass syntax tells the injector to make a new instance of Logger and bind that instance to the FormattedLogger token. The useExisting syntax refers to an already existing object instance declared as Logger.\"",
             "choices": [
                 "They are the same. Both will result in a new instance of Logger that is bound to the FormattedLogger token.",
@@ -324,7 +324,7 @@
             "topic": "Angular",
             "id": 25,
             "question": "\"What is the purpose of the data property (seen in the example below) in a route configuration?\"",
-            "code": "```ts\n   {\n       path: 'customers',\n       component: CustomerListComponent,\n       data: { accountSection: true }\n   }",
+            "body": "```ts\n   {\n       path: 'customers',\n       component: CustomerListComponent,\n       data: { accountSection: true }\n   }\n```",
             "answer": "\"a way to include static, read-only data associated with the route that can be retrieved from the ActivatedRoute\"",
             "choices": [
                 "a key/value mapping for setting @Input values on the routed component instance",
@@ -337,7 +337,7 @@
             "topic": "Angular",
             "id": 26,
             "question": "\"How does the built-in `ngIf` structural directive change the rendered DOM based on this template syntax?\"",
-            "code": "```ts\n@Component({\n  selector: 'app-product',\n  template: '<div *ngIf=\"product\">{{ product.name }}</div>',\n})\nexport class ProductComponent {\n  @Input() product;\n}",
+            "body": "```ts\n@Component({\n  selector: 'app-product',\n  template: '<div *ngIf=\"product\">{{ product.name }}</div>',\n})\nexport class ProductComponent {\n  @Input() product;\n}\n```",
             "answer": "\"If the product class field is \"truthy,\" then the rendered DOM will include the `<div>` with the value of the `product.name` field. If it is not \"truthy,' the rendered DOM will not contain the `<div>` element.\"",
             "choices": [
                 "The `<div>` acts as a placeholder. If the product class field is \"truthy,\" the `<div>` will get replaced by just the `product.name` value; if not, then nothing will get rendered.",
@@ -350,7 +350,7 @@
             "topic": "Angular",
             "id": 27,
             "question": "\"What does this code accomplish?\"",
-            "code": "```ts\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n\nplatformBrowserDynamic().bootstrapModule(AppModule);",
+            "body": "```ts\n@NgModule({\n  declarations: [AppComponent],\n  imports: [BrowserModule],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n\nplatformBrowserDynamic().bootstrapModule(AppModule);\n```",
             "answer": "\"It declares an Angular module named AppModule that contains a bootstrapped component named AppComponent. Then it registers that module with Angular, so the app can start up.\"",
             "choices": [
                 "It executes a unit test for an NgModule.",
@@ -363,7 +363,7 @@
             "topic": "Angular",
             "id": 28,
             "question": "\"Which choice best describes what the _resolve_ property does in this route configuration?\"",
-            "code": "```ts\n{\n   path: ':id',\n   component: UserComponent,\n   resolve: {\n     user: UserResolverService\n   }\n}",
+            "body": "```ts\n{\n   path: ':id',\n   component: UserComponent,\n   resolve: {\n     user: UserResolverService\n   }\n}\n```",
             "answer": "\"Prior to loading the _UserComponent_, the router will subscribe to the _Observable_ returned by a _resolve_ method in the _UserResolverService_. This technique can be used to get preloaded data for a _route_.\"",
             "choices": [
                 "Prior to loading the _UserComponent_, the router will subscribe to the _Observable_ returned by a _resolve_ method in the _UserResolverService_. This technique can be used to get preloaded data for a _route_.",
@@ -376,7 +376,7 @@
             "topic": "Angular",
             "id": 29,
             "question": "\"What is the purpose of the ContentChildren decorator in this component class?\"",
-            "code": "```ts\n@Component({\n . . .\n template: '<ng-content></ng-content\u00e2\u20ac\u00ba'\n})\nexport class TabsListComponent {\n @ContentChildren(TabComponent) tabs;\n}",
+            "body": "```ts\n@Component({\n . . .\n template: '<ng-content></ng-content\u203a'\n})\nexport class TabsListComponent {\n @ContentChildren(TabComponent) tabs;\n}\n```",
             "answer": "\"It provides access from within the component class to any _TabComponent_ components that were content projected into the <ng-content> for this component.\"",
             "choices": [
                 "If any _TabsComponent_ elements are added to the _TabsListComponent_ template, they will get put into the <ng-content> element at runtime.",
@@ -389,7 +389,7 @@
             "topic": "Angular",
             "id": 30,
             "question": "\"In order for Angular to process components in an application, where do the component types need to be registered?\"",
-            "code": "",
+            "body": "",
             "answer": "\"in an NgModule decorator metadata property named _declarations_\"",
             "choices": [
                 "within a script tag in the index.html file",
@@ -402,7 +402,7 @@
             "topic": "Angular",
             "id": 31,
             "question": "\"What is the purpose of the `fixture.detectChanges()` call in this unit test?\"",
-            "code": "```ts\nTestBed.configureTestingModule({\n  declarations: [UserCardComponent],\n});\nlet fixture = TestBed.createComponent(UserCardComponent);\n\nfixture.detectChanges();\n\nexpect(fixture.nativeElement.querySelector('h1').textContent).toContain(\n  fixture.componentInstance.title,\n);",
+            "body": "```ts\nTestBed.configureTestingModule({\n  declarations: [UserCardComponent],\n});\nlet fixture = TestBed.createComponent(UserCardComponent);\n\nfixture.detectChanges();\n\nexpect(fixture.nativeElement.querySelector('h1').textContent).toContain(\n  fixture.componentInstance.title,\n);\n```",
             "answer": "\"It forces Angular to perform change detection, which will render the _UserCardComponent_ before you can validate its template.\"",
             "choices": [
                 "It tracks any potential Ul changes and will fail the unit test if any are made.",
@@ -415,7 +415,7 @@
             "topic": "Angular",
             "id": 32,
             "question": "\"What will the URL segment look like based on the following call to the `Router.navigate` method when goToUser is passed the value 15?\"",
-            "code": "```ts\nexport class ToolsComponent {\n  constructor(private router: Router) {}\n  goToUser(id: number) {\n    this.router.navigate(['user', id]);\n  }\n}",
+            "body": "```ts\nexport class ToolsComponent {\n  constructor(private router: Router) {}\n  goToUser(id: number) {\n    this.router.navigate(['user', id]);\n  }\n}\n```",
             "answer": "\"/user/15\"",
             "choices": [
                 "/user/15",
@@ -428,7 +428,7 @@
             "topic": "Angular",
             "id": 33,
             "question": "\"When a service is provided for root and is also added to the provider's configuration for a lazy-loaded module, what instance of that service does the injector provide to constructors in the lazy-loaded module?\"",
-            "code": "",
+            "body": "",
             "answer": "\"A new instance of that service is created when the module is lazy loaded.\"",
             "choices": [
                 "A new instance of that service is created when the module is lazy loaded.",
@@ -441,7 +441,7 @@
             "topic": "Angular",
             "id": 34,
             "question": "\"What is the HostBinding decorator doing in this directive?\"",
-            "code": "```ts\n@Directive({\n  selector: ' [appHighlight] ',\n})\nexport class HighlightDirective {\n  @HostBinding('class.highlighted') highlight = true;\n}",
+            "body": "```ts\n@Directive({\n  selector: ' [appHighlight] ',\n})\nexport class HighlightDirective {\n  @HostBinding('class.highlighted') highlight = true;\n}\n```",
             "answer": "\"It is adding the CSS class named highlighted to any DOM element that has the appHighlight directive on it.\"",
             "choices": [
                 "It is adding the CSS class named highlighted to any DOM element that has the appHighlight directive on it.",
@@ -454,7 +454,7 @@
             "topic": "Angular",
             "id": 35,
             "question": "\"In reactive forms, what Angular form class type is used on the native DOM <form> element to wire it up?\"",
-            "code": "",
+            "body": "",
             "answer": "\"`FormGroup`\"",
             "choices": [
                 "`FormArray`",
@@ -467,24 +467,24 @@
             "topic": "Angular",
             "id": 36,
             "question": "\"Assuming the username FormControl has been configured with a minLength validator, how can you set up an error display in the following reactive forms markup for the username field?\"",
-            "code": "```html\n<form [formGroup]=\"form\"\u00e2\u20ac\u00ba\n  <input type=\"text\" formControlName= \"username\"\u00e2\u20ac\u00ba\n  ...\n</form>",
+            "body": "```html\n<form [formGroup]=\"form\"\u203a\n  <input type=\"text\" formControlName= \"username\"\u203a\n  ...\n</form>\n```",
             "answer": "\"D\"",
             "choices": [
                 "A",
-                "```ts\n<span *ngIf=\"username.minLength.invalid\"\u00e2\u20ac\u00ba\nUsername length is not valid\n</span>\n```",
+                "```ts\n<span *ngIf=\"username.minLength.invalid\"\u203a\nUsername length is not valid\n</span>\n```",
                 "B",
-                "```ts\n<input type=\"text\" formControlName=\"username\" [showMinLength]=\"true\"\u00e2\u20ac\u00ba\n```",
+                "```ts\n<input type=\"text\" formControlName=\"username\" [showMinLength]=\"true\"\u203a\n```",
                 "C",
                 "```ts\n<span *ngIf=\"form.get('username').getError('minLength') as minLengthError\">\nUsername must be at least {{ minLengthError.requiredLength }} characters.\n</span>\n```",
                 "D",
-                "```ts\n<input type=\"text\" formControlName=\"username\" #userName=\"ngModer\">\n<span *ngIf=\"userName.errors.minlength\"\u00e2\u20ac\u00ba\nUsername must be at least {{ userName.errors.minlength.requiredLength }} characters.\n</span>\n```"
+                "```ts\n<input type=\"text\" formControlName=\"username\" #userName=\"ngModer\">\n<span *ngIf=\"userName.errors.minlength\"\u203a\nUsername must be at least {{ userName.errors.minlength.requiredLength }} characters.\n</span>\n```"
             ]
         },
         {
             "topic": "Angular",
             "id": 37,
             "question": "\"How does the emulated view encapsulation mode handle CSS for a component?\"",
-            "code": "",
+            "body": "",
             "answer": "\"It creates unique attributes for DOM elements and scopes the CSS selectors you write to those attribute ids.\"",
             "choices": [
                 "It renders the CSS exactly how you wrote it without any changes.",
@@ -497,7 +497,7 @@
             "topic": "Angular",
             "id": 38,
             "question": "\"With the following TestBed setup, what can be used to access the rendered DOM for the UserCardComponent?\"",
-            "code": "```ts\nTestBed.configureTestingModule({\n  declarations: [UserCardComponent],\n});\nlet fixture = TestBed.createComponent(UserCardComponent);",
+            "body": "```ts\nTestBed.configureTestingModule({\n  declarations: [UserCardComponent],\n});\nlet fixture = TestBed.createComponent(UserCardComponent);\n```",
             "answer": "\"`fixture.nativeElement`\"",
             "choices": [
                 "`fixture.componentTemplate`",
@@ -510,7 +510,7 @@
             "topic": "Angular",
             "id": 39,
             "question": "\"Given these two components, what will get rendered to the DOM based on the markup usage?\"",
-            "code": "```ts\n@Component({\n selector: 'app-card',\n template: '<h1>Data Card</h1><ng-content></ng-content>'\n})\nexport class CardComponent { }\n\n@Component({\n selector: 'app-bio',\n template: '<ng-content></ng-content>.\n})\nexport class BioComponent { }\n\n// markup usage:\n<app-card><app-bio>Been around for four years.</app-bio></app-card>",
+            "body": "```ts\n@Component({\n selector: 'app-card',\n template: '<h1>Data Card</h1><ng-content></ng-content>'\n})\nexport class CardComponent { }\n\n@Component({\n selector: 'app-bio',\n template: '<ng-content></ng-content>.\n})\nexport class BioComponent { }\n\n// markup usage:\n<app-card><app-bio>Been around for four years.</app-bio></app-card>\n```",
             "answer": "\"A\"",
             "choices": [
                 "A",
@@ -527,7 +527,7 @@
             "topic": "Angular",
             "id": 40,
             "question": "\"Given the app-title-card component in the code below, what DOM will the app-user-card component render?\"",
-            "code": "```ts\n@Component({\n   selector: 'app-user-card',\n   template: '<app-title-card></app-title-card><p>Jenny Smith</p>'\n})\n\n@Component({\n   selector: 'app-title-card',\n   template: '<h1>User Data</hl>'\n})\n\n// usage of user card component in parent component html\n<app-user-card></app-user-card>",
+            "body": "```ts\n@Component({\n   selector: 'app-user-card',\n   template: '<app-title-card></app-title-card><p>Jenny Smith</p>'\n})\n\n@Component({\n   selector: 'app-title-card',\n   template: '<h1>User Data</hl>'\n})\n\n// usage of user card component in parent component html\n<app-user-card></app-user-card>\n```",
             "answer": "\"A\"",
             "choices": [
                 "A",
@@ -544,7 +544,7 @@
             "topic": "Angular",
             "id": 41,
             "question": "\"Pick the matching code for the custom provider registration that the @Inject () decorator is looking for:\"",
-            "code": "```ts\nconstructor(@Inject('Logger') private logger) { }",
+            "body": "```ts\nconstructor(@Inject('Logger') private logger) { }\n```",
             "answer": "\"B\"",
             "choices": [
                 "A",
@@ -561,7 +561,7 @@
             "topic": "Angular",
             "id": 42,
             "question": "\"Which choice best describes the following usage of the HttpClient.get method in the getsettings class method?\"",
-            "code": "```ts\nexport class SettingsService {\n    constructor(private httpClient: HttpClient) { }\n    ...\n\ngetSettings()\n{\n    return this.httpClient.get<Settings>(this.settingsUrl)\n        .pipe(\n            retry(3)\n        );\n}}",
+            "body": "```ts\nexport class SettingsService {\n    constructor(private httpClient: HttpClient) { }\n    ...\n\ngetSettings()\n{\n    return this.httpClient.get<Settings>(this.settingsUrl)\n        .pipe(\n            retry(3)\n        );\n}}\n```",
             "answer": "\"When the result of the getSettings method is subscribed to, the HTTP GET call will be made; if it fails, it will be retried up to three times before it gives up and returns an error.\"",
             "choices": [
                 "The RxJs pipe method is an alias for the subscribe method, so a call to `getSettings` will execute the get query. The retry operator is used to tell the pipe call to retry the get query three times.",
@@ -574,7 +574,7 @@
             "topic": "Angular",
             "id": 43,
             "question": "\"When a service requires some setup to initialize its default state through a method, how can you make sure that said method is invoked before the service gets injected anywhere?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use a factory provider at the root AppModule level that depends on the service to call that service method.\"",
             "choices": [
                 "Put the logic of that service method into the service constructor instead.",
@@ -587,7 +587,7 @@
             "topic": "Angular",
             "id": 44,
             "question": "\"What statement best describes this usage of the TestBed?\"",
-            "code": "```ts\nconst spy = jasmine.createSpyObj('DataService', ['getUsersFromApi']);\nTestBed.configureTestingModule({\n  providers: [UserService, { provide: DataService, useValue: spy }],\n});\nconst userService = TestBed.get(UserService);",
+            "body": "```ts\nconst spy = jasmine.createSpyObj('DataService', ['getUsersFromApi']);\nTestBed.configureTestingModule({\n  providers: [UserService, { provide: DataService, useValue: spy }],\n});\nconst userService = TestBed.get(UserService);\n```",
             "answer": "\"The TestBed scaffolds an NgModule with two providers and handles any dependency injection. If any Angular class requests the DataService in its constructor, the TestBed will inject spy in that constructor.\"",
             "choices": [
                 "The TestBed is required anytime you want to make use of a spy object in a unit test for an Angular provider.",
@@ -600,7 +600,7 @@
             "topic": "Angular",
             "id": 45,
             "question": "\"What is the primary difference between a component and a directive?\"",
-            "code": "",
+            "body": "",
             "answer": "\"A component has a template and a directive does not.\"",
             "choices": [
                 "A component uses a selector metadata property and a directive does not.",
@@ -613,7 +613,7 @@
             "topic": "Angular",
             "id": 46,
             "question": "\"What could you add to this directive class to allow the truncate length to be set during directive usage in markup?\"",
-            "code": "```ts\n@Directive({\n    selector: '[appTruncate]'\n})\nexport class TruncateDirective {\n    . . .\n}\n\n// example of desired usage:\n<p [appTruncate]=\"10\">Some very long text here</p>",
+            "body": "```ts\n@Directive({\n    selector: '[appTruncate]'\n})\nexport class TruncateDirective {\n    . . .\n}\n\n// example of desired usage:\n<p [appTruncate]=\"10\">Some very long text here</p>\n```",
             "answer": "\"`@Input() appTruncate: number;`\"",
             "choices": [
                 "`@Input() appTruncate: number;`",
@@ -626,7 +626,7 @@
             "topic": "Angular",
             "id": 47,
             "question": "\"How can you pass query parameters to this `HttpClient.get` request?\"",
-            "code": "```ts\nexport class OrderService {\n  constructor(private httpClient: HttpClient) {}\n\n  getOrdersByYear(year: number): Observable<Order[]> {\n    return this.httpClient.get<Order[]>(this.ordersUrl);\n  }\n}",
+            "body": "```ts\nexport class OrderService {\n  constructor(private httpClient: HttpClient) {}\n\n  getOrdersByYear(year: number): Observable<Order[]> {\n    return this.httpClient.get<Order[]>(this.ordersUrl);\n  }\n}\n```",
             "answer": "\"C\"",
             "choices": [
                 "A `return this.httpClient.get<Order[]>(this.ordersUrl, {'year': year})`",
@@ -641,7 +641,7 @@
             "topic": "Angular",
             "id": 48,
             "question": "\"Assuming the `DataService` has been registered in the providers for the application, which answer best describes what happens based on this component's constructor?\"",
-            "code": "```ts\n@Component({\n    ...\n})\nexport class OrderHistoryComponent {\n    constructor(private dataService: DataService) {}\n    ...\n}",
+            "body": "```ts\n@Component({\n    ...\n})\nexport class OrderHistoryComponent {\n    constructor(private dataService: DataService) {}\n    ...\n}\n```",
             "answer": "\"When Angular creates a new instance of the `OrderHistoryComponent`, the injector will provide an instance of a `DataService` class to the component constructor's first argument. The constructor's `dataService` parameter will be used to set a private instance field with the same name on the instance.\"",
             "choices": [
                 "It is declaring that the `OrderHistoryComponent` will have its own version of a `DataService` and that it should never use any existing instances. The `DataService` would need to be instantiated within the class as a private field for this code to be complete and working.",
@@ -654,7 +654,7 @@
             "topic": "Angular",
             "id": 49,
             "question": "\"Finish this markup using the `ngIf` directive to implement an else case that will display the text \"User is not active\":\"",
-            "code": "```ts\n<div *ngIf=\"userIsActive; else inactive\">\n  Currently active!\n</div>",
+            "body": "```ts\n<div *ngIf=\"userIsActive; else inactive\">\n  Currently active!\n</div>\n```",
             "answer": "\"D\"",
             "choices": [
                 "A",
@@ -671,7 +671,7 @@
             "topic": "Angular",
             "id": 50,
             "question": "\"What is the correct syntax for a route definition to lazy load a feature module?\"",
-            "code": "",
+            "body": "",
             "answer": "\"B\"",
             "choices": [
                 "A",
@@ -688,7 +688,7 @@
             "topic": "Angular",
             "id": 51,
             "question": "\"Describe how the validation is set up and configured in this reactive forms example:\"",
-            "code": "```ts\nexport class UserFormControl implements OnInit {\n    ...\n    ngOnInit() {\n        this.form = this.formBuilder.group({\n            username: this.formBuilder.control('',\n                [Validators.required, Validators.minLength(5), this.unique]),\n        )};\n    }\n    unique(control: FormControl) {\n        return control.value !== 'admin' ? null: {notUnique: true};\n    }\n}",
+            "body": "```ts\nexport class UserFormControl implements OnInit {\n    ...\n    ngOnInit() {\n        this.form = this.formBuilder.group({\n            username: this.formBuilder.control('',\n                [Validators.required, Validators.minLength(5), this.unique]),\n        )};\n    }\n    unique(control: FormControl) {\n        return control.value !== 'admin' ? null: {notUnique: true};\n    }\n}\n```",
             "answer": "\"The `FormControl` for `username` is getting configured with three validators: the `required` and `minLength` validators that come from Angular, and a custom validator function named `unique` that checks for the value not equal to the string `admin`.\"",
             "choices": [
                 "The `FormControl` for `username` is getting configured to exclude three validators from the validators that it is allowed to use.",
@@ -701,7 +701,7 @@
             "topic": "Angular",
             "id": 52,
             "question": "\"What does the Injectable decorator do on this service class?\"",
-            "code": "```ts\n@Injectable({\n    providedIn: 'root'\n)}\nexport class DataService { }",
+            "body": "```ts\n@Injectable({\n    providedIn: 'root'\n)}\nexport class DataService { }\n```",
             "answer": "\"It registers a provider for the service in the root application injector, making a single instance of it available throughout the application.\"",
             "choices": [
                 "It registers a provider for the service that is available only at the root module level, not to any children modules.",
@@ -714,7 +714,7 @@
             "topic": "Angular",
             "id": 53,
             "question": "\"Describe the usage of this code\"",
-            "code": "```ts\nexport interface AppSettings {\n  title: string;\n  version: number;\n}\nexport const APP_SETTINGS = new InjectionToken<AppSettings>('app.settings');",
+            "body": "```ts\nexport interface AppSettings {\n  title: string;\n  version: number;\n}\nexport const APP_SETTINGS = new InjectionToken<AppSettings>('app.settings');\n```",
             "answer": "\"The InjectionToken is used to create a provider token for a non-class dependency. An Object literal can be provider as a value for the APP_SETTINGS dependency provider type that can then be injected into components, services, etc ..\"",
             "choices": [
                 "The InjectionToken is adding an instance of the AppSettings to the root provider via the InjectionToken constructor call, making it automatically available to all NgModules, services and components throughout the Angular application without the need to inject it anywhere.",
@@ -727,7 +727,7 @@
             "topic": "Angular",
             "id": 54,
             "question": "\"For the following template-driven forms example, what argument can be passed to the submit method in the click event to submit the data for the form?\"",
-            "code": "```ts\n<form #form=\"ngForm\">\n\t<input type=\"text\" ngModel=\"firstName\">\n\t<input type=\"text\" ngModel=\"lastName\">\n\t<button (click)=\"submit()\">Save</button>\n</form>",
+            "body": "```ts\n<form #form=\"ngForm\">\n\t<input type=\"text\" ngModel=\"firstName\">\n\t<input type=\"text\" ngModel=\"lastName\">\n\t<button (click)=\"submit()\">Save</button>\n</form>\n```",
             "answer": "\"submit(form.value)\"",
             "choices": [
                 "submit(form.value)",
@@ -740,7 +740,7 @@
             "topic": "Angular",
             "id": 55,
             "question": "\"What is the purpose of the `prelodingStrategy` property configuration in this router code?\"",
-            "code": "```ts\nRouterModule.forRoot(\n  ...{\n    preloadingStrategy: PreloadAllModules,\n  },\n);",
+            "body": "```ts\nRouterModule.forRoot(\n  ...{\n    preloadingStrategy: PreloadAllModules,\n  },\n);\n```",
             "answer": "\"It configures the router to immediately load all routes that have a loadChildren property(routes that are typically loaded when requested)\"",
             "choices": [
                 "It enables the option to flag individual routes for preloading.",
@@ -753,7 +753,7 @@
             "topic": "Angular",
             "id": 56,
             "question": "\"What is an alternative way to write this markup to bind the value of the class field `userName` to the `h1` element title property?\"",
-            "code": "```html\n<h1 [title]=\"userName\">Current user is {{ userName }}</h1>",
+            "body": "```html\n<h1 [title]=\"userName\">Current user is {{ userName }}</h1>\n```",
             "answer": "\"title=\"{{ userName }}\"\"",
             "choices": [
                 "title=\"userName\"",
@@ -766,7 +766,7 @@
             "topic": "Angular",
             "id": 57,
             "question": "\"What is the `async` pipe doing in this example?\"",
-            "code": "```ts\n@Component({\n  selector: 'app-users',\n  template: '<div *ngFor=\"let user of users | async\">{{ user.name }}</div>',\n})\nexport class UsersComponent implements OnInit {\n  users;\n  constructor(private httpClient: HttpClient) {}\n  ngOnInit(): void {\n    this.users = this.httpClient.get<{ name: string }>('users');\n  }\n}",
+            "body": "```ts\n@Component({\n  selector: 'app-users',\n  template: '<div *ngFor=\"let user of users | async\">{{ user.name }}</div>',\n})\nexport class UsersComponent implements OnInit {\n  users;\n  constructor(private httpClient: HttpClient) {}\n  ngOnInit(): void {\n    this.users = this.httpClient.get<{ name: string }>('users');\n  }\n}\n```",
             "answer": "\"It is subscribing to the observable returned from the `HttpClient.get` method and unwrapping the returned value so it can be iterated over in the `ngFor`.\"",
             "choices": [
                 "It is doing nothing, since the async pipe cannot be used in an `ngFor` statement.",
@@ -779,7 +779,7 @@
             "topic": "Angular",
             "id": 58,
             "question": "\"How would you make use of this directive in markup based on its selector value\"",
-            "code": "```ts\n@Directive({\n\tselector: '[appTruncate]'\n})\nexport class TruncateDirective{\n\t. . .\n}",
+            "body": "```ts\n@Directive({\n\tselector: '[appTruncate]'\n})\nexport class TruncateDirective{\n\t. . .\n}\n```",
             "answer": "\"`html <p appTruncate>Some long text</p> `\"",
             "choices": [
                 "`html <p data-directive=\"appTruncate\">Some long text </p> `",
@@ -792,7 +792,7 @@
             "topic": "Angular",
             "id": 59,
             "question": "\"What lifecycle hook can be used on a component to monitor all changes to @Input values on that component?\"",
-            "code": "",
+            "body": "",
             "answer": "\"ngOnChanges\"",
             "choices": [
                 "ngOnInit",
@@ -805,7 +805,7 @@
             "topic": "Angular",
             "id": 60,
             "question": "\"What would be an example template syntax usage of this custom pipe?\"",
-            "code": "```ts\n@Pipe({ name: 'truncate' })\nexport class TruncatePipe implements PipeTransform {\n  transform(value: string, maxLength: number, showEllipsis: boolean) {\n    const newValue = maxLength ? value.substr(0, maxLength) : value;\n    return showEllipsis ? '${newValue}...' : newValue;\n  }\n}",
+            "body": "```ts\n@Pipe({ name: 'truncate' })\nexport class TruncatePipe implements PipeTransform {\n  transform(value: string, maxLength: number, showEllipsis: boolean) {\n    const newValue = maxLength ? value.substr(0, maxLength) : value;\n    return showEllipsis ? '${newValue}...' : newValue;\n  }\n}\n```",
             "answer": "\"`'some long text' | truncate:10:true`\"",
             "choices": [
                 "`{{ 'some long text' | truncate:10 }}`",
@@ -818,7 +818,7 @@
             "topic": "Angular",
             "id": 61,
             "question": "\"Which Angular CLI command would you run to generate a UsersComponent and add it to the SharedModule (in file shared.module.ts in your application)?\"",
-            "code": "",
+            "body": "",
             "answer": "\"ng generate component users --module=shared\"",
             "choices": [
                 "ng generate component --newModule=shared",
@@ -831,7 +831,7 @@
             "topic": "Angular",
             "id": 62,
             "question": "\"How can you rewrite this markup so the div container is not needed in the final DOM render\"",
-            "code": "```ts\n<div *ngIf=\"location\">\n\t<h1>{{ location.name }}</h1>\n\t<p>{{ location.description }}</p>\n</div>",
+            "body": "```ts\n<div *ngIf=\"location\">\n\t<h1>{{ location.name }}</h1>\n\t<p>{{ location.description }}</p>\n</div>\n```",
             "answer": "\"D\"",
             "choices": [
                 "A",
@@ -848,7 +848,7 @@
             "topic": "Angular",
             "id": 63,
             "question": "\"Describe the usage of this code:\"",
-            "code": "```ts\nexport interface AppSettings {\n  title: string;\n  version: number;\n}",
+            "body": "```ts\nexport interface AppSettings {\n  title: string;\n  version: number;\n}\n```",
             "answer": "",
             "choices": [
                 "This code as an error since you cannot use a TypeScript interface for the generic type on the InjectionToken.",
@@ -861,7 +861,7 @@
             "topic": "Angular",
             "id": 64,
             "question": "\"What Angular utilities, if any, are required to unit test a service with no constructor dependencies?\"",
-            "code": "",
+            "body": "",
             "answer": "\"The TestBed class iss needed to instantiate the service.\"",
             "choices": [
                 "By.css() helper method is needed",
@@ -874,7 +874,7 @@
             "topic": "Angular",
             "id": 65,
             "question": "\"What is the difference between the CanActivate and the CanLoad route guards?\"",
-            "code": "",
+            "body": "",
             "answer": "\"CanLoad is used at app startup to allow or deny routes to be added to the route table. CanActivate is used to manage access to routes at the time they are requested.\"",
             "choices": [
                 "CanActivate is used to check access. CanLoad is used to preload data for the route.",
@@ -887,7 +887,7 @@
             "topic": "Angular",
             "id": 66,
             "question": "\"What is the outlet property used for in this router definition object?\"",
-            "code": "```ts\n{\n\tpath: 'document',\n\tcomponent: DocumentComponent,\n\toutlet: 'document-box'\n}",
+            "body": "```ts\n{\n\tpath: 'document',\n\tcomponent: DocumentComponent,\n\toutlet: 'document-box'\n}\n```",
             "answer": "\"It us used to target a <router-outlet> element with the name attribute matching the string value as the location for the DocumentComponent to be rendered when routed to.\"",
             "choices": [
                 "it will locate all instancess of <document-box> in the DOM and inser a DocumentComponent element into them on route navigation.",
@@ -900,7 +900,7 @@
             "topic": "Angular",
             "id": 67,
             "question": "\"In this template syntax, every time the items property is changed (added to, removed from, etc.), the ngFor structural directive re-runs its logic for all DOM elements in the loop. What syntax can be used to make this more performant?\"",
-            "code": "```javascript\n<div *ngFor=\"let item of items\">\n  {{ item.id }} - {{ item.name }}\n</div>",
+            "body": "```javascript\n<div *ngFor=\"let item of items\">\n  {{ item.id }} - {{ item.name }}\n</div>\n```",
             "answer": "\"`*ngFor=\"let item of items; trackBy: trackById\"`\"",
             "choices": [
                 "`*ngFor=\"let item of items; let uniqueItem\"`",
@@ -913,7 +913,7 @@
             "topic": "Angular",
             "id": 68,
             "question": "\"What does this Angular CLI command do?\"",
-            "code": "```bash\nng build --configuration=production --progress=false",
+            "body": "```bash\nng build --configuration=production --progress=false\n```",
             "answer": "\"It builds the Angular application, setting the build configuration to the \"production\" target specified in the angular.json file, and prevents progress output to the console.\"",
             "choices": [
                 "It builds the Angular application, setting the build configuration to the \"production\" target specified in the angular.json file, and logs progress output to the console.",
@@ -926,7 +926,7 @@
             "topic": "Angular",
             "id": 69,
             "question": "\"Service classes can be registered as providers via which decorators?\"",
-            "code": "",
+            "body": "",
             "answer": "\"@Injectable only.\"",
             "choices": [
                 "@Injectable, @NgModule, @Component, and @Directive.",
@@ -939,7 +939,7 @@
             "topic": "Angular",
             "id": 70,
             "question": "\"What is the Input decorator used for in this component class?\"",
-            "code": "```javascript\n@Component({\n\tselector:'app-product-name',\n\t...\n})\nexport class ProductNameComponent {\n\t@Input() productName: string\n}",
+            "body": "```javascript\n@Component({\n\tselector:'app-product-name',\n\t...\n})\nexport class ProductNameComponent {\n\t@Input() productName: string\n}\n```",
             "answer": "\"It provides a way to bind values to the productName field by using the component selector.\"",
             "choices": [
                 "It is used simply to put a comment in front of a class field for documentation.",
@@ -952,7 +952,7 @@
             "topic": "Angular",
             "id": 71,
             "question": "\"Which route guard can be used to mediate navigation to a route?\"",
-            "code": "",
+            "body": "",
             "answer": "\"all of these answers.\"",
             "choices": [
                 "all of these answers.",
@@ -965,7 +965,7 @@
             "topic": "Angular",
             "id": 72,
             "question": "\"How can you configure the injector to use an existing object for a token instead of having it instantiate a class instance?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use the `useValue` provider configuration and set that equal to an existing object or an object literal.\"",
             "choices": [
                 "Use the `useValue` provider configuration and set that equal to an existing object or an object literal.",
@@ -978,7 +978,7 @@
             "topic": "Angular",
             "id": 73,
             "question": "\"Based on this route definition, what can be injected into UserDetailComponent constructor to get ahold of the id route parameter?\"",
-            "code": "```ts\n{path: 'user/:id', component: UserDetailComponent }",
+            "body": "```ts\n{path: 'user/:id', component: UserDetailComponent }\n```",
             "answer": "\"ActivatedRoute\"",
             "choices": [
                 "ActivatedRoute",
@@ -991,7 +991,7 @@
             "topic": "Angular",
             "id": 74,
             "question": "\"With the following reactive form markup, what would you add to wire up a call to an onSubmit class method?\"",
-            "code": "```html\n<form [formGroup]=\"form\">\n  <input type=\"text\" formControlName=\"username\" />\n  <button type=\"submit\" [disabled]=\"form. invalid\">Submit</button>\n</form>",
+            "body": "```html\n<form [formGroup]=\"form\">\n  <input type=\"text\" formControlName=\"username\" />\n  <button type=\"submit\" [disabled]=\"form. invalid\">Submit</button>\n</form>\n```",
             "answer": "\"Add (ngSubmit )=\"onSubmit ()\" to the <form> element.\"",
             "choices": [
                 "neither of these answers",
@@ -1004,7 +1004,7 @@
             "topic": "Angular",
             "id": 75,
             "question": "\"What is the expected DOM code for this usage of the ngClass attribute directive when isActive is true?\"",
-            "code": "```html\n<div [ngClass]=\"{ \u00e2\u20ac\u02dcactive-item': isActive }\">Item One</div>",
+            "body": "```html\n<div [ngClass]=\"{ \u2018active-item': isActive }\">Item One</div>\n```",
             "answer": "\"`<div class=\"active-item\">Item One</div>`\"",
             "choices": [
                 "`<div active-item>Item One</div>`",
@@ -1017,7 +1017,7 @@
             "topic": "Angular",
             "id": 76,
             "question": "\"Which answer best explains the usage of ngModel in this template code?\"",
-            "code": "```html\n<input [(ngModel)]=\"user.name\" />",
+            "body": "```html\n<input [(ngModel)]=\"user.name\" />\n```",
             "answer": "\"It is the two-way data binding syntax. The input element value property will be bound to the user.name property, and the value change event for the form element will update the user.name property value.\"",
             "choices": [
                 "It is conditionally displaying the input element if the user.name property has a value.",
@@ -1030,7 +1030,7 @@
             "topic": "Angular",
             "id": 77,
             "question": "\"What method is used to wire up a FormControl to a native DOM input element in reactive forms?\"",
-            "code": "",
+            "body": "",
             "answer": "\"Use the formControlName directive and set the value equal to the string name given to the FormControl.\"",
             "choices": [
                 "Use the string name given to the FormControl as the value for the DOM element id attribute.",
@@ -1043,7 +1043,7 @@
             "topic": "Angular",
             "id": 78,
             "question": "\"What other template syntax (replacing the ngClass directive) can be used to add or remove the CSS class names in this markup?\"",
-            "code": "```html\n<span [ngClass]=\"{ 'active': isActive, 'can-toggle': canToggle }\"> Employed </span>",
+            "body": "```html\n<span [ngClass]=\"{ 'active': isActive, 'can-toggle': canToggle }\"> Employed </span>\n```",
             "answer": "",
             "choices": [
                 "```html\n<span class=\"{{ isActive ? 'is-active' : '' }}\" class=\"{{ canToggle ? 'can-toggle' : '' }}\">\nEmployed\n</span>\n```",
@@ -1056,7 +1056,7 @@
             "topic": "Angular",
             "id": 79,
             "question": "\"In this directive decorator example, what is the purpose of the multi property in the provider object literal?\"",
-            "code": "```ts\n@Directive({\n  selector: '[customValidator]',\n  providers: [\n    {\n      provide: NG_VALIDATORS,\n      useExisting: CustomValidatorDirective,\n      multi: true,\n    },\n  ],\n})\nexport class CustomValidatorDirective implements Validator {}",
+            "body": "```ts\n@Directive({\n  selector: '[customValidator]',\n  providers: [\n    {\n      provide: NG_VALIDATORS,\n      useExisting: CustomValidatorDirective,\n      multi: true,\n    },\n  ],\n})\nexport class CustomValidatorDirective implements Validator {}\n```",
             "answer": "",
             "choices": [
                 "It indicates that the CustomValidatorDirective can be used on multiple form element types.",
@@ -1069,7 +1069,7 @@
             "topic": "Angular",
             "id": 80,
             "question": "\"Which Angular CLI command would you use to run your unit tests in a process that reruns your test suite on file changes?\n- [ ] ng test --single-run=false\n- [ ] ng test --watch-files\n- [ ] ng test --progress\n- [ ] ng test\"",
-            "code": "",
+            "body": "",
             "answer": "",
             "choices": [
                 "ng test --single-run=false",

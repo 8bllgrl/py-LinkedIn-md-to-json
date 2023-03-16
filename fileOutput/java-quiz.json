@@ -1,0 +1,2134 @@
+{
+    "questions": [
+        {
+            "topic": "Java",
+            "id": 1,
+            "question": "\"Given the string \"strawberries\" saved in a variable called fruit, what would `fruit.substring(2, 5)` return?\"",
+            "body": "",
+            "answer": "\"raw\"",
+            "choices": [
+                "rawb",
+                "raw",
+                "awb",
+                "traw"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 2,
+            "question": "\"How can you achieve runtime polymorphism in Java?\"",
+            "body": "",
+            "answer": "\"method overriding\"",
+            "choices": [
+                "method overloading",
+                "method overrunning",
+                "method overriding",
+                "method calling"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 3,
+            "question": "\"Given the following definitions, which of these expression will **NOT** evaluate to true?\"",
+            "body": "`boolean b1 = true, b2 = false; int i1 = 1, i2 = 2;`",
+            "answer": "\"`i2 && b1`\"",
+            "choices": [
+                "`(i1 | i2) == 3`",
+                "`i2 && b1`",
+                "`b1 || !b2`",
+                "`(i1 ^ i2) < 4`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 4,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\n1: class Main {\n2:   public static void main (String[] args) {\n3:     int array[] = {1, 2, 3, 4};\n4:     for (int i = 0; i < array.size(); i++) {\n5:        System.out.print(array[i]);\n6:     }\n7:   }\n8: }\n```",
+            "answer": "\"It will not compile because of line 4.\"",
+            "choices": [
+                "It will not compile because of line 4.",
+                "It will not compile because of line 3.",
+                "123",
+                "1234"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 5,
+            "question": "\"Which of the following can replace the CODE SNIPPET to make the code below print \"Hello World\"?\"",
+            "body": "```java\ninterface Interface1 {\n    static void print() {\n        System.out.print(\"Hello\");\n    }\n}\n\ninterface Interface2 {\n    static void print() {\n        System.out.print(\"World!\");\n    }\n}\n```",
+            "answer": "\"`Interface1.print(); Interface2.print();`\"",
+            "choices": [
+                "`super1.print(); super2.print();`",
+                "`this.print();`",
+                "`super.print();`",
+                "`Interface1.print(); Interface2.print();`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 6,
+            "question": "\"What does the following code print?\"",
+            "body": "```java\nString str = \"abcde\";\nstr.trim();\nstr.toUpperCase();\nstr.substring(3, 4);\nSystem.out.println(str);\n```",
+            "answer": "\"\"abcde\"\"",
+            "choices": [
+                "CD",
+                "CDE",
+                "D",
+                "\"abcde\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 7,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main (String[] args){\n        System.out.println(print(1));\n    }\n    static Exception print(int i){\n        if (i>0) {\n            return new Exception();\n        } else {\n            throw new RuntimeException();\n        }\n    }\n}\n```",
+            "answer": "\"\"java.lang.Exception\"\"",
+            "choices": [
+                "It will show a stack trace with a runtime exception.",
+                "\"java.lang.Exception\"",
+                "It will run and throw an exception.",
+                "It will not compile."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 8,
+            "question": "\"Which class can compile given these declarations?\"",
+            "body": "```java\ninterface One {\n    default void method() {\n        System.out.println(\"One\");\n    }\n}\n\ninterface Two {\n    default void method () {\n        System.out.println(\"One\");\n    }\n}\n```",
+            "answer": "\"D\"",
+            "choices": [
+                "A",
+                "```java\nclass Three implements One, Two {\npublic void method() {\nsuper.One.method();\n}\n}\n```",
+                "B",
+                "```java\nclass Three implements One, Two {\npublic void method() {\nOne.method();\n}\n}\n```",
+                "C",
+                "```java\nclass Three implements One, Two {\n}\n```",
+                "D",
+                "```java\nclass Three implements One, Two {\npublic void method() {\nOne.super.method();\n}\n}\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 9,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main (String[] args) {\n        List list = new ArrayList();\n        list.add(\"hello\");\n        list.add(2);\n        System.out.print(list.get(0) instanceof Object);\n        System.out.print(list.get(1) instanceof Integer);\n    }\n}\n```",
+            "answer": "\"truetrue\"",
+            "choices": [
+                "The code does not compile.",
+                "truefalse",
+                "truetrue",
+                "falsetrue"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 10,
+            "question": "\"Given the following two classes, what will be the output of the Main class?\"",
+            "body": "```java\npackage mypackage;\npublic class Math {\n    public static int abs(int num){\n        return num < 0 ? -num : num;\n    }\n}\npackage mypackage.elementary;\npublic class Math {\n    public static int abs (int num) {\n        return -num;\n    }\n}\n```\n\n```java\nimport mypackage.Math;\nimport mypackage.elementary.*;\n\nclass Main {\n    public static void main (String args[]){\n        System.out.println(Math.abs(123));\n    }\n}\n```",
+            "answer": "\"\"123\"\"",
+            "choices": [
+                "Lines 1 and 2 generate compiler errors due to class name conflicts.",
+                "\"-123\"",
+                "It will throw an exception on line 5.",
+                "\"123\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 11,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\n1: class MainClass {\n2:     final String message() {\n3:         return \"Hello!\";\n4:     }\n5: }\n\n6: class Main extends MainClass {\n7:     public static void main(String[] args) {\n8:         System.out.println(message());\n9:     }\n\n10:     String message() {\n11:         return \"World!\";\n12:     }\n13: }\n```",
+            "answer": "\"It will not compile because of line 10.\"",
+            "choices": [
+                "It will not compile because of line 10.",
+                "\"Hello!\"",
+                "It will not compile because of line 2.",
+                "\"World!\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 12,
+            "question": "\"Given this code, which command will output \"2\"?\"",
+            "body": "```java\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(args[2]);\n    }\n}\n```",
+            "answer": "\"`java Main 1 \"2\" \"2\" 5`\"",
+            "choices": [
+                "`java Main 1 2 \"3 4\" 5`",
+                "`java Main 1 \"2\" \"2\" 5`",
+                "`java Main.class 1 \"2\" 2 5`",
+                "`java Main 1 \"2\" \"3 4\" 5`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 13,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main(String[] args){\n        int a = 123451234512345;\n        System.out.println(a);\n    }\n}\n```",
+            "answer": "\"Nothing - this will not compile.\"",
+            "choices": [
+                "\"123451234512345\"",
+                "Nothing - this will not compile.",
+                "a negative integer value",
+                "\"12345100000\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 14,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main (String[] args) {\n        String message = \"Hello world!\";\n        String newMessage = message.substring(6, 12)\n            + message.substring(12, 6);\n        System.out.println(newMessage);\n    }\n}\n```",
+            "answer": "\"A runtime exception is thrown.\"",
+            "choices": [
+                "The code does not compile.",
+                "A runtime exception is thrown.",
+                "\"world!!world\"",
+                "\"world!world!\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 15,
+            "question": "\"How do you write a foreach loop that will iterate over ArrayList\\<Pencil\\>pencilCase?\"",
+            "body": "",
+            "answer": "\"`for (Pencil pencil : pencilCase) {}`\"",
+            "choices": [
+                "`for (Pencil pencil : pencilCase) {}`",
+                "`for (pencilCase.next()) {}`",
+                "`for (Pencil pencil : pencilCase.iterator()) {}`",
+                "`for (pencil in pencilCase) {}`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 16,
+            "question": "\"What does this code print?\"",
+            "body": "```java\nSystem.out.print(\"apple\".compareTo(\"banana\"));\n```",
+            "answer": "\"negative number\"",
+            "choices": [
+                "`0`",
+                "positive number",
+                "negative number",
+                "compilation error"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 17,
+            "question": "\"You have an ArrayList of names that you want to sort alphabetically. Which approach would **NOT** work?\"",
+            "body": "",
+            "answer": "\"`names.sort(List.DESCENDING)`\"",
+            "choices": [
+                "`names.sort(Comparator.comparing(String::toString))`",
+                "`Collections.sort(names)`",
+                "`names.sort(List.DESCENDING)`",
+                "`names.stream().sorted((s1, s2) -> s1.compareTo(s2)).collect(Collectors.toList())`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 18,
+            "question": "\"By implementing encapsulation, you cannot directly access the class's \\_ properties unless you are writing code inside the class itself.\"",
+            "body": "",
+            "answer": "\"private\"",
+            "choices": [
+                "private",
+                "protected",
+                "no-modifier",
+                "public"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 19,
+            "question": "\"Which is the most up-to-date way to instantiate the current date?\"",
+            "body": "",
+            "answer": "\"`LocalDate.now()`\"",
+            "choices": [
+                "`new SimpleDateFormat(\"yyyy-MM-dd\").format(new Date())`",
+                "`new Date(System.currentTimeMillis())`",
+                "`LocalDate.now()`",
+                "`Calendar.getInstance().getTime()`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 20,
+            "question": "\"Fill in the blank to create a piece of code that will tell whether `int0` is divisible by `5`:\"",
+            "body": "`boolean isDivisibleBy5 = _____`",
+            "answer": "\"`int0 % 5 == 0`\"",
+            "choices": [
+                "`int0 / 5 ? true: false`",
+                "`int0 % 5 == 0`",
+                "`int0 % 5 != 5`",
+                "`Math.isDivisible(int0, 5)`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 21,
+            "question": "\"How many times will this code print \"Hello World!\"?\"",
+            "body": "```java\nclass Main {\n    public static void main(String[] args){\n        for (int i=0; i<10; i=i++){\n            i+=1;\n            System.out.println(\"Hello World!\");\n        }\n    }\n}\n```",
+            "answer": "\"10 times\"",
+            "choices": [
+                "10 times",
+                "9 times",
+                "5 times",
+                "infinite number of times"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 22,
+            "question": "\"The runtime system starts your program by calling which function first?\"",
+            "body": "",
+            "answer": "\"main\"",
+            "choices": [
+                "print",
+                "iterative",
+                "hello",
+                "main"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 23,
+            "question": "\"What code would you use in Constructor A to call Constructor B?\"",
+            "body": "```java\npublic class Jedi {\n  /* Constructor A */\n  Jedi(String name, String species){}\n\n  /* Constructor B */\n  Jedi(String name, String species, boolean followsTheDarkSide){}\n}\n```",
+            "answer": "\"this(name, species, false)\"",
+            "choices": [
+                "Jedi(name, species, false)",
+                "new Jedi(name, species, false)",
+                "this(name, species, false)",
+                "super(name, species, false)"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 24,
+            "question": "\"Which statement is **NOT** true?\"",
+            "body": "",
+            "answer": "\"An anonymous class does not require a zero-argument constructor.\"",
+            "choices": [
+                "An anonymous class may specify an abstract base class as its base type.",
+                "An anonymous class does not require a zero-argument constructor.",
+                "An anonymous class may specify an interface as its base type.",
+                "An anonymous class may specify both an abstract class and interface as base types."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 25,
+            "question": "\"What will this program print out to the console when executed?\"",
+            "body": "```java\nimport java.util.LinkedList;\n\npublic class Main {\n    public static void main(String[] args){\n        LinkedList<Integer> list = new LinkedList<>();\n        list.add(5);\n        list.add(1);\n        list.add(10);\n        System.out.println(list);\n    }\n}\n```",
+            "answer": "\"[5, 1, 10]\"",
+            "choices": [
+                "[5, 1, 10]",
+                "[10, 5, 1]",
+                "[1, 5, 10]",
+                "[10, 1, 5]"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 26,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main(String[] args){\n       String message = \"Hello\";\n       for (int i = 0; i<message.length(); i++){\n          System.out.print(message.charAt(i+1));\n       }\n    }\n}\n```",
+            "answer": "\"A runtime exception is thrown.\"",
+            "choices": [
+                "\"Hello\"",
+                "A runtime exception is thrown.",
+                "The code does not compile.",
+                "\"ello\""
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 27,
+            "question": "\"Object-oriented programming is a style of programming where you organize your program around \\_ and data, rather than \\_ and logic.\"",
+            "body": "",
+            "answer": "\"objects; actions\"",
+            "choices": [
+                "functions; actions",
+                "objects; actions",
+                "actions; functions",
+                "actions; objects"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 28,
+            "question": "\"What statement returns true if \"nifty\" is of type String?\"",
+            "body": "",
+            "answer": "\"`\"nifty\" instanceof String`\"",
+            "choices": [
+                "`\"nifty\".getType().equals(\"String\")`",
+                "`\"nifty\".getType() == String`",
+                "`\"nifty\".getClass().getSimpleName() == \"String\"`",
+                "`\"nifty\" instanceof String`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 29,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nimport java.util.*;\nclass Main {\n    public static void main(String[] args) {\n        List<Boolean> list = new ArrayList<>();\n        list.add(true);\n        list.add(Boolean.parseBoolean(\"FalSe\"));\n        list.add(Boolean.TRUE);\n        System.out.print(list.size());\n        System.out.print(list.get(1) instanceof Boolean);\n    }\n}\n```",
+            "answer": "\"3true\"",
+            "choices": [
+                "A runtime exception is thrown.",
+                "3false",
+                "2true",
+                "3true"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 30,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\n1: class Main {\n2:     Object message() {\n3:         return \"Hello!\";\n4:     }\n5:     public static void main(String[] args) {\n6:         System.out.print(new Main().message());\n7:         System.out.print(new Main2().message());\n8:     }\n9: }\n10: class Main2 extends Main {\n11:     String message() {\n12:         return \"World!\";\n13:     }\n14: }\n```",
+            "answer": "\"Hello!World!\"",
+            "choices": [
+                "It will not compile because of line 7.",
+                "Hello!Hello!",
+                "Hello!World!",
+                "It will not compile because of line 11."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 31,
+            "question": "\"What method can be used to create a new instance of an object?\"",
+            "body": "",
+            "answer": "\"constructor\"",
+            "choices": [
+                "another instance",
+                "field",
+                "constructor",
+                "private method"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 32,
+            "question": "\"Which is the most reliable expression for testing whether the values of two string variables are the same?\"",
+            "body": "",
+            "answer": "\"string1.equals(string2)\"",
+            "choices": [
+                "string1 == string2",
+                "string1 = string2",
+                "string1.matches(string2)",
+                "string1.equals(string2)"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 33,
+            "question": "\"Which letters will print when this code is run?\"",
+            "body": "```java\npublic static void main(String[] args) {\n    try {\n        System.out.println(\"A\");\n        badMethod();\n        System.out.println(\"B\");\n    } catch (Exception ex) {\n        System.out.println(\"C\");\n    } finally {\n        System.out.println(\"D\");\n    }\n}\npublic static void badMethod() {\n    throw new Error();\n}\n```",
+            "answer": "\"A and D\"",
+            "choices": [
+                "A, B, and D",
+                "A, C, and D",
+                "C and D",
+                "A and D"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 34,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    static int count = 0;\n    public static void main(String[] args) {\n        if (count < 3) {\n            count++;\n            main(null);\n        } else {\n            return;\n        }\n        System.out.println(\"Hello World!\");\n    }\n}\n```",
+            "answer": "\"It will print \"Hello World!\" three times.\"",
+            "choices": [
+                "It will throw a runtime exception.",
+                "It will not compile.",
+                "It will print \"Hello World!\" three times.",
+                "It will run forever."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 35,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nimport java.util.*;\nclass Main {\n    public static void main(String[] args) {\n        String[] array = {\"abc\", \"2\", \"10\", \"0\"};\n        List<String> list = Arrays.asList(array);\n        Collections.sort(list);\n        System.out.println(Arrays.toString(array));\n    }\n}\n```",
+            "answer": "\"`[0, 10, 2, abc]`\"",
+            "choices": [
+                "`[abc, 0, 2, 10]`",
+                "The code does not compile.",
+                "`[abc, 2, 10, 0]`",
+                "`[0, 10, 2, abc]`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 36,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n    public static void main(String[] args) {\n        String message = \"Hello\";\n        print(message);\n        message += \"World!\";\n        print(message);\n    }\n    static void print(String message) {\n        System.out.print(message);\n        message += \" \";\n    }\n}\n```",
+            "answer": "\"HelloHelloWorld!\"",
+            "choices": [
+                "Hello World!",
+                "HelloHelloWorld!",
+                "Hello Hello World!",
+                "Hello HelloWorld!"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 37,
+            "question": "\"What is displayed when this code is compiled and executed?\"",
+            "body": "```java\npublic class Main {\n    public static void main(String[] args) {\n        int x = 5;\n        x = 10;\n        System.out.println(x);\n    }\n}\n```",
+            "answer": "\"10\"",
+            "choices": [
+                "x",
+                "null",
+                "10",
+                "5"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 38,
+            "question": "\"Which approach cannot be used to iterate over a List named _theList_?\"",
+            "body": "",
+            "answer": "\"C\"",
+            "choices": [
+                "A",
+                "```java\nfor (int i = 0; i < theList.size(); i++) {\nSystem.out.println(theList.get(i));\n}\n```",
+                "B",
+                "```java\nfor (Object object : theList) {\nSystem.out.println(object);\n}\n```",
+                "C",
+                "```java\nIterator it = theList.iterator();\nfor (it.hasNext()) {\nSystem.out.println(it.next());\n}\n```",
+                "D",
+                "```java\ntheList.forEach(System.out::println);\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 39,
+            "question": "\"What method signature will work with this code?\"",
+            "body": "`boolean healthyOrNot = isHealthy(\"avocado\");`",
+            "answer": "\"boolean isHealthy(String string)\"",
+            "choices": [
+                "public void isHealthy(String avocado)",
+                "boolean isHealthy(String string)",
+                "public isHealthy(\"avocado\")",
+                "private String isHealthy(String food)"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 40,
+            "question": "\"Which are valid keywords in a Java module descriptor (module-info.java)?\"",
+            "body": "",
+            "answer": "\"requires, exports\"",
+            "choices": [
+                "provides, employs",
+                "imports, exports",
+                "consumes, supplies",
+                "requires, exports"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 41,
+            "question": "\"Which type of variable keeps a constant value once it is assigned?\"",
+            "body": "",
+            "answer": "\"final\"",
+            "choices": [
+                "non-static",
+                "static",
+                "final",
+                "private"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 42,
+            "question": "\"How does the keyword `volatile` affect how a variable is handled?\"",
+            "body": "",
+            "answer": "\"It will never be cached by the CPU.\"",
+            "choices": [
+                "It will be read by only one thread at a time.",
+                "It will be stored on the hard drive.",
+                "It will never be cached by the CPU.",
+                "It will be preferentially garbage collected."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 43,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\nchar smooch = 'x';\nSystem.out.println((int) smooch);\n```",
+            "answer": "\"a positive number\"",
+            "choices": [
+                "an alphanumeric character",
+                "a negative number",
+                "a positive number",
+                "a ClassCastException"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 44,
+            "question": "\"You get a NullPointerException. What is the most likely cause?\"",
+            "body": "",
+            "answer": "\"The object you are using has not been instantiated.\"",
+            "choices": [
+                "A file that needs to be opened cannot be found.",
+                "A network connection has been lost in the middle of communications.",
+                "Your code has used up all available memory.",
+                "The object you are using has not been instantiated."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 45,
+            "question": "\"How would you fix this code so that it compiles?\"",
+            "body": "```java\npublic class Nosey {\n    int age;\n    public static void main(String[] args) {\n        System.out.println(\"Your age is: \" + age);\n    }\n}\n```",
+            "answer": "\"Make age static.\"",
+            "choices": [
+                "Make age static.",
+                "Make age global.",
+                "Make age public.",
+                "Initialize age to a number."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 46,
+            "question": "\"Add a Duck called \"Waddles\" to the ArrayList **ducks**.\"",
+            "body": "```java\npublic class Duck {\n    private String name;\n    Duck(String name) {}\n}\n```",
+            "answer": "\"`ducks.add(new Duck(\"Waddles\"));`\"",
+            "choices": [
+                "`Duck waddles = new Duck();`",
+                "`Duck duck = new Duck(\"Waddles\");`",
+                "`ducks.add(new Duck(\"Waddles\"));`",
+                "`ducks.add(new Waddles());`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 47,
+            "question": "\"If you encounter `UnsupportedClassVersionError` it means the code was `___` on a newer version of Java than the JRE `___` it.\"",
+            "body": "",
+            "answer": "\"compiled; executing\"",
+            "choices": [
+                "executed; interpreting",
+                "executed; compiling",
+                "compiled; executing",
+                "compiled, translating"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 48,
+            "question": "\"Given this class, how would you make the code compile?\"",
+            "body": "```java\npublic class TheClass {\n    private final int x;\n}\n```",
+            "answer": "\"C\"",
+            "choices": [
+                "A",
+                "```java\npublic TheClass() {\nx += 77;\n}\n```",
+                "B",
+                "```java\npublic TheClass() {\nx = null;\n}\n```",
+                "C",
+                "```java\npublic TheClass() {\nx = 77;\n}\n```",
+                "D",
+                "```java\nprivate void setX(int x) {\nthis.x = x;\n}\npublic TheClass() {\nsetX(77);\n}\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 49,
+            "question": "\"How many times f will be printed?\"",
+            "body": "```java\npublic class Solution {\n    public static void main(String[] args) {\n        for (int i = 44; i > 40; i--) {\n            System.out.println(\"f\");\n        }\n    }\n}\n```",
+            "answer": "\"4\"",
+            "choices": [
+                "4",
+                "3",
+                "5",
+                "A Runtime exception will be thrown"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 50,
+            "question": "\"Which statements about `abstract` classes are true?\"",
+            "body": "```\n1. They can be instantiated.\n2. They allow member variables and methods to be inherited by subclasses.\n3. They can contain constructors.\n```",
+            "answer": "\"2 and 3\"",
+            "choices": [
+                "1, 2, and 3",
+                "only 3",
+                "2 and 3",
+                "only 2"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 51,
+            "question": "\"Which keyword lets you call the constructor of a parent class?\"",
+            "body": "",
+            "answer": "\"super\"",
+            "choices": [
+                "parent",
+                "super",
+                "this",
+                "new"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 52,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\n  1: int a = 1;\n  2: int b = 0;\n  3: int c = a/b;\n  4: System.out.println(c);\n```",
+            "answer": "\"It will throw an ArithmeticException.\"",
+            "choices": [
+                "It will throw an ArithmeticException.",
+                "It will run and output 0.",
+                "It will not compile because of line 3.",
+                "It will run and output infinity."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 53,
+            "question": "\"Normally, to access a static member of a class such as Math.PI, you would need to specify the class \"Math\". What would be the best way to allow you to use simply \"PI\" in your code?\"",
+            "body": "",
+            "answer": "\"Add a static import.\"",
+            "choices": [
+                "Add a static import.",
+                "Declare local copies of the constant in your code.",
+                "This cannot be done. You must always qualify references to static members with the class form which they came from.",
+                "Put the static members in an interface and inherit from that interface."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 54,
+            "question": "\"Which keyword lets you use an interface?\"",
+            "body": "",
+            "answer": "\"implements\"",
+            "choices": [
+                "extends",
+                "implements",
+                "inherits",
+                "import"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 55,
+            "question": "\"Why are ArrayLists better than arrays?\"",
+            "body": "",
+            "answer": "\"You don't have to decide the size of an ArrayList when you first make it.\"",
+            "choices": [
+                "You don't have to decide the size of an ArrayList when you first make it.",
+                "You can put more items into an ArrayList than into an array.",
+                "ArrayLists can hold more kinds of objects than arrays.",
+                "You don't have to decide the type of an ArrayList when you first make it."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 56,
+            "question": "\"Declare a variable that holds the first four digits of \u03a0\"",
+            "body": "",
+            "answer": "\"double pi = 3.141;\"",
+            "choices": [
+                "int pi = 3.141;",
+                "decimal pi = 3.141;",
+                "double pi = 3.141;",
+                "float pi = 3.141;",
+                "```java\npublic class TestReal {\npublic static void main (String[] argv)\n{\ndouble pi = 3.14159265;       //accuracy up to 15 digits\nfloat pi2 = 3.141F;           //accuracy up to 6-7 digits\n\nSystem.out.println (\"Pi=\" + pi);\nSystem.out.println (\"Pi2=\" + pi2);\n}\n}\n```",
+                "```\nThe default Java type which Java will be using for a float variable will be double.\nSo, even if you declare any variable as float, what the compiler has to actually do is to assign a double value to a float variable,\nwhich is not possible. So, to tell the compiler to treat this value as a float, that 'F' is used.\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 57,
+            "question": "\"Use the magic power to cast a spell\"",
+            "body": "```java\npublic class MagicPower {\n    void castSpell(String spell) {}\n}\n```",
+            "answer": "\"`new MagicPower().castSpell(\"expecto patronum\");`\"",
+            "choices": [
+                "`new MagicPower().castSpell(\"expecto patronum\");`",
+                "`MagicPower magicPower = new MagicPower();`",
+                "`MagicPower.castSpell(\"expelliarmus\");`",
+                "`new MagicPower.castSpell();`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 58,
+            "question": "\"What language construct serves as a blueprint containing an object's properties and functionality?\"",
+            "body": "",
+            "answer": "\"class\"",
+            "choices": [
+                "constructor",
+                "instance",
+                "class",
+                "method"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 59,
+            "question": "\"What does this code print?\"",
+            "body": "```java\npublic static void main(String[] args) {\n    int x=5,y=10;\n    swapsies(x,y);\n    System.out.println(x+\" \"+y);\n}\n\nstatic void swapsies(int a, int b) {\n    int temp=a;\n    a=b;\n    b=temp;\n}\n```",
+            "answer": "\"5 10\"",
+            "choices": [
+                "10 10",
+                "5 10",
+                "10 5",
+                "5 5"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 60,
+            "question": "\"What is the result of this code?\"",
+            "body": "```java\ntry {\n    System.out.println(\"Hello World\");\n} catch (Exception e) {\n    System.out.println(\"e\");\n} catch (ArithmeticException e) {\n    System.out.println(\"e\");\n} finally {\n    System.out.println(\"!\");\n}\n```",
+            "answer": "\"It will not compile because the second catch statement is unreachable\"",
+            "choices": [
+                "Hello World",
+                "It will not compile because the second catch statement is unreachable",
+                "Hello World!",
+                "It will throw runtime exception"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 61,
+            "question": "\"Which is not a java keyword\"",
+            "body": "",
+            "answer": "\"unsigned\"",
+            "choices": [
+                "finally",
+                "native",
+                "interface",
+                "unsigned"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 62,
+            "question": "\"Which operator would you use to find the remainder after division?\"",
+            "body": "",
+            "answer": "\"`%`\"",
+            "choices": [
+                "`%`",
+                "`//`",
+                "`/`",
+                "`DIV`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 63,
+            "question": "\"Which choice is a disadvantage of inheritance?\"",
+            "body": "",
+            "answer": "\"Classes related by inheritance are tightly coupled to each other.\"",
+            "choices": [
+                "Overridden methods of the parent class cannot be reused.",
+                "Responsibilities are not evenly distributed between parent and child classes.",
+                "Classes related by inheritance are tightly coupled to each other.",
+                "The internal state of the parent class is accessible to its children."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 64,
+            "question": "\"How would you declare and initialize an array of 10 ints?\"",
+            "body": "",
+            "answer": "\"`int[] numbers = new int[10];`\"",
+            "choices": [
+                "`Array<Integer> numbers = new Array<Integer>(10);`",
+                "`Array[int] numbers = new Array[int](10);`",
+                "`int[] numbers = new int[10];`",
+                "`int numbers[] = int[10];`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 65,
+            "question": "\"Refactor this event handler to a lambda expression:\"",
+            "body": "```java\ngroucyButton.addActionListener(new ActionListener() {\n    @Override\n    public void actionPerformed(ActionEvent e) {\n        System.out.println(\"Press me one more time..\");\n    }\n});\n```",
+            "answer": "\"`groucyButton.addActionListener((event) -> System.out.println(\"Press me one more time...\"));`\"",
+            "choices": [
+                "`groucyButton.addActionListener(ActionListener listener -> System.out.println(\"Press me one more time...\"));`",
+                "`groucyButton.addActionListener((event) -> System.out.println(\"Press me one more time...\"));`",
+                "`groucyButton.addActionListener(new ActionListener(ActionEvent e) {() -> System.out.println(\"Press me one more time...\");});`",
+                "`groucyButton.addActionListener(() -> System.out.println(\"Press me one more time...\"));`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 66,
+            "question": "\"Which functional interfaces does Java provide to serve as data types for lambda expressions?\"",
+            "body": "",
+            "answer": "\"Consumer, Predicate, Supplier\"",
+            "choices": [
+                "Observer, Observable",
+                "Collector, Builder",
+                "Filter, Map, Reduce",
+                "Consumer, Predicate, Supplier"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 67,
+            "question": "\"What is a valid use of the hashCode() method?\"",
+            "body": "",
+            "answer": "\"deciding if two instances of a class are equal\"",
+            "choices": [
+                "encrypting user passwords",
+                "deciding if two instances of a class are equal",
+                "enabling HashMap to find matches faster",
+                "moving objects from a List to a HashMap"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 68,
+            "question": "\"What kind of relationship does \"extends\" denote?\"",
+            "body": "",
+            "answer": "\"is-a\"",
+            "choices": [
+                "uses-a",
+                "is-a",
+                "has-a",
+                "was-a"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 69,
+            "question": "\"How do you force an object to be garbage collected?\"",
+            "body": "",
+            "answer": "\"Set object to null and call System.gc()\"",
+            "choices": [
+                "Set object to null and call Runtime.gc()",
+                "Set object to null and call System.gc()",
+                "Set object to null and call Runtime.getRuntime().runFinalization()",
+                "There is no way to force an object to be garbage collected"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 70,
+            "question": "\"Java programmers commonly use design patterns. Some examples are the **\\_**, which helps create instances of a class, the **\\_**, which ensures that only one instance of a class can be created; and the **\\_**, which allows for a group of algorithms to be interchangeable.\"",
+            "body": "",
+            "answer": "\"static factory method; singleton; strategy pattern\"",
+            "choices": [
+                "static factory method; singleton; strategy pattern",
+                "strategy pattern; static factory method; singleton",
+                "creation pattern; singleton; prototype pattern",
+                "singleton; strategy pattern; static factory method"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 71,
+            "question": "\"Using Java's Reflection API, you can use \\_ to get the name of a class and \\_ to retrieve an array of its methods.\"",
+            "body": "",
+            "answer": "\"this.getClass().getSimpleName(); this.getClass().getDeclaredMethods()\"",
+            "choices": [
+                "this.getClass().getSimpleName(); this.getClass().getDeclaredMethods()",
+                "this.getName(); this.getMethods()",
+                "Reflection.getName(this); Reflection.getMethods(this)",
+                "Reflection.getClass(this).getName(); Reflection.getClass(this).getMethods()"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 72,
+            "question": "\"Which is not a valid lambda expression?\"",
+            "body": "",
+            "answer": "\"`String a -> false;`\"",
+            "choices": [
+                "`a -> false;`",
+                "`(a) -> false;`",
+                "`String a -> false;`",
+                "`(String a) -> false;`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 73,
+            "question": "\"Which access modifier makes variables and methods visible only in the class where they are declared?\"",
+            "body": "",
+            "answer": "\"private\"",
+            "choices": [
+                "public",
+                "protected",
+                "nonmodifier",
+                "private"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 74,
+            "question": "\"What type of variable can be assigned to only once?\"",
+            "body": "",
+            "answer": "\"final\"",
+            "choices": [
+                "private",
+                "non-static",
+                "final",
+                "static"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 75,
+            "question": "\"How would you convert a String to an Int?\"",
+            "body": "",
+            "answer": "\"`Integer.parseInt(\"21\")`\"",
+            "choices": [
+                "`\"21\".intValue()`",
+                "`String.toInt(\"21\")`",
+                "`Integer.parseInt(\"21\")`",
+                "`String.valueOf(\"21\")`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 76,
+            "question": "\"What method should be added to the Duck class to print the name Moby?\"",
+            "body": "```java\npublic class Duck {\n    private String name;\n\n    Duck(String name) {\n        this.name = name;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(new Duck(\"Moby\"));\n    }\n}\n```",
+            "answer": "\"`public String toString() { return name; } `\"",
+            "choices": [
+                "`public String toString() { return name; } `",
+                "`public void println() { System.out.println(name); } `",
+                "`String toString() { return this.name; } `",
+                "`public void toString() { System.out.println(this.name); } `"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 77,
+            "question": "\"Which operator is used to concatenate Strings in Java\"",
+            "body": "",
+            "answer": "\"`+`\"",
+            "choices": [
+                "`+`",
+                "`&`",
+                "`.`",
+                "`-`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 78,
+            "question": "\"How many times does this loop print \"exterminate\"?\"",
+            "body": "```java\nfor (int i = 44; i > 40; i--) {\n    System.out.println(\"exterminate\");\n}\n```",
+            "answer": "\"four\"",
+            "choices": [
+                "two",
+                "four",
+                "three",
+                "five"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 79,
+            "question": "\"What is the value of myCharacter after line 3 is run?\"",
+            "body": "```java\n1: public class Main {\n2:   public static void main (String[] args) {\n3:     char myCharacter = \"piper\".charAt(3);\n4:   }\n5: }\n```",
+            "answer": "\"e\"",
+            "choices": [
+                "p",
+                "r",
+                "e",
+                "i"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 80,
+            "question": "\"When should you use a static method?\"",
+            "body": "",
+            "answer": "\"when you want your method to be available independently of class instances\"",
+            "choices": [
+                "when your method is related to the object's characteristics",
+                "when you want your method to be available independently of class instances",
+                "when your method uses an object's instance variable",
+                "when your method is dependent on the specific instance that calls it"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 81,
+            "question": "\"What phrase indicates that a function receives a copy of each argument passed to it rather than a reference to the objects themselves?\"",
+            "body": "",
+            "answer": "\"pass by value\"",
+            "choices": [
+                "pass by reference",
+                "pass by occurrence",
+                "pass by value",
+                "API call"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 82,
+            "question": "\"In Java, what is the scope of a method's argument or parameter?\"",
+            "body": "",
+            "answer": "\"inside the method\"",
+            "choices": [
+                "inside the method",
+                "both inside and outside the method",
+                "neither inside nor outside the method",
+                "outside the method"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 83,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\npublic class Main {\n  public static void main (String[] args) {\n    int[] sampleNumbers = {8, 5, 3, 1};\n    System.out.println(sampleNumbers[2]);\n  }\n}\n```",
+            "answer": "\"3\"",
+            "choices": [
+                "5",
+                "8",
+                "1",
+                "3"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 84,
+            "question": "\"Which change will make this code compile successfully?\"",
+            "body": "```java\n1: public class Main {\n2:   String MESSAGE =\"Hello!\";\n3:   static void print(){\n4:     System.out.println(message);\n5:   }\n6:   void print2(){}\n7: }\n```",
+            "answer": "\"Remove the body of the `print` method.\"",
+            "choices": [
+                "Change line 2 to `public static final String message`",
+                "Change line 6 to `public void print2(){}`",
+                "Remove the body of the `print2` method and add a semicolon.",
+                "Remove the body of the `print` method."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 85,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nimport java.util.*;\nclass Main {\n  public static void main(String[] args) {\n    String[] array = new String[]{\"A\", \"B\", \"C\"};\n    List<String> list1 = Arrays.asList(array);\n    List<String> list2 = new ArrayList<>(Arrays.asList(array));\n    List<String> list3 = new ArrayList<>(Arrays.asList(\"A\", new String(\"B\"), \"C\"));\n    System.out.print(list1.equals(list2));\n    System.out.print(list1.equals(list3));\n  }\n}\n```",
+            "answer": "\"truetrue\"",
+            "choices": [
+                "falsefalse",
+                "truetrue",
+                "falsetrue",
+                "truefalse"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 86,
+            "question": "\"Which code snippet is valid?\"",
+            "body": "",
+            "answer": "\"`ArrayList<String> words = new ArrayList<>(Arrays.asList(\"Hello\", \"World\"));`\"",
+            "choices": [
+                "`ArrayList<String> words = new ArrayList<String>(){\"Hello\", \"World\"};`",
+                "`ArrayList words = Arrays.asList(\"Hello\", \"World\");`",
+                "`ArrayList<String> words = {\"Hello\", \"World\"};`",
+                "`ArrayList<String> words = new ArrayList<>(Arrays.asList(\"Hello\", \"World\"));`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 87,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nclass Main {\n  public static void main(String[] args) {\n    StringBuilder sb = new StringBuilder(\"hello\");\n    sb.deleteCharAt(0).insert(0, \"H\").\" World!\";\n    System.out.println(sb);\n  }\n}\n```",
+            "answer": "\"It will not compile.\"",
+            "choices": [
+                "It will not compile.",
+                "\"HelloWorld!\"",
+                "\"hello\"",
+                "????"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 88,
+            "question": "\"How would you use the TaxCalculator to determine the amount of tax on $50?\"",
+            "body": "```java\nclass TaxCalculator {\n  static calculate(total) {\n    return total * .05;\n  }\n}\n```",
+            "answer": "\"TaxCalculator.calculate(50);\"",
+            "choices": [
+                "TaxCalculator.calculate(50);",
+                "new TaxCalculator.calculate(50);",
+                "calculate(50);",
+                "new TaxCalculator.calculate($50);"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 89,
+            "question": "\"Which characteristic does not apply to instances of java.util.HashSet?\"",
+            "body": "",
+            "answer": "\"contains sorted elements\"",
+            "choices": [
+                "uses hashcode of objects when inserted",
+                "contains unordred elements",
+                "contains unique elements",
+                "contains sorted elements"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 90,
+            "question": "\"What is the output?\"",
+            "body": "```java\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args)\n    {\n        PriorityQueue<Integer> queue = new PriorityQueue<>();\n        queue.add(4);\n        queue.add(3);\n        queue.add(2);\n        queue.add(1);\n\n        while (queue.isEmpty() == false) {\n            System.out.printf(\"%d\", queue.remove());\n        }\n    }\n}\n```",
+            "answer": "\"1 2 3 4\"",
+            "choices": [
+                "1 3 2 4",
+                "4 2 3 1",
+                "1 2 3 4",
+                "4 3 2 1"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 91,
+            "question": "\"What will this code print, assuming it is inside the main method of a class?\"",
+            "body": "`System.out.println(\"hello my friends\".split(\" \")[0]);`",
+            "answer": "\"hello\"",
+            "choices": [
+                "my",
+                "hellomyfriends",
+                "hello",
+                "friends"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 92,
+            "question": "\"You have an instance of type Map<String, Integer> named instruments containing the following key-value pairs: guitar=1200, cello=3000, and drum=2000. If you add the new key-value pair cello=4500 to the Map using the put method, how many elements do you have in the Map when you call instruments.size()?\"",
+            "body": "",
+            "answer": "\"3\"",
+            "choices": [
+                "2",
+                "When calling the put method, Java will throw an exception",
+                "4",
+                "3"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 93,
+            "question": "\"Which class acts as root class for Java Exception hierarchy?\"",
+            "body": "",
+            "answer": "\"Throwable\"",
+            "choices": [
+                "Clonable",
+                "Throwable",
+                "Object",
+                "Serializable"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 94,
+            "question": "\"Which class does not implement the java.util.Collection interface?\"",
+            "body": "",
+            "answer": "\"java.util.HashMap\"",
+            "choices": [
+                "java.util.Vector",
+                "java.util.ArrayList",
+                "java.util.HashSet",
+                "java.util.HashMap"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 95,
+            "question": "\"You have a variable of named `employees` of type `List<Employee>` containing multiple entries. The `Employee` type has a method `getName()` that returns the employee name. Which statement properly extracts a list of employee names?\"",
+            "body": "",
+            "answer": "\"`employees.stream().map(Employee::getName).collect(Collectors.toList());`\"",
+            "choices": [
+                "`employees.collect(employee -> employee.getName());`",
+                "`employees.filter(Employee::getName).collect(Collectors.toUnmodifiableList());`",
+                "`employees.stream().map(Employee::getName).collect(Collectors.toList());`",
+                "`employees.stream().collect((e) -> e.getName());`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 96,
+            "question": "\"This code does not compile. What needs to be changed so that it does?\"",
+            "body": "```java\npublic enum Direction {\n    EAST(\"E\"),\n    WEST(\"W\"),\n    NORTH(\"N\"),\n    SOUTH(\"S\");\n\n    private final String shortCode;\n\n    public String getShortCode() {\n        return shortCode;\n    }\n}\n```",
+            "answer": "\"Add a constructor that accepts a `String` parameter and assigns it to the field `shortCode`.\"",
+            "choices": [
+                "Add a constructor that accepts a `String` parameter and assigns it to the field `shortCode`.",
+                "Remove the `final` keyword for the field `shortCode`.",
+                "All enums need to be defined on a single line of code.",
+                "Add a setter method for the field `shortCode`."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 97,
+            "question": "\"Which language feature ensures that objects implementing the `AutoCloseable` interface are closed when it completes?\"",
+            "body": "",
+            "answer": "\"try-with-resources\"",
+            "choices": [
+                "try-catch-finally",
+                "try-finally-close",
+                "try-with-resources",
+                "try-catch-close"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 98,
+            "question": "\"What code should go in line 3?\"",
+            "body": "```java\n1: class Main {\n2:     public static void main(String[] args) {\n3:\n4:         array[0] = new int[]{1, 2, 3};\n5:         array[1] = new int[]{4, 5, 6};\n6:         array[2] = new int[]{7, 8, 9};\n7:         for (int i = 0; i < 3; i++)\n8:             System.out.print(array[i][1]); //prints 258\n9:     }\n10: }\n```",
+            "answer": "\"`int[][] array = new int[3][3];`\"",
+            "choices": [
+                "`int[][] array = new int[][];`",
+                "`int[][] array = new int[3][3];`",
+                "`int[][] array = new int[2][2];`",
+                "`int[][] array = [][];`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 99,
+            "question": "\"Is this an example of method overloading or overriding?\"",
+            "body": "```java\nclass Car {\n    public void accelerate() {}\n}\nclass Lambo extends Car {\n    public void accelerate(int speedLimit) {}\n    public void accelerate() {}\n}\n```",
+            "answer": "\"both\"",
+            "choices": [
+                "neither",
+                "both",
+                "overloading",
+                "overriding"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 100,
+            "question": "\"Which choice is the best data type for working with money in Java?\"",
+            "body": "",
+            "answer": "\"BigDecimal\"",
+            "choices": [
+                "float",
+                "String",
+                "double",
+                "BigDecimal"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 101,
+            "question": "\"Which statement about constructors is not true?\"",
+            "body": "",
+            "answer": "\"Every class must explicitly define a constructor without parameters.\"",
+            "choices": [
+                "A class can have multiple constructors with a different parameter list.",
+                "You can call another constructor with `this` or `super`.",
+                "A constructor does not define a return value.",
+                "Every class must explicitly define a constructor without parameters."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 102,
+            "question": "\"What language feature allows types to be parameters on classes, interfaces, and methods in order to reuse the same code for different data types?\"",
+            "body": "",
+            "answer": "\"Generics\"",
+            "choices": [
+                "Regular Expressions",
+                "Reflection",
+                "Generics",
+                "Concurrency"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 103,
+            "question": "\"What will be printed?\"",
+            "body": "```java\npublic class Berries{\n\n    String berry = \"blue\";\n\n    public static void main(String[] args) {\n        new Berries().juicy(\"straw\");\n    }\n    void juicy(String berry){\n        this.berry = \"rasp\";\n        System.out.println(berry + \"berry\");\n    }\n}\n```",
+            "answer": "\"strawberry\"",
+            "choices": [
+                "raspberry",
+                "strawberry",
+                "blueberry",
+                "rasp"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 104,
+            "question": "\"What is the value of `forestCount` after this code executes?\"",
+            "body": "```java\nMap<String, Integer> forestSpecies = new HashMap<>();\n\nforestSpecies.put(\"Amazon\", 30000);\nforestSpecies.put(\"Congo\", 10000);\nforestSpecies.put(\"Daintree\", 15000);\nforestSpecies.put(\"Amazon\", 40000);\n\nint forestCount = forestSpecies.size();\n```",
+            "answer": "\"3\"",
+            "choices": [
+                "3",
+                "4",
+                "2",
+                "When calling the put method, Java will throw an exception"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 105,
+            "question": "\"What is a problem with this code?\"",
+            "body": "```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\n\n\nclass Main {\n\n    public static void main(String[] args) {\n        List<String> list = new ArrayList<String>(Arrays.asList(\"a\", \"b\", \"c\"));\n        for(String value :list) {\n            if(value.equals(\"a\")) {\n                list.remove(value);\n            }\n        }\n        System.out.println(list); // outputs [b,c]\n    }\n}\n```",
+            "answer": "\"Modifying a collection while iterating through it can throw a ConcurrentModificationException.\"",
+            "choices": [
+                "String should be compared using == method instead of equals.",
+                "Modifying a collection while iterating through it can throw a ConcurrentModificationException.",
+                "The List interface does not allow an argument of type String to be passed to the remove method.",
+                "ArrayList does not implement the List interface."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 106,
+            "question": "\"How do you convert this method into a lambda expression?\"",
+            "body": "```java\npublic int square(int x) {\n    return x * x;\n}\n```",
+            "answer": "\"`Function<Integer, Integer> squareLambda = x -> x * x;`\"",
+            "choices": [
+                "`Function<Integer, Integer> squareLambda = (int x) -> { x * x };`",
+                "`Function<Integer, Integer> squareLambda = () -> { return x * x };`",
+                "`Function<Integer, Integer> squareLambda = x -> x * x;`",
+                "`Function<Integer, Integer> squareLambda = x -> return x * x;`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 107,
+            "question": "\"Which choice is a valid implementation of this interface?\"",
+            "body": "```java\ninterface MyInterface {\n    int foo(int x);\n}\n```",
+            "answer": "\"C\"",
+            "choices": [
+                "A",
+                "```java\npublic class MyClass implements MyInterface {\n// ....\npublic void foo(int x){\nSystem.out.println(x);\n}\n}\n```",
+                "B",
+                "```java\npublic class MyClass implements MyInterface {\n// ....\npublic double foo(int x){\nreturn x * 100;\n}\n}\n```",
+                "C",
+                "```java\npublic class MyClass implements MyInterface {\n// ....\npublic int foo(int x){\nreturn x * 100;\n}\n}\n```",
+                "D",
+                "```java\npublic class MyClass implements MyInterface {\n// ....\npublic int foo(){\nreturn 100;\n}\n}\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 108,
+            "question": "\"What is the result of this program?\"",
+            "body": "```java\ninterface Foo {\n    int x = 10;\n}\n\npublic class Main{\n\n    public static void main(String[] args) {\n        Foo.x = 20;\n        System.out.println(Foo.x);\n    }\n}\n```",
+            "answer": "\"An error will occur when compiling.\"",
+            "choices": [
+                "10",
+                "20",
+                "null",
+                "An error will occur when compiling."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 109,
+            "question": "\"Which statement must be inserted on line 1 to print the value true?\"",
+            "body": "```java\n1:\n2: Optional<String> opt = Optional.of(val);\n3: System.out.println(opt.isPresent());\n```",
+            "answer": "\"`String val = \"Sam\";`\"",
+            "choices": [
+                "`Integer val = 15;`",
+                "`String val = \"Sam\";`",
+                "`String val = null;`",
+                "`Optional<String> val = Optional.empty();`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 110,
+            "question": "\"What will this code print, assuming it is inside the main method of a class?\"",
+            "body": "```java\nSystem.out.println(true && false || true);\nSystem.out.println(false || false && true);\n```",
+            "answer": "\"true </br> false\"",
+            "choices": [
+                "false </br> true",
+                "true </br> true",
+                "true </br> false",
+                "false </br> false"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 111,
+            "question": "\"What will this code print?\"",
+            "body": "```java\nList<String> list1 = new ArrayList<>();\nlist1.add(\"One\");\nlist1.add(\"Two\");\nlist1.add(\"Three\");\n\nList<String> list2 = new ArrayList<>();\nlist2.add(\"Two\");\n\nlist1.remove(list2);\nSystem.out.println(list1);\n```",
+            "answer": "\"`[One, Two, Three]`\"",
+            "choices": [
+                "`[Two]`",
+                "`[One, Two, Three]`",
+                "`[One, Three]`",
+                "`Two`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 112,
+            "question": "\"Which code checks whether the characters in two Strings,named `time` and `money`, are the same?\"",
+            "body": "",
+            "answer": "\"`if(time.equals(money)){}`\"",
+            "choices": [
+                "`if(time <> money){}`",
+                "`if(time.equals(money)){}`",
+                "`if(time == money){}`",
+                "`if(time = money){}`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 113,
+            "question": "\"An **\\_** is a serious issue thrown by the JVM that the JVM is unlikely to recover from. An **\\_** is an unexpected event that an application may be able to deal with in order to continue execution.\"",
+            "body": "",
+            "answer": "\"error, exception\"",
+            "choices": [
+                "exception,assertion",
+                "AbnormalException, AccidentalException",
+                "error, exception",
+                "exception, error"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 114,
+            "question": "\"Which keyword would not be allowed here?\"",
+            "body": "```java\nclass Unicorn {\n    _____ Unicorn(){}\n}\n```",
+            "answer": "\"static\"",
+            "choices": [
+                "static",
+                "protected",
+                "public",
+                "void"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 115,
+            "question": "\"Which OOP concept is this code an example of?\"",
+            "body": "```java\nList[] myLists = {\n    new ArrayList<>(),\n    new LinkedList<>(),\n    new Stack<>(),\n    new Vector<>(),\n};\n\nfor (List list : myLists){\n    list.clear();\n}\n```",
+            "answer": "\"polymorphism\"",
+            "choices": [
+                "composition",
+                "generics",
+                "polymorphism",
+                "encapsulation"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 116,
+            "question": "\"What does this code print?\"",
+            "body": "```java\nString a = \"bikini\";\nString b = new String(\"bikini\");\nString c = new String(\"bikini\");\n\nSystem.out.println(a == b);\nSystem.out.println(b == c);\n```",
+            "answer": "\"false; false\"",
+            "choices": [
+                "true; false",
+                "false; false",
+                "false; true",
+                "true; true"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 117,
+            "question": "\"What keyword is added to a method declaration to ensure that two threads do not simultaneously execute it on the same object instance?\"",
+            "body": "",
+            "answer": "\"synchronized\"",
+            "choices": [
+                "native",
+                "volatile",
+                "synchronized",
+                "lock"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 118,
+            "question": "\"Which is a valid type for this lambda function?\"",
+            "body": "```java\n_____ oddOrEven = x -> {\n    return x % 2 == 0 ? \"even\" : \"odd\";\n};\n```",
+            "answer": "\"`Function<Integer, String>`\"",
+            "choices": [
+                "`Function<Integer, Boolean>`",
+                "`Function<String>`",
+                "`Function<Integer, String>`",
+                "`Function<Integer>`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 119,
+            "question": "\"What is displayed when this code is compiled and executed?\"",
+            "body": "```java\nimport java.util.HashMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> pantry = new HashMap<>();\n\n        pantry.put(\"Apples\", 3);\n        pantry.put(\"Oranges\", 2);\n\n        int currentApples = pantry.get(\"Apples\");\n        pantry.put(\"Apples\", currentApples + 4);\n\n        System.out.println(pantry.get(\"Apples\"));\n    }\n}\n```",
+            "answer": "\"7\"",
+            "choices": [
+                "6",
+                "3",
+                "4",
+                "7"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 120,
+            "question": "\"What variable type should be declared for capitalize?\"",
+            "body": "```shell\nList<String> songTitles = Arrays.asList(\"humble\", \"element\", \"dna\");\n_______ capitalize = (str) -> str.toUpperCase();\nsongTitles.stream().map(capitalize).forEach(System.out::println);\n```",
+            "answer": "\"`Function<String, String>`\"",
+            "choices": [
+                "`Function<String, String>`",
+                "`Stream<String>`",
+                "`String<String, String>`",
+                "`Map<String, String>`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 121,
+            "question": "\"Which is the correct return type for the processFunction method?\"",
+            "body": "```java\n_____ processFunction(Integer number, Function<Integer, String> lambda) {\n    return lambda.apply(number);\n}\n```",
+            "answer": "\"`String`\"",
+            "choices": [
+                "`Integer`",
+                "`String`",
+                "`Consumer`",
+                "`Function<Integer, String>`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 122,
+            "question": "\"What function could you use to replace slashes for dashes in a list of dates?\"",
+            "body": "```java\nList<String> dates = new ArrayList<String>();\n// missing code\ndates.replaceAll(replaceSlashes);\n```",
+            "answer": "\"`UnaryOperator<String> replaceSlashes = date -> date.replace(\"/\", \"-\");`\"",
+            "choices": [
+                "`UnaryOperator<String> replaceSlashes = date -> date.replace(\"/\", \"-\");`",
+                "`Function<String, String> replaceSlashes = dates -> dates.replace(\"-\", \"/\");`",
+                "`Map<String, String> replaceSlashes = dates.replace(\"/\", \"-\");`",
+                "`Consumer<Date> replaceSlashes = date -> date.replace(\"/\", \"-\");`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 123,
+            "question": "\"From which class do all other classes implicitly extend?\"",
+            "body": "",
+            "answer": "\"`Object`\"",
+            "choices": [
+                "`Object`",
+                "`Main`",
+                "`Java`",
+                "`Class`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 124,
+            "question": "\"How do you create and run a Thread for this class?\"",
+            "body": "```java\nimport java.util.date;\n\npublic class CurrentDateRunnable implements Runnable {\n    @Override\n    public void run () {\n        while (true) {\n            System.out.println(\"Current date: \" + new Date());\n\n            try {\n                Thread.sleep(5000);\n            } catch (InterruptedException e) {\n                throw new RuntimeException(e);\n            }\n        }\n    }\n}\n```",
+            "answer": "\"`Thread thread = new Thread(new CurrentDateRunnable()); thread.start();`\"",
+            "choices": [
+                "`Thread thread = new Thread(new CurrentDateRunnable()); thread.start();`",
+                "`new Thread(new CurrentDateRunnable()).join();`",
+                "`new CurrentDateRunnable().run();`",
+                "`new CurrentDateRunnable().start();`"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 125,
+            "question": "\"Which expression is a functional equivalent?\"",
+            "body": "```java\nList<Integer> numbers = List.of(1,2,3,4);\nint total = 0;\n\nfor (Integer x : numbers) {\n    if (x % 2 == 0)\n    total += x * x;\n}\n```",
+            "answer": "\"D\"",
+            "choices": [
+                "A",
+                "```java\nint total = numbers.stream()\n.transform(x -> x * x)\n.filter(x -> x % 2 == 0)\n.sum ();\n```",
+                "B",
+                "```java\nint total = numbers.stream()\n.filter(x -> x % 2 == 0)\n.collect(Collectors.toInt());\n```",
+                "C",
+                "```java\nint total = numbers.stream()\n.mapToInt (x -> {if (x % 2 == 0) return x * x;})\n.sum();\n```",
+                "D",
+                "```java\nint total = numbers.stream()\n.filter(x -> x % 2 == 0)\n.mapToInt(x -> x * x)\n.sum();\n```",
+                "```java\nnumbers                         // Input `List<Integer>` > [1, 2, 3, 4]\n.stream()                   // Converts input into `Stream<Integer>`\n.filter(x -> x % 2 == 0)    // Filter even numbers and return `Stream<Integer>` > [2, 4]\n.mapToInt(x -> x * x)       // Square the number, converts `Integer` to an `int`, and returns `IntStream` > [4, 16]\n.sum()                      // Returns the sum as `int` > 20\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 126,
+            "question": "\"Which is not one of the standard input/output streams provided by java.lang.System?\"",
+            "body": "",
+            "answer": "\"print\"",
+            "choices": [
+                "print",
+                "out",
+                "err",
+                "in"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 127,
+            "question": "\"The compiler is complaining about this assignment of the variable pickle to the variable jar. How woulld you fix this?\"",
+            "body": "```java\ndouble pickle = 2;\nint jar = pickle;\n```",
+            "answer": "\"Cast pickle to an int before assigning it to jar.\"",
+            "choices": [
+                "Use the method toInt() to convert pickle before assigning it to jar.",
+                "Cast pickle to an int before assigning it to jar.",
+                "Make pickle into a double by adding + \".0\"",
+                "Use the new keyword to create a new Integer from pickle before assigning it to jar."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 128,
+            "question": "\"What value should x have to make this loop execute 10 times?\"",
+            "body": "```java\nfor(int i=0; i<30; i+=x) {}\n```",
+            "answer": "\"3\"",
+            "choices": [
+                "10",
+                "3",
+                "1",
+                "0"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 129,
+            "question": "\"The **\\_** runs compiled Java code, while the **\\_** compiles Java files.\"",
+            "body": "",
+            "answer": "\"JRE; JDK\"",
+            "choices": [
+                "IDE; JRE",
+                "JDK; IDE",
+                "JRE; JDK",
+                "JDK; JRE"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 130,
+            "question": "\"Which packages are part of Java Standard Edition\"",
+            "body": "",
+            "answer": "\"All above\"",
+            "choices": [
+                "java.net",
+                "java.util",
+                "java.lang",
+                "All above"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 131,
+            "question": "\"What values for x and y will cause this code to print \"btc\"?\"",
+            "body": "```java\nString buy = \"bitcoin\";\nSystem.out.println(buy.substring(x, x+1) + buy.substring(y, y+2))\n```",
+            "answer": "\"int x = 0; int y = 2;\"",
+            "choices": [
+                "int x = 0; int y = 2;",
+                "int x = 1; int y = 3;",
+                "int x = 0; int y = 3;",
+                "int x = 1; int y = 3;"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 132,
+            "question": "\"Which keyword would you add to make this method the entry point of the program?\"",
+            "body": "",
+            "answer": "\"static\"",
+            "choices": [
+                "exception",
+                "args",
+                "static",
+                "String"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 133,
+            "question": "\"You have a list of Bunny objects that you want to sort by weight using Collections.sort. What modification would you make to the Bunny class?\"",
+            "body": "",
+            "answer": "\"Implement the comparable interface by overriding the compareTo method.\"",
+            "choices": [
+                "Implement the comparable interface by overriding the compareTo method.",
+                "Add the keyword default to the weight variable.",
+                "Override the equals method inside the Bunny class.",
+                "Implement Sortable and override the sortBy method."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 134,
+            "question": "\"Identify the incorrect Java feature.\"",
+            "body": "",
+            "answer": "\"Use of pointers\"",
+            "choices": [
+                "Object oriented",
+                "Use of pointers",
+                "Dynamic",
+                "Architectural neural"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 135,
+            "question": "\"What is the output of this code?\"",
+            "body": "```java\nint yearsMarried = 2;\nswitch (yearsMarried) {\n   case 1:\n      System.out.println(\"paper\");\n   case 2:\n      System.out.println(\"cotton\");\n   case 3:\n      System.out.println(\"leather\");\n   default:\n      System.out.println(\"I don't gotta buy gifts for nobody!\");\n}\n```",
+            "answer": "\"cotton <br> leather <br> I don't gotta buy gifts for nobody!\"",
+            "choices": [
+                "cotton",
+                "cotton <br> leather",
+                "cotton <br> leather <br> I don't gotta buy gifts for nobody!",
+                "cotton <br> I don't gotta buy gifts for nobody!"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 136,
+            "question": "\"What language feature do these expressions demonstrate?\"",
+            "body": "```\nSystem.out::println\nDoggie::fetch\n```",
+            "answer": "\"method references\"",
+            "choices": [
+                "condensed invocation",
+                "static references",
+                "method references",
+                "bad code"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 137,
+            "question": "\"What is the difference between the wait() and sleep methods?\"",
+            "body": "",
+            "answer": "\"When things go wrong, sleep throws an IllegalMonitorStateException whereas wait throws an InterruptedException.\"",
+            "choices": [
+                "Only Threads can wait, but any Object can be put to sleep.",
+                "A wait can be woken up by another Thread calling notify whereas a sleep cannot.",
+                "When things go wrong, sleep throws an IllegalMonitorStateException whereas wait throws an InterruptedException.",
+                "Sleep allows for multi-threading whereas wait does not."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 138,
+            "question": "\"Which is the right way to declare an enumeration of cats?\"",
+            "body": "",
+            "answer": "\"enum Cats {SPHYNX, SIAMESE, BENGAL}\"",
+            "choices": [
+                "enum Cats (SPHYNX, SIAMESE, BENGAL);",
+                "enum Cats (\"sphynx\", \"siamese\", \"bengal\");",
+                "enum Cats {SPHYNX, SIAMESE, BENGAL}",
+                "enum Cats {\"sphynx\",\"siamese\",\"bengal}"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 139,
+            "question": "\"What happens when this code is run?\"",
+            "body": "```java\nList<String> horses = new ArrayList<String>();\nhorses.add (\" Sea Biscuit \");\nSystem.out.println(horses.get(1).trim());\n```",
+            "answer": "\"An IndexOutOfBoundsException will be thrown.\"",
+            "choices": [
+                "\"Sea Biscuit\" will be printed.",
+                "\" Sea Biscuit \" will be printed.",
+                "An IndexOutOfBoundsException will be thrown.",
+                "A NullPointerException will be thrown."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 140,
+            "question": "\"Which data structure would you choose to associate the amount of rainfall with each month?\"",
+            "body": "",
+            "answer": "\"Map\"",
+            "choices": [
+                "Vector",
+                "LinkedList",
+                "Map",
+                "Queue",
+                "```java\npublic class Rainfall {\nprivate java.time.Month month;\nprivate double rainfall;\n}\nVector<Rainfall>\nLinkedList<Rainfall>\nQueue<Rainfall>\n```"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 141,
+            "question": "\"Among the following which contains date information?\"",
+            "body": "",
+            "answer": "\"java.sql timestamp\"",
+            "choices": [
+                "java.sql timestamp",
+                "java.io time",
+                "java.io.timestamp",
+                "java.sql.time"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 142,
+            "question": "\"What is the size of float and double in java?\"",
+            "body": "",
+            "answer": "\"32 and 64\"",
+            "choices": [
+                "32 and 64",
+                "32 and 32",
+                "64 and 64",
+                "64 and 32"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 143,
+            "question": "\"When you pass an object reference as an argument to a method call what gets passed?\"",
+            "body": "",
+            "answer": "\"the original reference\"",
+            "choices": [
+                "a reference to a copy",
+                "a copy of the reference",
+                "the object itself",
+                "the original reference"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 144,
+            "question": "\"Which choice demonstrates a valid way to create a reference to a static function of another class?\"",
+            "body": "",
+            "answer": "\"Function<Integer, Integer> funcReference = MyClass::myFunction;\"",
+            "choices": [
+                "Function<Integer, Integer> funcReference = MyClass::myFunction;",
+                "Function<Integer, Integer> funcReference = MyClass.myFunction;",
+                "Function<Integer, Integer> funcReference = MyClass().myFunction();",
+                "Function<Integer, Integer> funcReference = MyClass::myFunction();"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 145,
+            "question": "\"What is UNICODE?\"",
+            "body": "",
+            "answer": "\"Unicode is used for external representation of characters and strings\"",
+            "choices": [
+                "Unicode is used for external representation of words and strings",
+                "Unicode is used for internal representation of characters and strings",
+                "Unicode is used for external representation of characters and strings",
+                "Unicode is used for internal representation of words and strings"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 146,
+            "question": "\"What kind of thread is the Garbage collector thread?\"",
+            "body": "",
+            "answer": "\"Daemon thread\"",
+            "choices": [
+                "User thread",
+                "Daemon thread",
+                "Both",
+                "None of these"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 147,
+            "question": "\"What is HashMap and Map?\"",
+            "body": "",
+            "answer": "\"HashMap is class and map is interface that implements that\"",
+            "choices": [
+                "HashMap is Interface and map is class that implements that",
+                "HashMap is class and map is interface that implements that",
+                "Map is class and Hashmap is interface that implements that",
+                "Map is Interface and Hashmap is class that implements that"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 148,
+            "question": "\"What invokes a thread's run() method?\"",
+            "body": "",
+            "answer": "\"start() method of the thread class.\"",
+            "choices": [
+                "JVM invokes the thread's run() method when the thread is initially executed.",
+                "Main application running the thread.",
+                "start() method of the thread class.",
+                "None of the above."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 149,
+            "question": "\"What is true about a final class?\"",
+            "body": "",
+            "answer": "\"All of the above.\"",
+            "choices": [
+                "class declared final is a final class.",
+                "Final classes are created so the methods implemented by that class cannot be overriddden.",
+                "It can't be inherited.",
+                "All of the above."
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 150,
+            "question": "\"Which method can be used to find the highest value of x and y?\"",
+            "body": "",
+            "answer": "\"Math.max(x,y)\"",
+            "choices": [
+                "Math.largest(x,y)",
+                "Math.maxNum(x,y)",
+                "Math.max(x,y)",
+                "Math.maximum(x,y)"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 151,
+            "question": "\"`void accept(T t)` is method of -?\"",
+            "body": "",
+            "answer": "\"Consumer\"",
+            "choices": [
+                "Consumer",
+                "Producer",
+                "Both",
+                "None"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 152,
+            "question": "\"Which of these does `Stream filter()` operates on?\"",
+            "body": "",
+            "answer": "\"Predicate\"",
+            "choices": [
+                "Predicate",
+                "Interface",
+                "Class",
+                "Methods"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 153,
+            "question": "\"Which of these does `Stream map()` operates on?\"",
+            "body": "",
+            "answer": "\"Function\"",
+            "choices": [
+                "Class",
+                "Interface",
+                "Predicate",
+                "Function"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 154,
+            "question": "\"What code is needed at line 8?\"",
+            "body": "```java\n1: class Main {\n\n2:      public static void main(String[] args) {\n\n3:          Map<String, Integer> map = new HashMap<>();\n4:          map.put(\"a\", 1);\n5:          map.put(\"b\", 2);\n6:          map.put(\"c\", 3);\n\n7:          int result = 0;\n\n8:\n9:              result += entry.getValue();\n10:         }\n\n11:         System.out.println(result); // outputs 6\n12:     }\n13: }\n```",
+            "answer": "\"for(Entry<String, Integer> entry: map.entrySet()) {\"",
+            "choices": [
+                "for(MapEntry<String, Integer> entry: map.entrySet()) {",
+                "for(String entry: map) {",
+                "for(Integer entry: map.values()) {",
+                "for(Entry<String, Integer> entry: map.entrySet()) {"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 155,
+            "question": "\"What will print when Lambo is instantiated?\"",
+            "body": "```java\nclass Car {\n    String color = \"blue\";\n}\n\nclass Lambo extends Car {\n    String color = \"white\";\n\n    public Lambo() {\n        System.out.println(super.color);\n        System.out.println(this.color);\n        System.out.println(color);\n    }\n}\n```",
+            "answer": "\"blue\"",
+            "choices": [
+                "blue",
+                "blue",
+                "white",
+                "white"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 156,
+            "question": "\"Which command will run a FrogSounds app that someone emailed to you as a jar?\"",
+            "body": "",
+            "answer": "\"java -jar FrogSounds.jar\"",
+            "choices": [
+                "jar FrogSounds.java",
+                "javac FrogSounds.exe",
+                "jar cf FrogSounds.jar",
+                "java -jar FrogSounds.jar"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 157,
+            "question": "\"What is the default value of short variable?\"",
+            "body": "",
+            "answer": "\"0\"",
+            "choices": [
+                "0",
+                "0.0",
+                "null",
+                "undefined"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 158,
+            "question": "\"What will be the output of the following Java program?\"",
+            "body": "```java\nclass variable_scope {\n    public static void main(String args[]) {\n        int x;\n        x = 5;\n        {\n            int y = 6;\n            System.out.print(x + \" \" + y);\n        }\n        System.out.println(x + \" \" + y);\n    }\n}\n```",
+            "answer": "\"Compilation Error\"",
+            "choices": [
+                "Compilation Error",
+                "Runtime Error",
+                "5 6 5 6",
+                "5 6 5"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 159,
+            "question": "\"Subclasses of an abstract class are created using the keyword **\\_**.\"",
+            "body": "",
+            "answer": "\"extends\"",
+            "choices": [
+                "extends",
+                "abstracts",
+                "interfaces",
+                "implements"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 160,
+            "question": "\"What will be the output of the following program?\"",
+            "body": "```java\nimport java.util.Formatter;\npublic class Course {\n    public static void main(String[] args) {\n        Formatter data = new Formatter();\n        data.format(\"course %s\", \"java \");\n        System.out.println(data);\n        data.format(\"tutorial %s\", \"Merit campus\");\n        System.out.println(data);\n    }\n}\n```",
+            "answer": "\"course java\"",
+            "choices": [
+                "course java",
+                "course java",
+                "Compilation Error",
+                "Runtime Error"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 161,
+            "question": "\"Calculate the time complexity of the following program.\"",
+            "body": "```java\n void printUnorderedPairs(int[] arrayA, int[] arrayB){\n    for(int i = 0; i < arrayA.length; i++){\n        for(int  j = 0; j < arrayB.length; j++){\n            if(arrayA[i] < arrayB[j]){\n                System.out.println(arrayA[i] + \",\" + arrayB[j]);\n            }\n        }\n    }\n }\n```",
+            "answer": "\"O(AB)\"",
+            "choices": [
+                "O(N\\*N)",
+                "O(1)",
+                "O(AB)",
+                "O(A\\*B)"
+            ]
+        },
+        {
+            "topic": "Java",
+            "id": 162,
+            "question": "\"What do these expressions evaluate to?\"",
+            "body": "1. true && false\n    2. true && false || true",
+            "answer": "\"1. false 2. true\"",
+            "choices": [
+                "1. false 2. true",
+                "1. false 2. false",
+                "1. true 2. false",
+                "1. true 2. true"
+            ]
+        }
+    ]
+}
