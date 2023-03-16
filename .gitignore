@@ -1,4 +1,6 @@
 
 # files for testing purposes
+/res
+/fileOutput
 /res/*
 /fileOutput/*
