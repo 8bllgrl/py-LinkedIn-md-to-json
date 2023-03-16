@@ -1,0 +1,793 @@
+{
+    "questions": [
+        {
+            "topic": "R (Programming Language)",
+            "id": 1,
+            "question": "\"How does a matrix differ from a data frame?\"",
+            "body": "",
+            "answer": "\"A data frame may contain variables that have different modes.\"",
+            "choices": [
+                "A matrix may contain numeric values only.",
+                "A matrix must not be singular.",
+                "A data frame may contain variables that have different modes.",
+                "A data frame may contain variables of different lengths."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 2,
+            "question": "\"What value does this statement return?\"",
+            "body": "`unclass(as.Date(\"1971-01-01\"))`",
+            "answer": "\"365\"",
+            "choices": [
+                "1",
+                "365",
+                "4",
+                "12"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 3,
+            "question": "\"What do you use to take an object such as a data frame out of the workspace?\"",
+            "body": "",
+            "answer": "\"remove()\"",
+            "choices": [
+                "remove()",
+                "erase()",
+                "detach()",
+                "delete()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 4,
+            "question": "\"Review the following code. What is the result of line 3?\"",
+            "body": "```\nxvect<-c(1,2,3)\nxvect[2] <- \"2\"\nxvect\n```",
+            "answer": "\"[1] \"1\" \"2\" \"3\"\"",
+            "choices": [
+                "[1] 1 2 3",
+                "[1] \"1\" 2 \"3\"",
+                "[1] \"1\" \"2\" \"3\"",
+                "[1] 7 9"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 5,
+            "question": "\"The variable height is a numeric vector in the code below. Which statement returns the value 35?\"",
+            "body": "",
+            "answer": "\"`height[length(height)]`\"",
+            "choices": [
+                "`height(length(height))`",
+                "`height[length(height)]`",
+                "`height[length[height]]`",
+                "`height(5)`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 6,
+            "question": "\"In the image below, the data frame is named rates. The statement `sd(rates[, 2])` returns 39. As what does R regard Ellen's product ratings?\"",
+            "body": "![Image](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png?raw=png)",
+            "answer": "\"sample <-- not sure\"",
+            "choices": [
+                "sample with replacement",
+                "population",
+                "trimmed sample",
+                "sample <-- not sure"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 7,
+            "question": "\"Which choice does R regard as an acceptable name for a variable?\"",
+            "body": "",
+            "answer": "\"`Var2_A`\"",
+            "choices": [
+                "`Var_A!`",
+                "`\\_VarA`",
+                "`.2Var_A`",
+                "`Var2_A`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 8,
+            "question": "\"What is the principal difference between an array and a matrix?\"",
+            "body": "",
+            "answer": "\"A matrix has two dimensions, while an array can have three or more dimensions.\"",
+            "choices": [
+                "A matrix has two dimensions, while an array can have three or more dimensions.",
+                "An array is a subtype of the data frame, while a matrix is a separate type entirely.",
+                "A matrix can have columns of different lengths, but an array's columns must all be the same length.",
+                "A matrix may contain numeric values only, while an array can mix different types of values."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 9,
+            "question": "\"Which is not a property of lists and vectors?\"",
+            "body": "",
+            "answer": "\"scalar\"",
+            "choices": [
+                "type",
+                "length",
+                "attributes",
+                "scalar"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 10,
+            "question": "\"In the image below, the data frame on lines 1 through 4 is named StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?\"",
+            "body": "![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png?raw=png)",
+            "answer": "\"StDf[1:2,1]\"",
+            "choices": [
+                "StDf[1:2,-3]",
+                "StDf[1:2,1]",
+                "StDf[1:2,]",
+                "StDf[1,2,]"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 11,
+            "question": "\"Which function displays the first five rows of the data frame named pizza?\"",
+            "body": "",
+            "answer": "\"head(pizza, 5)\"",
+            "choices": [
+                "BOF(pizza, 5)",
+                "first(pizza, 5)",
+                "top(pizza, 5)",
+                "head(pizza, 5)"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 12,
+            "question": "\"You accidentally display a large data frame on the R console, losing all the statements you entered during the current session. What is the best way to get the prior 25 statements back?\"",
+            "body": "",
+            "answer": "\"history(max.show = 25)\"",
+            "choices": [
+                "console(-25)",
+                "console(reverse=TRUE)",
+                "history()",
+                "history(max.show = 25)"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 13,
+            "question": "\"d.pizza is a data frame. It's a column named temperature contains only numbers. If you extract temperature using the [] accessors, its class defaults to numeric. How can you access temperature so that it retains the class of data.frame?\"",
+            "body": "```\n> class( d.pizza[ , \"temperature\" ] )\n> \"numeric\"\n```",
+            "answer": "\"`class( d.pizza[ , \"temperature\", drop=F ] )`\"",
+            "choices": [
+                "`class( d.pizza( , \"temperature\" ) )`",
+                "`class( d.pizza[ , \"temperature\" ] )`",
+                "`class( d.pizza$temperature )`",
+                "`class( d.pizza[ , \"temperature\", drop=F ] )`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 14,
+            "question": "\"What does c contain?\"",
+            "body": "```\na <- c(3,3,6.5,8)\nb <- c(7,2,5.5,10)\nc <- a < b\n```",
+            "answer": "\"[1] TRUE FALSE FALSE TRUE\"",
+            "choices": [
+                "[1] NaN",
+                "[1] -4",
+                "[1] 4 -1 -1 2",
+                "[1] TRUE FALSE FALSE TRUE"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 15,
+            "question": "\"Review the statements below. Does the use of the dim function change the class of y, and if so what is y's new class?\"",
+            "body": "```\n> y <- 1:9\n> dim(y) <- c(3,3)\n```",
+            "answer": "\"Yes, y's new class is \"matrix\".\"",
+            "choices": [
+                "No, y's new class is \"array\".",
+                "Yes, y's new class is \"matrix\".",
+                "No, y's new class is \"vector\".",
+                "Yes, y's new class is \"integer\"."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 16,
+            "question": "\"What is `mydf$y` in this code?\"",
+            "body": "`mydf <- data.frame(x=1:3, y=c(\"a\",\"b\",\"c\"), stringAsFactors=FALSE)`",
+            "answer": "\"character vector\"",
+            "choices": [
+                "list",
+                "string",
+                "factor",
+                "character vector"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 17,
+            "question": "\"How does a vector differ from a list?\"",
+            "body": "",
+            "answer": "\"A vector contains items of a single data type, while a list can contain items of different data types.\"",
+            "choices": [
+                "Vectors are used only for numeric data, while lists are useful for both numeric and string data.",
+                "Vectors and lists are the same thing and can be used interchangeably.",
+                "A vector contains items of a single data type, while a list can contain items of different data types.",
+                "Vectors are like arrays, while lists are like data frames."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 18,
+            "question": "\"What statement shows the objects on your workspace?\"",
+            "body": "",
+            "answer": "\"ls()\"",
+            "choices": [
+                "list.objects()",
+                "print.objects()",
+                "getws()",
+                "ls()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 19,
+            "question": "\"What function joins two or more column vectors to form a data frame?\"",
+            "body": "",
+            "answer": "\"cbind()\"",
+            "choices": [
+                "rbind()",
+                "cbind()",
+                "bind()",
+                "coerce()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 20,
+            "question": "\"Review line 1 below. What does the statement in line 2 return?\"",
+            "body": "```\n1 mylist <- list(1,2,\"C\",4,5)\n2 unlist(mylist)\n```",
+            "answer": "\"[1] \"1\" \"2\" \"C\" \"4\" \"5\"\"",
+            "choices": [
+                "[1] 1 2 4 5",
+                "\"C\"",
+                "[1] \"1\" \"2\" \"C\" \"4\" \"5\"",
+                "[1] 1 2 C 4 5"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 21,
+            "question": "\"What is the value of y in this code?\"",
+            "body": "```\nx <- NA\ny <- x/1\n```",
+            "answer": "\"NA\"",
+            "choices": [
+                "Inf",
+                "Null",
+                "NaN",
+                "NA"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 22,
+            "question": "\"Two variable in the mydata data frame are named Var1 and Var2. How do you tell a bivariate function, such as cor.test, which two variables you want to analyze?\"",
+            "body": "",
+            "answer": "\"`cor.test(mydata$Var1,mydata$Var2)`\"",
+            "choices": [
+                "`cor.test(Var1 ~ Var2)`",
+                "`cor.test(mydata$(Var1,Var2))`",
+                "`cor.test(mydata$Var1,mydata$Var2)`",
+                "`cor.test(Var1,Var2, mydata)`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 23,
+            "question": "\"A data frame named d.pizza is part of the DescTools package. A statement is missing from the following R code and an error is therefore likely to occur. Which statement is missing?\"",
+            "body": "```\nlibrary(DescTools)\ndeliver <- aggregate(count,by=list(area,driver), FUN=mean)\nprint(deliver)\n```",
+            "answer": "\"`attach(d.pizza)`\"",
+            "choices": [
+                "`attach(d.pizza)`",
+                "`summarize(deliver)`",
+                "`mean <- rbind(d.pizza,count)`",
+                "`deliver[!complete.cases(deliver),]`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 24,
+            "question": "\"How to name rows and columns in DataFrames and Matrices F in R?\"",
+            "body": "",
+            "answer": "\"data frame: names() and row.names() matrix: dimnames() (not sure)\"",
+            "choices": [
+                "data frame: names() and rownames() matrix: colnames() and row.names()",
+                "data frame: names() and row.names() matrix: dimnames() (not sure)",
+                "data frame: colnames() and row.names() matrix: names() and rownames()",
+                "data frame: colnames() and rownames() matrix: names() and row.names()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 25,
+            "question": "\"Which set of two statements-followed by the cbind() function-results in a data frame named vbound?\"",
+            "body": "",
+            "answer": "",
+            "choices": [
+                "```r\nv1<-list(1,2,3)\nv2<-list(c(4,5,6))\nvbound<-cbind(v1,v2)\n```",
+                "```r\nv1<-c(1,2,3)\nv2<-list(4,5,6))\nvbound<-cbind(v1,v2)\n```",
+                "```r\nv1<-c(1,2,3)\nv2<-c(4,5,6))\nvbound<-cbind(v1,v2)\n```"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 26,
+            "question": "\"ournames is a character vector. What values does the statement below return to Cpeople?\"",
+            "body": "`Cpeople <- ournames %in% grep(\"^C\", ournames, value=TRUE)`",
+            "answer": "\"TRUE and FALSE values, depending on whether the first character in an ournames record is C\"",
+            "choices": [
+                "records where the first character is a C",
+                "any record with a value containing a C",
+                "TRUE or FALSE, depending on whether any character in ournames is C",
+                "TRUE and FALSE values, depending on whether the first character in an ournames record is C"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 27,
+            "question": "\"What is the value of names(v[4])?\"",
+            "body": "```r\nv <- 1:3\nnames(v) <- c(\"a\", \"b\", \"c\")\nv[4] <- 4\n```",
+            "answer": "\"\"\"\"",
+            "choices": [
+                "\"\"",
+                "d",
+                "NULL",
+                "NA"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 28,
+            "question": "\"Which of the following statements doesn't yield the code output below. Review the following code. What is the result of line 3?\"",
+            "body": "```r\nx <- c(1, 2, 3, 4)\nOutput: [1] 2 3 4\n```",
+            "answer": "\"x[c(-1, 2, 3, 4)]\"",
+            "choices": [
+                "x[c(2, 3, 4)]",
+                "x[-1]",
+                "x[c(-1, 0, 0, 0)]",
+                "x[c(-1, 2, 3, 4)]"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 29,
+            "question": "\"Given DFMerged <- merge(DF1, DF2) and the image below, how manu rows are in DFMerged?\"",
+            "body": "![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png?raw=png)",
+            "answer": "\"0\"",
+            "choices": [
+                "6",
+                "9",
+                "3",
+                "0"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 30,
+            "question": "\"What does R return in response to the final statement?\"",
+            "body": "```r\nx<-5:8\nnames(x)<-letters[5:8]\nx\n```",
+            "answer": "\"e f g h\"",
+            "choices": [
+                "e f g h",
+                "5 6 7 8",
+                "e f g h",
+                "e f g h"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 31,
+            "question": "\"How do you return \"October\" from x in this code?\"",
+            "body": "```r\nx<-as.Date(\"2018-10-01\")\n```",
+            "answer": "\"months(x)\"",
+            "choices": [
+                "attr()",
+                "months(x)",
+                "as.month(x)",
+                "month(x)"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 32,
+            "question": "\"How will R respond to the last line of this code?\"",
+            "body": "```r\nfact<-factor(c(\"Rep\",\"Dem\",\"Dem\",\"Rep\"))\nfact\n[1] Rep Dem Dem Rep\nLevels: Rep Dem\nfact[2]<-\"Ind\"\n```",
+            "answer": "\"invalid factor level, NA generated\"",
+            "choices": [
+                ">",
+                "[,2]Ind",
+                "invalid factor level, NA generated",
+                "Ind"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 33,
+            "question": "\"What does R return?\"",
+            "body": "```r\nStartDate<- as.Date(\"2020/2/28\")\nStopDate<- as.Date(\"2020/3/1\")\nStopDate-StartDate\n```",
+            "answer": "\"time difference of two days\"",
+            "choices": [
+                "\"1970-01-02\"",
+                "time difference of one day",
+                "time difference of two days",
+                "error in x-y: nonnumeric argument to binary operator"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 34,
+            "question": "\"What does the expression `mtrx * mtrx` do ?\"",
+            "body": "```r\n> mtrx <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)\n> newmat <- mtrx * mtrx\n```",
+            "answer": "\"It squares each cell in **mtrx**\"",
+            "choices": [
+                "it transpose **mtrx**",
+                "it premultiplies the current **netwmat** row by the **newmat** column.",
+                "it returns the results of a matrix multiplication",
+                "It squares each cell in **mtrx**",
+                "```r\n> newmat\n[,1] [,2]\n[1,]    9   25\n[2,]   64   16\n\n# The `%*%` operator gives matrix multiplication\n> mtrx %*% mtrx\n[,1] [,2]\n[1,]   49   35\n[2,]   56   56\n```"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 35,
+            "question": "\"Which function in R combines different values into a single object?\"",
+            "body": "",
+            "answer": "\"c()\"",
+            "choices": [
+                "connect()",
+                "concat()",
+                "contact()",
+                "c()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 36,
+            "question": "\"Which file contains settings that R uses for all users of a given installation of R?\"",
+            "body": "",
+            "answer": "\"Rprofile.site\"",
+            "choices": [
+                "Rdefaults.site",
+                "Renviron.site",
+                "Rprofile.site",
+                "Rstatus.site"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 37,
+            "question": "\"If **mdf** is a data frame, which statement is true ?\"",
+            "body": "",
+            "answer": "\"**ncol(mdf)** equals **length(mdf)**.\"",
+            "choices": [
+                "**ncol(mdf)** equals **length(mdf)**.",
+                "The number of rows must equals the number of columns.",
+                "The legnth of any column in **mdf** may differ from any other column in **mdf**",
+                "All columns must have the same data type."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 38,
+            "question": "\"A list can contain a list as an element. **MyList** has five columns, and the third column's item is a list of three items. How do you put all seven values in **MyList** into a single vector?\"",
+            "body": "",
+            "answer": "\"unlist(MyList)\"",
+            "choices": [
+                "vector(MyList, length = 7)",
+                "coerce(MyList, nrows = 1)",
+                "unlist(MyList)",
+                "coerce(MyList, nrows = 7)"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 39,
+            "question": "\"Which strings could be returned by the function ls(path = \"^V\")?\"",
+            "body": "",
+            "answer": "\"VisitPCA, VarX\"",
+            "choices": [
+                "ANOVAData, anovadata",
+                "VisitPCA, VarX",
+                "VisitPCA, varx",
+                "Xvar, Yvar"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 40,
+            "question": "\"StDf is a data frame. Based on this knowledge, what does this statement return?\"",
+            "body": "```r\nStDf[, -1]\n```",
+            "answer": "\"all but the first column of StDf\"",
+            "choices": [
+                "all but the first row and first column of StDf",
+                "all but the final column of StDf",
+                "all but the first column of StDf",
+                "only the first column of StDf"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 41,
+            "question": "\"Which statement enables you to interactively open a single file?\"",
+            "body": "",
+            "answer": "\"file.choose()\"",
+            "choices": [
+                "file.list()",
+                "file.select()",
+                "file.choose()",
+                "file.open()"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 42,
+            "question": "\"How are these data types alike: logical, integer, numeric, and character?\"",
+            "body": "",
+            "answer": "\"Each is a type of atomic vector.\"",
+            "choices": [
+                "Each is a type of data frame.",
+                "Each is a type of atomic vector.",
+                "Each is a type of complex vector.",
+                "Each is a type of raw vector."
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 43,
+            "question": "\"What does the `MyMat[ ,3]` subsetting operation return for this code?\"",
+            "body": "```r\nMyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)\n```",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```\n[ ,3]\n[1, ] 8\n[2, ] 12\n```",
+                ":",
+                "```\n[1] 8 12\n```",
+                ":",
+                "```\n[1] 10 12\n```",
+                ":",
+                "```\n[ ,3]\n[1, ] 10\n[2, ] 12\n```"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 44,
+            "question": "\"What does the function `power.anova.test` return?\"",
+            "body": "",
+            "answer": "\"the probability of not making a Type II error\"",
+            "choices": [
+                "the probability of making a Type I error",
+                "the probability of not making a Type II error",
+                "the probability of making a Type II error",
+                "the probability of not making a Type I error"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 45,
+            "question": "\"Review the statement below. What is the effect of `covariate:factor` on the analysis?\"",
+            "body": "```r\nresult <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)\n```",
+            "answer": "\"It calls for the effect of the covariate **within each level of the factor**.\"",
+            "choices": [
+                "It forces the intercepts of the individual regressions to zero.",
+                "It calls for the effect of the covariate **within each level of the factor**.",
+                "It calls for the effect of each variable from covariate to factor in testcoef.",
+                "It forces the covariate to enter the equation before the factor levels.",
+                "```r\n# Example call to demonstrate.  `Species` is a Factor.  Petal.Length, Petal.Width are numeric.\n# see `help(formula)` for more details on the formula specification.  `:` is \"effect modification\" or \"interaction\"\n\n> summary(lm(Petal.Length ~ Petal.Width + Species + Petal.Width:Species, data = iris))\n...\nPetal.Width:Speciesversicolor   1.3228     0.5552   2.382   0.0185 *\nPetal.Width:Speciesvirginica    0.1008     0.5248   0.192   0.8480\n...\n```"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 46,
+            "question": "\"A variable whose type is numeric can contain which items?\"",
+            "body": "",
+            "answer": "\"real values only\"",
+            "choices": [
+                "integers and real values",
+                "integers, real, and raw values",
+                "real values only",
+                "integers, real, and logical values"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 47,
+            "question": "\"What is the legitimate name of a data class in R?\"",
+            "body": "",
+            "answer": "\"integer\"",
+            "choices": [
+                "property",
+                "integer",
+                "number",
+                "variant"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 48,
+            "question": "\"How do you extract the values above the main diagonal from a square matrix named `Rmat`?\"",
+            "body": "",
+            "answer": "\"`Rmat[upper.tri(Rmat)]`\"",
+            "choices": [
+                "`Rmat[upper.tri(Rmat)]`",
+                "`upper.triangular(Rmat)`",
+                "`upper.tri(Rmat)`",
+                "`upper.diag(Rmat)`"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 49,
+            "question": "\"`x` is a vector of type integer, as shown on line 1 below. What is the type of the result returned by the statement > median(x)?\"",
+            "body": "`x <- c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`",
+            "answer": "\"double\"",
+            "choices": [
+                "numeric",
+                "integer",
+                "single",
+                "double"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 50,
+            "question": "\"A list named `a` is created using the statement below. Which choice returns TRUE?\"",
+            "body": "`a <- list(\"10\", TRUE, 5.6)`",
+            "answer": "\"is.list(a[1])\"",
+            "choices": [
+                "is.list(a[1])",
+                "is.numeric(a[1])",
+                "is.logical(a[1])",
+                "is.character(a[1])"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 51,
+            "question": "\"How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```r\nlate_delivery <- pizza$delivery_min >= 30\nindex_late <- index(late_delivery)\nindex_late\n```",
+                ":",
+                "```r\nlate_delivery <- pizza$delivery_min >= 30\nrownum_late <- rownum(late_delivery)\nrownum_late\n```",
+                ":",
+                "```r\nlate_delivery <- pizza$delivery_min >= 30\nwhich_late <- which(late_delivery)\nwhich_late\n```",
+                ":",
+                "```r\nlate_delivery <- pizza$delivery_min >= 30\nlate <- piza$late_delivery\npizza$late\n```"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 52,
+            "question": "\"Which function returns `[1] TRUE FALSE TRUE`?\"",
+            "body": "`indat <- c(\"Ash Rd\",\"Ash Cir\",\"Ash St\")`",
+            "answer": "\"grepl(\"Rd|Ave|Dr|St\", indat)\"",
+            "choices": [
+                "grepl(\"[Rd|Ave|Dr|St]\", indat)",
+                "grepl(\"Rd|Ave|Dr|St\", indat)",
+                "grepl(\"Rd,Ave,Dr,St\", indat)",
+                "grepl(\"[Rd],[Ave],[Dr],[St]\", indat)"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 53,
+            "question": "\"Which statement returns the fourth row of a data frame named _fish_?\"",
+            "body": "",
+            "answer": "\"fish[4, ]\"",
+            "choices": [
+                "fish[4, ]",
+                "fish( ,4)",
+                "fish(4, )",
+                "fish{4, }"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 54,
+            "question": "\"What is the value of _csum_?\"",
+            "body": "```\na <- c(1.2, 2, 3.5, 4)\nb <- c(1.2, 2.2, 3.5, 4)\ncsum <-sum(a == b)\n```",
+            "answer": "\"3\"",
+            "choices": [
+                "8",
+                "3",
+                "0.2",
+                "21.6"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 55,
+            "question": "\"What is the result of these three lines of code?\"",
+            "body": "```r\nvect1 <- c(1:4)\nvect2 <- c(1:2)\nvect1 * vect2\n```",
+            "answer": "\"[1] 1 4 3 8\"",
+            "choices": [
+                "[1] 1 4 3 8",
+                "ERROR",
+                "[1] 1 2 3 4 1 2",
+                "[1] 1 2 3 4 2 4 6 8"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 56,
+            "question": "\"Which choice returns [1] \"2019-09-28\"?\"",
+            "body": "",
+            "answer": "\"format(as.POSIXct(\"Sep-28-2019 07:54:31 AM UTC\",format='%b-%d-%Y'))\"",
+            "choices": [
+                "format(as.POSIXct(\"Sep-28-2019 07:54:31 AM\",format='%b%d%Y'))",
+                "as.POSIXlt(\"Sep-28-2019 07:54:31 AM\",format='%b-%d-%Y')",
+                "as.POSIXct(\"Sep-28-2019 07:54:31 AM UTC\")",
+                "format(as.POSIXct(\"Sep-28-2019 07:54:31 AM UTC\",format='%b-%d-%Y'))"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 57,
+            "question": "\"The variable potus is a character vector, as shown in line 1 below. Wich statement returns the results shown?\"",
+            "body": "```r\n1 potus <- c(\"GHW Bush\", \"Clinton\", \"GW Bush\", \"Obama\")\n\nResults: [1] \"GHW BUsh\" \"Clinton\" \"Obama\"\n```",
+            "answer": "\"potus[-3]\"",
+            "choices": [
+                "potus[-\"GW Bush\"]",
+                "potus[1:2 4]",
+                "potus[-3]",
+                "potus[1,2,4]"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 58,
+            "question": "\"A data frame contains two factor -fact1 and fact2- and a numerical outcome variable. Which statement returns results that do NOT include an interaction term?\"",
+            "body": "",
+            "answer": "\"anova(lm(outcome ~ fact1 : fact2))\"",
+            "choices": [
+                "anova(lm(outcome ~ fact1 : fact2))",
+                "anova(lm(outcome ~ fact1 \\* fact2))",
+                "anova(lm(outcome ~ fact1 + fact2))",
+                "anova(lm(outcome ~ fact1 + fact2 + fact1 : fact2))"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 59,
+            "question": "\"Review line 1 below. What does the statement on line 2 return?\"",
+            "body": "```r\n1 myvect <- c(-2,-1,0)\n2 as.logical(myvect)\n```",
+            "answer": "\"[1]TRUE TRUE FALSE\"",
+            "choices": [
+                "[1]-2 -1 0",
+                "[1]TRUE TRUE FALSE",
+                "[1]FALSE FALSE TRUE",
+                "[1]NA NA NA"
+            ]
+        },
+        {
+            "topic": "R (Programming Language)",
+            "id": 60,
+            "question": "\"A list named _a_ is created using the statement below. Which choice returns TRUE?\"",
+            "body": "```\na <- list(\"10\", TRUE, 5.6)\n```",
+            "answer": "\"is.list(a[1])\"",
+            "choices": [
+                "is.list(a[1])",
+                "is.numeric(a[1])",
+                "is.logical(a[1])",
+                "is.character(a[1])"
+            ]
+        }
+    ]
+}

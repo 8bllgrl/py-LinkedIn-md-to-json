@@ -1,0 +1,937 @@
+{
+    "questions": [
+        {
+            "topic": ".NET Framework",
+            "id": 1,
+            "question": "\"What is the difference between a stack and queue?\"",
+            "body": "",
+            "answer": "\"Stacks process value types by a top-down hierarchy - last in, first-out (LIFO). Queues follow this principle and insert items from the lower end while deleting ones from the top - first in, first-out (FIFO)\"",
+            "choices": [
+                "Queues process value types by a top-down hierarchy - first in, first out (FIFO). Stacks follow this principle and insert items from the lower end while deleting ones from the top - last in, first-out (LIFO).",
+                "Queues process value types by a top-down hierarchy-last in, first-out (LIFO). Stacks follow this principle and insert items from the lower end while deleting ones from the top-first in, first-out (FIFO).",
+                "Stacks process value types by a top-down hierarchy - last in, first-out (LIFO). Queues follow this principle and insert items from the lower end while deleting ones from the top - first in, first-out (FIFO)",
+                "Stacks process value types by a top-down hierarchy-first in, first out (FIFO). Queues follow this principle and insert items from the lower end while deleting ones from the top-last in, first-out (LIFO)."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 2,
+            "question": "\"Which group contains all official types of JIT compilations?\"",
+            "body": "",
+            "answer": "\"Pre-JIT, Econo-JIT, Normal-JIT\"",
+            "choices": [
+                "Pre-JIT, Quick-JIT, Coll-JIT",
+                "Before-JIT, Quick-JIT, Cool-JIT",
+                "Pre-JIT, Quick-JIT, Normal-JIT",
+                "Pre-JIT, Econo-JIT, Normal-JIT"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 3,
+            "question": "\"What is Kestrel?\"",
+            "body": "",
+            "answer": "\"a cross-platform web server ASP.NET Core that is included by default in ASP.NET Core project templates\\*\\*\"",
+            "choices": [
+                "an iOS web server initially that was later designed to work with .NET Core",
+                "a cross-platform web server ASP.NET Core that is included by default in ASP.NET Core project templates\\*\\*",
+                "a cross-platform, open-source web server that starts up web APIs",
+                "a free and open-source cross-platform web server software that can communicate with IIS"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 4,
+            "question": "\"When would you use asynchronous actions?\"",
+            "body": "",
+            "answer": "\"to avoid blocking the request thread while waits for an I/O operation\"",
+            "choices": [
+                "to release the quest thread of a I/O operation",
+                "to capture the request thread of a I/O operation",
+                "to avoid blocking the request thread while waits for an I/O operation",
+                "to block the request thread if it waits for an I/O operation"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 5,
+            "question": "\"What is CoreCLR?\"",
+            "body": "",
+            "answer": "\"CoreCLR is the .NET execution engine in .NET Core that performs functions like garbage collection and compilation to machine code.\"",
+            "choices": [
+                "CoreCLR is a component that allows the highest degree of control when coding; you can Abort(), Suspend() or Resume().",
+                "CoreCLR is the .NET execution engine that runs the source code. Special programs called compilers must rewrite it into MSIL.",
+                "CoreCLR is the .NET execution engine the runs the source code. Special programs called compilers must rewrite it into IL.",
+                "CoreCLR is the .NET execution engine in .NET Core that performs functions like garbage collection and compilation to machine code."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 6,
+            "question": "\"When you define an abstract method, how do you use it in a derived class?\"",
+            "body": "",
+            "answer": "\"In your derived class, override the method.\"",
+            "choices": [
+                "Abstract methods cannot be used in derived classes.",
+                "In your derived class, overload the method.",
+                "In your derived class, override the method.",
+                "In your derived class, declare the method as virtual."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 7,
+            "question": "\"Which code do you use if you want to trigger a garbage collection in .NET?\"",
+            "body": "",
+            "answer": "\"`System.GC.Collect();`\"",
+            "choices": [
+                "`Garbage.CleanUp();`",
+                "`System.GC.Clear();`",
+                "`System.GC.Collect();`",
+                "`Garbage.Collect();`"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 8,
+            "question": "\"You want to include language elements in a program. Which design pattern best fits this objective?\"",
+            "body": "",
+            "answer": "\"Interpreter <= correct\"",
+            "choices": [
+                "Interpreter <= correct",
+                "Command",
+                "Bridge",
+                "Decorator"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 9,
+            "question": "\"What makes a strong-named assembly?\"",
+            "body": "",
+            "answer": "\"a signed assembly\"",
+            "choices": [
+                "an assembly with the version specified",
+                "a signed assembly",
+                "an assembly with culture information",
+                "an assembly with the name marked as important"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 10,
+            "question": "\"What happens when you concatenate two strings?\"",
+            "body": "",
+            "answer": "\"A third string object is created containing the concatenated strings.\"",
+            "choices": [
+                "You cannot concatenate strings in .NET.",
+                "The second string object is modified so it contains the concatenated strings.",
+                "A third string object is created containing the concatenated strings.",
+                "The first string object is modified so it contains the concatenated strings."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 11,
+            "question": "\"What is a delegate?\"",
+            "body": "",
+            "answer": "\"A delegate in .NET is similar to a function pointer in C or C++. Using a delegate allows the programmer to encapsulate a reference to a method inside a delegate object.\"",
+            "choices": [
+                "A delegate is an object or collection initializer that adds flexibility, readability and maintainability in C#.",
+                "A delegate in .NET is similar to a function pointer in C or C++. Using a delegate allows the programmer to encapsulate a reference to a method inside a delegate object.",
+                "A delegate is a collection initializer that adds flexibility, readability and maintainability in .NET.",
+                "A delegate is an extension method. Using a delegate allows the programmer to add flexibility, readability and maintainability in .NET."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 12,
+            "question": "\"Which is a set of features that extends the query capabilities of the .NET language syntax by adding sets of new standard query operators that allow data manipulation, regardless of the data source?\"",
+            "body": "",
+            "answer": "\"LINQ\"",
+            "choices": [
+                "XML",
+                "C#",
+                "LINQ",
+                "XAML"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 13,
+            "question": "\"What is the single responsibility principle?\"",
+            "body": "",
+            "answer": "\"A class should have only a single responsibility - that is, only changes to one part of the software's specification should be able to affect the specification of the class.\"",
+            "choices": [
+                "Software entities should be open for extension, but closed for modification.",
+                "Entities must depend on abstractions, not on concrete implementations.",
+                "Objects in a program should be repleaceble with instances of their subtypes without altering the correctness of that programm.",
+                "A class should have only a single responsibility - that is, only changes to one part of the software's specification should be able to affect the specification of the class."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 14,
+            "question": "\"When should a developer use the .NET Standard class library project type?\"",
+            "body": "",
+            "answer": "\"when you want to increase the number of apps that are compatible with your library, and decrease the .NET API surface area your library can access\"",
+            "choices": [
+                "when you want to increase the .NET API surface area your library can access, and allow only .NET Core apps to be compatible with your library",
+                "when you want to increase the number of apps that are compatible with your library, and decrease the .NET API surface area your library can access",
+                "when you want to decrease speed but have more features",
+                "when you want to increase compilation speed and have fewer features"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 15,
+            "question": "\"What is the difference between a SDK (software development kit) and runtime in .NET Core?\"",
+            "body": "",
+            "answer": "\"The runtime is the virtual machine that hosts and runs the application and abstracts all the interaction with the operating system; the SDK usually includes documentation and other help files.\"",
+            "choices": [
+                "The SDK is the \"virtual machine\" that hosts and runs the application and abstracts all the interaction with the operating system; the runtime usually includes documentation and other help files.",
+                "The runtime is the virtual machine that hosts and runs the application and abstracts all the interaction with the operating system; the SDK usually includes documentation and other help files.",
+                "The runtime compiles code along with the CLR; the SDK usually includes documentation and other help files.",
+                "The SDK compiles code along with the CLR; the runtime usually includes documentation and other help files."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 16,
+            "question": "\"What is the Common Type System (CTS)?\"",
+            "body": "",
+            "answer": "\"the component of CLI in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages\"",
+            "choices": [
+                "the component of CLR in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages",
+                "the component of CLI in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages",
+                "the component of CLR that allows you to map the content of a file to the logical address of an application",
+                "the component of CLR that enables you to run multiple versions of an application or component and CLR on the same computer at the same time"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 17,
+            "question": "\"Assuming y is a value type, which is an example of boxing?\"",
+            "body": "",
+            "answer": "\"object thisObject = y;\"",
+            "choices": [
+                "y = (int)thisObject;",
+                "int y = 3;",
+                "y = (int)thisObject=;3;",
+                "object thisObject = y;"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 18,
+            "question": "\"What is an abstract class in .NET?\"",
+            "body": "",
+            "answer": "\"An abstract class provides a partial implementation for functionality and some abstract or virtual members that must be implemented by the inheriting entities. It can declare fields too.\"",
+            "choices": [
+                "An abstract class provides a partial implementation for functionality and some abstract or virtual members that must be implemented by the inheriting entities. It can declare fields too.",
+                "An abstract class allows developers to create new classes that reuse, extend, and modify the behavior defined in other classes.",
+                "An abstract class is responsible for keeping track of what is actually executing and where each executing thread is.",
+                "An abstract class declares a contract or behavior that implementing classes require. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 19,
+            "question": "\"What is the namespace for caching information in .NET?\"",
+            "body": "",
+            "answer": "\"System.Runtime.Caching;\"",
+            "choices": [
+                "System.Data.Caching;",
+                "All.System.Caching;",
+                "System.Runtime.Caching;",
+                "System.Compiler.Caching;"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 20,
+            "question": "\"What is an interface in .NET?\"",
+            "body": "",
+            "answer": "\"An interface declares a contract or behavior that implementing classes require. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented.\"",
+            "choices": [
+                "An interface provides a partial implementation for functionality and some abstract or virtual members that must be implemented by the inheriting entities. It can declare fields too.",
+                "An interface is responsible for keeping track of what is actually executing and where each executing thread is.",
+                "An interface allows developers to create new classes that reuse, extend, and modify the behavior defined in other classes.",
+                "An interface declares a contract or behavior that implementing classes require. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 21,
+            "question": "\"What does CAS stand for and what does it do?\"",
+            "body": "",
+            "answer": "\"CAS stands for Code Access Security and it enables users to restrict, on a very granular level, what managed code can do according to a level of trust.\"",
+            "choices": [
+                "CAS stands for Code Application Secrets and it enables users to restrict, on a very granular level, what hidden code can do according to a level of trust for an application.",
+                "CAS stands for Code Access Secrets and it enables users to restrict, on a very granular level, what hidden code can do according to a level of trust.",
+                "CAS stands for Cognitive Access Security and it enables users to restrict security logic manipulation.",
+                "CAS stands for Code Access Security and it enables users to restrict, on a very granular level, what managed code can do according to a level of trust."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 22,
+            "question": "\"Which is NOT true about lambda statements?\"",
+            "body": "",
+            "answer": "\"A statement lambda cannot return a value.\"",
+            "choices": [
+                "A statement lambda cannot return a value.",
+                "If a statement lambda has a return value, it has to use a return statement.",
+                "A statement lambda requires using curly braces.",
+                "A statement lambda can have more than one statement."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 23,
+            "question": "\"Which is NOT true about a read-only variable?\"",
+            "body": "",
+            "answer": "\"It can be initialized at declaration only.\"",
+            "choices": [
+                "At runtime, its value is evaluated.",
+                "It can be either static or an instance member.",
+                "It can be initialized at declaration only.",
+                "It can be initialized in either the constructor or the declaration."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 24,
+            "question": "\"What is the difference between System.String and string?\"",
+            "body": "",
+            "answer": "\"There is none\u2014string is an alias for System. String.\"",
+            "choices": [
+                "string is used for fied-size strings in C#, while System.String is used for all the strings.",
+                "There is no such class as System.String.",
+                "There is none\u2014string is an alias for System. String.",
+                "System.String is a VB.NET data type, while string is a C# type."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 25,
+            "question": "\"When break is used inside two nested for loops, does control come out of the inner for loop or the outer for loop?\"",
+            "body": "",
+            "answer": "\"It breaks from only the inner loop.\"",
+            "choices": [
+                "It breaks from only the outer loop.",
+                "It breaks from all loops.",
+                "It breaks from only the inner loop.",
+                "It breaks from the outer loop after the second iteration."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 26,
+            "question": "\"You want to separate object construction from its representation. Which design pattern best fits this objective?\"",
+            "body": "",
+            "answer": "\"Builder\"",
+            "choices": [
+                "Adapter",
+                "Bridge",
+                "Singleton",
+                "Builder"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 27,
+            "question": "\"You want to encapsulate a command request as an object. Which design pattern best fits this objective?\"",
+            "body": "",
+            "answer": "\"Command\"",
+            "choices": [
+                "Command",
+                "Iterator",
+                "Facade",
+                "Observer"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 28,
+            "question": "\"Why would Pre-JIT be used by the .NET Framework?\"",
+            "body": "",
+            "answer": "\"to compile complete source code into native code in a single compilation cycle during deployment of the application\"",
+            "choices": [
+                "to compile only the methods that are called at runtime and store those methods in cache after execution",
+                "to compile complete source code into native code in a single compilation cycle during deployment of the application",
+                "to compile only the methods that are called at runtime and then store them in cache for one minute",
+                "to compile only the methods that are called at runtime and remove them from memory after execution"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 29,
+            "question": "\"What do code contracts do?\"",
+            "body": "",
+            "answer": "\"Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code.\"",
+            "choices": [
+                "Code contracts are data structures that can operate on demand per requirements.",
+                "Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code.",
+                "Code contracts contain definitions for a group of related functionalities that a class or a struct can implement.",
+                "Code contracts contain data structures for a group of related functionalities that a class or a struct can implement."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 30,
+            "question": "\"You must connect an app to an online identity provider using OAuth. For authentication, the app uses WebAuthenticationBroker object. You need to make sure the app registers with the provider. Which action do you take?\"",
+            "body": "",
+            "answer": "\"Invoke the AuthenticateAsync method and construct an HTTPS request URI.\"",
+            "choices": [
+                "Construct an HTTP request URI and an HTTPS request URI.",
+                "Invoke the GetCurrentApplicationCallbackUri method and construct an HTTPS request URI.",
+                "Invoke the AuthenticateAsync and GetCurrentApplicationCallbackUri methods.",
+                "Invoke the AuthenticateAsync method and construct an HTTPS request URI."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 31,
+            "question": "\"You want to create a class of which only a single instance can exist. Which design pattern best fits this objective?\"",
+            "body": "",
+            "answer": "\"Singleton\"",
+            "choices": [
+                "Adapter",
+                "Singleton",
+                "Bridge",
+                "Decorator"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 32,
+            "question": "\"What is the dependency inversion principle?\"",
+            "body": "",
+            "answer": "\"Entities must depend on abstractions, not on concrete implementations.\"",
+            "choices": [
+                "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.",
+                "A class should have only a single responsibility\u2014that is, only changes to one part of the software's specification should be able to affect the specification of the class.",
+                "Software entities should be open for extension, but closed for modification.",
+                "Entities must depend on abstractions, not on concrete implementations."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 33,
+            "question": "\"What is a namespace?\"",
+            "body": "",
+            "answer": "\"a group of classes, structures, interfaces, enumerations, and delegates\u2014organized in a logical hierarchy by function that enable you to access the core functionality you need in your applications\"",
+            "choices": [
+                "a group of generic collections\u2014in a logical hierarchy by function\u2014that enable you to access the core functionality you need in your applications",
+                "a group of methods\u2014in a logical hierarchy by class\u2014that enable you to access the core functionality you need in .NET",
+                "a group of assemblies\u2014in a logical hierarchy by function\u2014that enable you to access the core functionality you need in your applications",
+                "a group of classes, structures, interfaces, enumerations, and delegates\u2014organized in a logical hierarchy by function that enable you to access the core functionality you need in your applications"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 34,
+            "question": "\"Which of the following selects an anonymous type?\"",
+            "body": "",
+            "answer": "\"select new { a.Country, a.Region }\"",
+            "choices": [
+                "select new { a.Country, a.Region }",
+                "select a",
+                "select a.Country, a.Region",
+                "select { a.Country, a.Region }"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 35,
+            "question": "\"Which is NOT true about a constant variable?\"",
+            "body": "",
+            "answer": "\"At runtime, its value is evaluated.\"",
+            "choices": [
+                "At compile time, the value is evaluated.",
+                "Only at declaration can it be initialized.",
+                "At runtime, its value is evaluated.",
+                "It cannot be static."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 36,
+            "question": "\"What is the purpose of CLR?\"",
+            "body": "",
+            "answer": "\"CLR performs various operations such as memory management, security checks, assembly loading, and thread management. It also provides a secure execution environment for applications.\"",
+            "choices": [
+                "CLR performs various operations such as security checks, spell checks, assembly loading, and thread management. It provides a secure execution environment for the internet.",
+                "CLR sets the rules developers must use for the components that are interlanguage compatible. CLR is reusable across all the .NET-compliant languages.",
+                "CLR is a compiler that converts Intermediate Language to a native code.",
+                "CLR performs various operations such as memory management, security checks, assembly loading, and thread management. It also provides a secure execution environment for applications."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 37,
+            "question": "\"What is CIL?\"",
+            "body": "",
+            "answer": "\"Formerly known as MSIL, CIL is a programming language that NET developers use. It represents the lowest possible level for a language that humans can still read.\"",
+            "choices": [
+                "Formerly known as MSIL, CIL is a programming language that NET developers use. It represents the lowest possible level for a language that humans can still read.",
+                "CIL is an object-oriented programming language that is a partially compiled code that .NET developers will then compile to native machine code.",
+                "CIL is used to convert a value type to an object type.",
+                "CIL is a compiled code library that Microsoft developed as an open specification. Developers use it for security, versioning, and deployment purposes."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 38,
+            "question": "\"**\\_** pattern works as a bridge between two incompatible interfaces? // wording in question is maybe changed?\"",
+            "body": "",
+            "answer": "\"Adapter\"",
+            "choices": [
+                "Adapter",
+                "Bridge",
+                "Singleton",
+                "Builder"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 39,
+            "question": "\"Why would you use ahead-of-time (AOT) compilation?\"",
+            "body": "",
+            "answer": "\"You can deliver a faster startup time, especially in big applications where much code executes on startup.\"",
+            "choices": [
+                "You can deliver a faster startup time, especially in big applications where much code executes on startup.",
+                "You have a slow processor.",
+                "You have little memory and disk space",
+                "The JIT compiler does not have to do a lot of disk I/O actions, which are quite expensive."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 40,
+            "question": "\"Which statement describes a Dispose method?\"",
+            "body": "",
+            "answer": "\"It belongs to the IDisposable interface and is used to free resources, such as network connection and files.\"",
+            "choices": [
+                "It defines an execution environment for program code and manages the CLR",
+                "It belongs to the IDisposable interface and is used to free resources, such as network connection and files.",
+                "It is partially method-compiled code library for use in deployment, versioning, and security.",
+                "It is used for encapsulation of collections tied to functions of a class and object."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 41,
+            "question": "\"What is a thread?\"",
+            "body": "",
+            "answer": "\"the basic unit to which an operating system allocate processor time\"",
+            "choices": [
+                "A single operation that does not return a value and that usually executes asynchronously",
+                "the basic unit to which an operating system allocate processor time",
+                "a series of related tasks or methods that together turn inputs into outputs",
+                "a program that is running on your computer"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 42,
+            "question": "\"You want to add responsibilities to object dynamically. Which design pattern best fit this objective?\"",
+            "body": "",
+            "answer": "\"Decorator\"",
+            "choices": [
+                "Decorator",
+                "Bridge",
+                "Singleton",
+                "Facade"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 43,
+            "question": "\"Which choice creates an 8-tuple containing prime numbers that are less than 20?\"",
+            "body": "",
+            "answer": "\"`var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);`\"",
+            "choices": [
+                "`var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);`",
+                "`var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 21);`",
+                "`var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 20);`",
+                "`var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 19);`"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 44,
+            "question": "\"How can you recieve form data without a model binder in a controller action?\"",
+            "body": "> Note: The differences are `IFormResult`/`IActionResult` and `Forms`/`Form`",
+            "answer": "",
+            "choices": [
+                "```c#\npublic IFormResult ReceivedDataByRequest()\n{\nstring theName = Request.Forms[\"theName\"];\nreturn View();\n}\n```",
+                "```c#\npublic IActionResult ReceivedDataByRequest()\n{\nstring theName = Request.Forms[\"theName\"];\nreturn View();\n}\n```",
+                "```c#\npublic IFormResult ReceivedDataByRequest()\n{\nstring theName = Request.Form[\"theName\"];\nreturn View();\n}\n```",
+                "```c#\npublic IActionResult ReceivedDataByRequest()\n{\nstring theName = Request.Form[\"theName\"];\nreturn View();\n}\n```"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 45,
+            "question": "\"Where should you store connection string information?\"",
+            "body": "",
+            "answer": "\"in configuration files\"",
+            "choices": [
+                "in any file within the namespace of the program",
+                "in the view",
+                "in configuration files",
+                "in the database"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 46,
+            "question": "\"Why use design patterns?\"",
+            "body": "",
+            "answer": "\"design patterns help you solve issues related to sofware development using a proven solution, and make communication between developers more efficient\"",
+            "choices": [
+                "design patterns make the code more efficient with memory usage",
+                "design patterns minimize the number of code lines when creating complex applications",
+                "design patterns tend to be more secure and prevent code from being hacked",
+                "design patterns help you solve issues related to sofware development using a proven solution, and make communication between developers more efficient"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 47,
+            "question": "\"What is a task?\"",
+            "body": "",
+            "answer": "\"a single operation that does not return a value and that usually executes asynchronously\"",
+            "choices": [
+                "the basic unit to which an operating system allocates processor time",
+                "a program that is running on your compiler",
+                "a single operation that does not return a value and that usually executes asynchronously",
+                "a series of related methods that together turn inputs into outputs"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 48,
+            "question": "\"Which choice is NOT a component of .NET Framework?\"",
+            "body": "",
+            "answer": "\".NET framework class library\"",
+            "choices": [
+                "common language JIT",
+                ".NET framework class library",
+                "common language runtime",
+                "side-by-side execution"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 49,
+            "question": "\"Which statement about the `this` keyword is _not_ true?\"",
+            "body": "",
+            "answer": "\"A constructor can use a base statement and a `this` statement if the base statement comes first.\"",
+            "choices": [
+                "The `this` keyword lets a constructor call a different constructor in the same class.",
+                "A constructor can use a base statement and a `this` statement if the base statement comes first.",
+                "A constructor can use one `this` statement at most.",
+                "If a constructor uses a `this` statement, its code is executed after the invoked constructor is executed."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 50,
+            "question": "\"When should you use the .NET Core class library project type?\"",
+            "body": "",
+            "answer": "\"when you want to increase the .NET API surface area your library can access, and allow only .NET Core apps to be compatible with your library\"",
+            "choices": [
+                "when you want to increase the .NET API surface area your library can access, and allow only .NET Core apps to be compatible with your library",
+                "when you want to increase the number of apps that are compatible with your library, and decrease the .NET API surface area your library can access",
+                "when you want to decrease speed but have more features",
+                "when you want to increase compilation speed and have fewer features"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 51,
+            "question": "\"Why would the .NET Framework use Normal-JIT (Just-in-Time)?\"",
+            "body": "",
+            "answer": "\"to compile only methods called at runtime \u2013 which are compiled the first time the methods are called and then stored in a cache to be used for execution when the same methods are called again\"",
+            "choices": [
+                "to compile complete source code into native code in a single compilation cycle during deployment of the application",
+                "to compile only the methods that are called at runtime and remove them from memory after execution",
+                "to compile only the methods that are called at runtime and them store them in cache for one minute",
+                "to compile only methods called at runtime \u2013 which are compiled the first time the methods are called and then stored in a cache to be used for execution when the same methods are called again"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 52,
+            "question": "\"What is .NET?\"",
+            "body": "",
+            "answer": "\".NET is a free, cross-platform, open-source developer platform for building many different types of applications with multiple languages, editors, and libraries for web, mobile, desktop, gaming, and IoT.\"",
+            "choices": [
+                ".NET is a general-purpose programming language. The language has expanded significantly over time, and now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.",
+                ".NET is a virtual machine that enables a computer to run programs written in several languages and compile programs to bytecode.",
+                ".NET is an interpreted, high-level, general-purpose programming language. Its language constructs an object-oriented approach aimed at helping programmers write clear, logical code for small and large-scale projects.",
+                ".NET is a free, cross-platform, open-source developer platform for building many different types of applications with multiple languages, editors, and libraries for web, mobile, desktop, gaming, and IoT."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 53,
+            "question": "\"The ASP.NET Core Module is a native IIS module that plugs into the IIS pipeline to either **\\_**.\"",
+            "body": "",
+            "answer": "\"host an ASP.NET Code app inside of the IIS workes process, called the in-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kestrel server, called the out-of-process hosting model\"",
+            "choices": [
+                "host an ASP.NET Code app inside of the IIS worker process, called the out-of-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kesrel server, called the in-process hosting model",
+                "create IIS code the server needs in a file with the extension required, or run the IIS server in a mode compatible for ASP.NET Core",
+                "package up your C# application and C# packages into .NET modules, or specify which of its packages should be visible to other .NET modules",
+                "host an ASP.NET Code app inside of the IIS workes process, called the in-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kestrel server, called the out-of-process hosting model"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 54,
+            "question": "\"In the code below, what is the difference between RenderPartial and RenderAction?\"",
+            "body": "```cs\n@{\n  Html.RenderAction(\"Add\");\n  Html.RenderPartial(\"Add\");\n}\n```",
+            "answer": "\"RenderAction will call an action method of the current controller and render a result inline. RenderPartial will render the specified view inline without calling any action method.\"",
+            "choices": [
+                "RenderPartial will call an action method of the current controller and render a result inline. RenderAction will render the specified view inline without calling any action method.",
+                "RenderAction will call an action method of the current model and render a result inline. RenderPartial will render the specified view inline without calling any action method.",
+                "RenderAction will call an action method of the current controller and render a result inline. RenderPartial will render the specified view inline without calling any action method.",
+                "RenderPartial will call an action method of the current model and render a result inline. RenderAction will render the specified view inline without calling any action method."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 55,
+            "question": "\"What is the Liskov substitution principle?\"",
+            "body": "",
+            "answer": "\"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.\"",
+            "choices": [
+                "Many client-specific interfaces are better than one general-purpose interface.",
+                "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.",
+                "A class should have only a single responsibility \u2014 that is, only changes to one part of the software's specification should be able to affect the specification of the class.",
+                "Software entities should be open for extension, but closed for modification."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 56,
+            "question": "\"What method do you use to explicitly kill a user's session?\"",
+            "body": "",
+            "answer": "\"`Session.Abandon()`\"",
+            "choices": [
+                "`Session.Timeout()`",
+                "`Session.Abandon()`",
+                "`Session.KillAll()`",
+                "`Session.Remove()`"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 57,
+            "question": "\"Which choice best describes the difference between globalization and localization?\"",
+            "body": "",
+            "answer": "\"Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. Localization is the process of translating an application's resources into versions for each culture that the application will support.\"",
+            "choices": [
+                "Localization enables the .NET runtime to provide services to managed code so language compilers can emit metadata and references in your code. Globalization reverses this process.",
+                "Globalization enables the .NET runtime to provide services to managed code so language compilers can emit metadata and references in your code. Localization reverses this process.",
+                "Localization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. Globalization is the process of translating an application's resources into versions for each culture that the application will support.",
+                "Globalization involves designing and developing a world-ready app that supports localized interfaces and regional data for users in multiple cultures. Localization is the process of translating an application's resources into versions for each culture that the application will support."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 58,
+            "question": "\"What does CIL stand for?\"",
+            "body": "",
+            "answer": "\"Common Intermediate Language\"",
+            "choices": [
+                "C# Interpreted Language",
+                "Common Intermediate Language",
+                "Commonly Interpreted Language",
+                "C# Intermediate Language"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 59,
+            "question": "\"Which choice best describes the difference between a namespace and an assembly?\"",
+            "body": "",
+            "answer": "\"Namespace is the logical naming decided at design time by the developer. Scope for a particular type is defined at run time using an assembly.\"",
+            "choices": [
+                "Namespace contains code to form MSIL (Microsoft Intermediate Language). An assembly contains a set of unique names.",
+                "Namespace is the logical naming decided at design time by the developer. Scope for a particular type is defined at run time using an assembly.",
+                "A namespace has logical units that are physically grouped together. An assembly does not have any classification.",
+                "A namespace has logical units that are physically grouped together for assemblies. Assembly classes are available in your program and will be logically grouped."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 60,
+            "question": "\"What is a tuple?\"",
+            "body": "",
+            "answer": "\"A data structure that has a specific number and sequence of elements\"",
+            "choices": [
+                "A data structure that has a specific number and sequence of elements",
+                "An object to store multiple variables of the same type in an array data structure",
+                "A group of classes designed specifically for grouping together objects and performing tasks on them",
+                "An array whose elements are jagged"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 61,
+            "question": "\"What does IL stand for?\"",
+            "body": "",
+            "answer": "\"Intermediate Language\"",
+            "choices": [
+                "Intermediate Language",
+                "Intelligent Language",
+                "Intelligent Linq",
+                "Interpreted Language"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 62,
+            "question": "\"You want to create an instance of several families of classes. Which design pattern best fits this objective?\"",
+            "body": "",
+            "answer": "\"Abstract Factory\"",
+            "choices": [
+                "Decorator",
+                "Singleton",
+                "Abstract Factory",
+                "Bridge"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 63,
+            "question": "\"Which statement about a read-only variable is _not_ true?\"",
+            "body": "",
+            "answer": "\"It can be initialized at declaration only.\"",
+            "choices": [
+                "It can be either static or an instance memeber.",
+                "At run time, its value is evaluated.",
+                "It can be initialized in either the constructor or the declaration.",
+                "It can be initialized at declaration only."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 64,
+            "question": "\"What is the interface segregation principle?\"",
+            "body": "",
+            "answer": "\"Many client-specific interfaces are better than one general-purpose interface.\"",
+            "choices": [
+                "Many client-specific interfaces are better than one general-purpose interface.",
+                "Software entities should be open for extension, but closed for modification.",
+                "A class should have only a single responsibility - that is, only changes to one part of the software's specification should be able to affect the specification of the class.",
+                "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 65,
+            "question": "\"Why would the .NET Framework use Econo-JIT (Just-inTime)?\"",
+            "body": "",
+            "answer": "\"to compile only the methods that are called at run time and remove them from memory after execution\"",
+            "choices": [
+                "to compile only the methods that are called at run time and then store them in cache for one minute",
+                "to compile only methods called at run time - which are compiled the first time the methods are called and then stored in cache to be used for execution when the same methods are called again",
+                "to compile complete source code into native code in a single compilation cycle during deployment of the application",
+                "to compile only the methods that are called at run time and remove them from memory after execution"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 66,
+            "question": "\"What is the difference between a heap and a stack?\"",
+            "body": "",
+            "answer": "\"The stack contains stored value types; the heap contains stored reference types.\"",
+            "choices": [
+                "The stack contains stored value types; the heap contains stored reference types.",
+                "The heap is stored value types; the stack is stored reference types.",
+                "The heap is stored object types; the stack is stored class types.",
+                "The stack is stored object types; the heap is stored class types."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 67,
+            "question": "\"What is open closed principle?\"",
+            "body": "",
+            "answer": "\"software entities should be open for extension, but closed for modification.\"",
+            "choices": [
+                "software entities should be open for extension, but closed for modification."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 68,
+            "question": "\"How do you make sure that the garbage collector is done running when you call `GC.Collect()`?\"",
+            "body": "",
+            "answer": "\"by calling [`GC.WaitForFullGCComplete()`](https://docs.microsoft.com/en-us/dotnet/api/system.gc.waitforfullgccomplete)\"",
+            "choices": [
+                "There is no way to find this out.",
+                "You cannot. [`GC.Collect()`](https://docs.microsoft.com/en-us/dotnet/api/system.gc.collect) is a blocking method, and will return only once the garbage collector is done running.",
+                "by calling [`GC.WaitForFullGCComplete()`](https://docs.microsoft.com/en-us/dotnet/api/system.gc.waitforfullgccomplete)",
+                "by calling [`GC.WaitForPendingFinalizers()`](https://docs.microsoft.com/en-us/dotnet/api/system.gc.waitforpendingfinalizers)"
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 69,
+            "question": "\"What does JIT do in .Net?\"",
+            "body": "",
+            "answer": "\"JIT translates the IL code to an assembly code and uses the CPU architecture of the target machine to execute a .NET application.\"",
+            "choices": [
+                "JIT is used for deployment, versioning, and security.",
+                "JIT translates the IL code to an assembly code and uses the CPU architecture of the target machine to execute a .NET application.",
+                "JIT compiles to C# code using .NET environment properties.",
+                "JIT is used for deployment, versioning, and security, and forces the computer's processor to execute the native machine code."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 70,
+            "question": "\"Which statement about a constant variable is not `true`?\"",
+            "body": "",
+            "answer": "\"At run time, its value is evaluated.\"",
+            "choices": [
+                "At run time, its value is evaluated.",
+                "It cannot be static.",
+                "Only at declaration can it be initialized.",
+                "At compile time, the value is evaluated."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 71,
+            "question": "\"What is the difference between managed and unmanaged code?\"",
+            "body": "",
+            "answer": "\"Managed code is code that is handled by the common language runtime (CLR). Unmanaged code is any code that does not depend on CLR for execution.\"",
+            "choices": [
+                "Managed code is code that is handled by the common language runtime (CLR). Unmanaged code is any code that does not depend on CLR for execution.",
+                "Managed code is any code that does not depend on the common language runtime (CLR) for execution. Unmanaged code is code that is handled by the CLR.",
+                "Managed code is code that is handled by Microsoft Intermediate Language (MSIL). Unmanaged code is any code that does not depend on MSIL for execution.",
+                "Managed code is any code that does not depend on Microsoft Intermediate Language (MSIL) for execution. Unmanaged code is code that is handled by MSIL."
+            ]
+        },
+        {
+            "topic": ".NET Framework",
+            "id": 72,
+            "question": "\"Why use the Configure method of startup class?\"",
+            "body": "",
+            "answer": "\"It can ensure that middleware runs before or after middleware added by libraries at the start or end of the app's request processing pipeline.\"",
+            "choices": [
+                "It can be used to configure the application services.",
+                "It can ensure that middleware runs before or after middleware added by libraries at the start or end of the app's request processing pipeline.",
+                "It can specify how the app respondes to HTTP requests.",
+                "It can specify how the app makes requests to HTTP."
+            ]
+        }
+    ]
+}

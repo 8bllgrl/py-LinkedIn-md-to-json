@@ -1,0 +1,1120 @@
+{
+    "questions": [
+        {
+            "topic": "C (Programming Language)",
+            "id": 1,
+            "question": "\"Which Code sample will eventually cause the computer to run out of memory?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nwhile(1)\n{\nchar *smallString = (char *) malloc(10);\n}\n```",
+                ":",
+                "```c\nlong long number = 1;\nwhile(1)\nnumber *= 2;\n```",
+                ":",
+                "```c\nwhile(1)\n{\nchar hugeString[1000000L];\nmemset(hugeString, 0, 1000000L);\n}\n```",
+                ":",
+                "```c\nwhile(1)\n{\nlong *bigArray = (long *) malloc(sizeof(long) * 1000);\nmemset(bigArray, 1000000, 1000);\n\n(bigArray);\n}\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 2,
+            "question": "\"What will this code print on the screen?\"",
+            "body": "```c\nint f1 (int a, int b)\n{\n    if (a > b)\n    {\n        printf(\"A is greater than B\\n\");\n        return 1;\n    }\n    else\n    {\n        printf(\"B is greater than A\");\n        return 0;\n    }\n}\n\nmain()\n{\n    if (f1(20,10) || f1(10,20))\n        printf(\"C is fun!\\n\");\n}\n```",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```\nA is greater then B\nC is fun!\n```",
+                ":",
+                "```\nA is greater then B\nB is greater then A\nC is fun!\n```",
+                ":",
+                "```\nA is greater then B\nB is greater then A\n```",
+                "Nothing is printed on Screen"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 3,
+            "question": "\"What is the name for calling a function inside the same function?\"",
+            "body": "",
+            "answer": "\"recursion\"",
+            "choices": [
+                "recursion",
+                "subfunction",
+                "inner call",
+                "infinite loop"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 4,
+            "question": "\"What does the declaration of variable c2 demonstrate?\"",
+            "body": "```c\nmain(){\n    char c1 ='a';\n    char c2 = c1+10;\n}\n```",
+            "answer": "\"character arithmetic\"",
+            "choices": [
+                "character arithmetic",
+                "undefined assignment",
+                "type conversion",
+                "invalid declaration"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 5,
+            "question": "\"What is this declaration an example of?\"",
+            "body": "```c\nstruct s {\n    int i;\n    struct s *s1;\n    struct s *s2;\n};\n```",
+            "answer": "\"a node\"",
+            "choices": [
+                "a node",
+                "a linked list",
+                "a stack",
+                "a binary tree"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 6,
+            "question": "\"Header files are listed using the preprocessing directive #include, and can have one of the following formats: #include &lt;fileA&gt; or #include \"fileB\". What is the difference between these two formats?\"",
+            "body": "",
+            "answer": "\"The preprocessor will try to locate fileA in a predetermined directory path. It will try to locate fileB in the same directory as the source file along with a custom directory path.\"",
+            "choices": [
+                "The preprocessor will try to locate fileA in same directory as the source file, and the fileB in a predetermined directory path.",
+                "The preprocessor will try to locate fileA in the fixed system directory. It will try to locate fileB in the directory path designated by the -I option added to the command line while compiling the source code.",
+                "The file using the fileA syntax must be system files, of unlimited number; fileB must be a user file at a maximun of one per source file.",
+                "The preprocessor will try to locate fileA in a predetermined directory path. It will try to locate fileB in the same directory as the source file along with a custom directory path."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 7,
+            "question": "\"Using a for loop, how could you write a C code to count down from 10 to 1 and display each number on its own line?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nfor (int i = 0; i>=0, i--){\nprintf(\"%d\\n\", i);\n}//end of loop\n```",
+                ":",
+                "```c\nint i;\nfor (i=1; i<=10; i++){\nprintf(\"%d\", i);\n}\n```",
+                ":",
+                "```c\nint i = 10;\nwhile (i>0){\nprintf(\"%d\\n\", i);\ni--;\n}\n```",
+                ":",
+                "```c\nint i;\nfor (i= 10; i>0; i--){\nprintf(\"%d\\n\", i);\n}// end of loop\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 8,
+            "question": "\"What is not one of the reserved words in standard C?\"",
+            "body": "",
+            "answer": "\"typeof\"",
+            "choices": [
+                "volatile",
+                "typeof",
+                "register",
+                "typedef"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 9,
+            "question": "\"What does the program shown below return?\"",
+            "body": "```c\nint main(){\n    int a=1, b=2, c=3, d=4;\n    int x = a;\n    if (a>b)\n    if (b<c) x=b;\n    else x=c;\n    return(x);\n}\n```",
+            "answer": "\"1\"",
+            "choices": [
+                "1",
+                "3",
+                "2",
+                "0"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 10,
+            "question": "\"Using the Union declaration below, how many bytes of memory space will the data of this type occupy?\"",
+            "body": "```c\nunion Cars {\n    char make[20];\n    char model[30];\n    short year;\n} car;\n```",
+            "answer": "\"30\"",
+            "choices": [
+                "32",
+                "54",
+                "30",
+                "52"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 11,
+            "question": "\"In this code sample, what is not a problem for C compiler?\"",
+            "body": "```c\nmain(){\n    constant int PI = 3.14;\n    printf(\"%f\\n\", pi);\n}\n```",
+            "answer": "\"The value of PI needs to be set to 3.141593, not 3.14\"",
+            "choices": [
+                "The value of PI needs to be set to 3.141593, not 3.14",
+                "The declaration of PI needs to say const, not constant.",
+                "The data type of PI needs to be float not int.",
+                "The printf statement needs to use PI, not pi."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 12,
+            "question": "\"Which is the smallest program to compile and run without errors?\"",
+            "body": "",
+            "answer": "\"int main() {return 0;}\"",
+            "choices": [
+                "main()",
+                "int main() {return 0;}",
+                "main() { }",
+                "main() { ; }"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 13,
+            "question": "\"What is optional in a function declaration?\"",
+            "body": "",
+            "answer": "\"parameter names\"",
+            "choices": [
+                "data type of parameters",
+                "return type of function",
+                "parameter names",
+                "number of parameters"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 14,
+            "question": "\"C treats all devices, such as the display and the keyboard, as files. Which file opens automatically when a program executes?\"",
+            "body": "",
+            "answer": "\"stdout\"",
+            "choices": [
+                "stdout",
+                "stdio.h",
+                "default.h",
+                "string.h"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 15,
+            "question": "\"In which segment does dynamic memory allocation takes place?\"",
+            "body": "",
+            "answer": "\"heap\"",
+            "choices": [
+                "BSS Segment",
+                "stack",
+                "heap",
+                "data segment"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 16,
+            "question": "\"Which function do you use to deallocate memory?\"",
+            "body": "",
+            "answer": "\"free()\"",
+            "choices": [
+                "dalloc()",
+                "dealloc()",
+                "release()",
+                "free()"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 17,
+            "question": "\"In C language what are the basic building blocks that are constructed together to write a program?\"",
+            "body": "",
+            "answer": "\"tokens\"",
+            "choices": [
+                "keywords",
+                "identifiers",
+                "tokens",
+                "functions"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 18,
+            "question": "\"When is memory for a variable allocated?\"",
+            "body": "",
+            "answer": "\"during the declaration of the variable\"",
+            "choices": [
+                "during the assigment of the variable",
+                "during the initialization of the variable",
+                "during the declaration of the variable",
+                "during the definition of the variable"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 19,
+            "question": "\"C uses the call by value method to pass arguments to functions. How can you invoke the call by reference method?\"",
+            "body": "",
+            "answer": "\"by using pointers\"",
+            "choices": [
+                "by using pointers",
+                "by declaring functions separately from defining them",
+                "by using recursive functions",
+                "by using global variables"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 20,
+            "question": "\"A union allows you to store different `___` in the same `___`.\"",
+            "body": "",
+            "answer": "\"Data types; Memory space\"",
+            "choices": [
+                "Objects; Structure",
+                "Variables; Declaration",
+                "Data types; Memory space",
+                "Arrays; Header file"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 21,
+            "question": "\"What is the output of this program?\"",
+            "body": "```c\nmain() {\n    char c1='a' , c2='A';\n    int i=c2-c1;\n    printf(\"%d\", i);\n}\n```",
+            "answer": "\"-32\"",
+            "choices": [
+                "32",
+                "Runtime error",
+                "-32",
+                "0"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 22,
+            "question": "\"What is the difference between scanf() and sscanf() functions?\"",
+            "body": "",
+            "answer": "\"The scanf() function reads formatted data from the keyboard; The sscanf() function reads formatted input from a string.\"",
+            "choices": [
+                "The scanf() function reads data formatted as a string; The sscanf() function reads string input from the screen.",
+                "The scanf() function reads formatted data from the keyboard; The sscanf() function reads formatted input from a string.",
+                "The scanf() function reads string data from the keyboard; The sscanf() function reads string data from a string.",
+                "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 23,
+            "question": "\"What is not a valid command with this declaration?\"",
+            "body": "```c\nchar *string[20] = { \"one\", \"two\", \"three\"};\n```",
+            "answer": "\"`printf(\"%s\", string[1][2]);`\"",
+            "choices": [
+                "`printf(\"%c\", string[1][2]);`",
+                "`printf(\"%s\", string[1][2]);`",
+                "`printf(\"%s\", string[1]);`",
+                "`printf(string[1]);`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 24,
+            "question": "\"What is the expression player->name equivalent to?\"",
+            "body": "",
+            "answer": "\"`(*player).name`\"",
+            "choices": [
+                "`player.name`",
+                "`(*player).name`",
+                "`*player.name`",
+                "`player.*name`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 25,
+            "question": "\"Which program will compile and run without errors?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nmain() {\nfor(i=0; i<10; i++) ;\n}\n```",
+                ":",
+                "```c\nmain() {\nint i=0;\nfor(; i<10; i++) ;\n}\n```",
+                ":",
+                "```c\nmain() {\nint i;\nfor(i=0; i<j; i++) ;\n}\n```",
+                ":",
+                "```c\nmain() {\nint i;\nfor (i= 10; i<10; i++)\n}\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 26,
+            "question": "\"What does this function call return?\"",
+            "body": "```c\n1 main() { float x = f1(10, 5); }\n2 float f1(int a, int b) { return (a/b); }\n```",
+            "answer": "\"a compiler error\"",
+            "choices": [
+                "2",
+                "2.000000",
+                "a runtime error",
+                "a compiler error"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 27,
+            "question": "\"What does this program create?\"",
+            "body": "```c\n#include <stdio.h>\nint main() {\n    int *p = NULL;\n    return 0;\n}\n```",
+            "answer": "\"a NULL pointer\"",
+            "choices": [
+                "a runtime error",
+                "a NULL pointer",
+                "a compile error",
+                "a void pointer"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 28,
+            "question": "\"What is an alternative way to write the expression (\\*x).y?\"",
+            "body": "",
+            "answer": "\"x->y\"",
+            "choices": [
+                "There is no equivalent.",
+                "x->y",
+                "\\*x->y",
+                "y->x"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 29,
+            "question": "\"Compile time errors are static errors that can be found where in the code?\"",
+            "body": "",
+            "answer": "\"in declarations and definitions\"",
+            "choices": [
+                "in declarations and definitions",
+                "in functions and expressions",
+                "in syntax and semantics",
+                "in objects and statements"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 30,
+            "question": "\"File input and output (I/O) in C is heavily based on the way it is done `___`?\"",
+            "body": "",
+            "answer": "\"in Unix\"",
+            "choices": [
+                "in Unix",
+                "in C++",
+                "in C#",
+                "in DOS"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 31,
+            "question": "\"What does the strcmp(str1, str2); function return?\"",
+            "body": "",
+            "answer": "\"0 if str1 and str2 are the same, a negative number if str1 is less than str2, a positive number if str1 is greater than str2\"",
+            "choices": [
+                "0 if str1 and str2 are the same, a negative number if str1 is less than str2, a positive number if str1 is greater than str2",
+                "true (1) if str1 and str2 are the same, false (0) if str1 and str2 are not the same",
+                "true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same",
+                "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 32,
+            "question": "\"What is the output of this program?\"",
+            "body": "```c\nint a=10, b=20;\nint f1(a) { return(a*b); }\nmain() {\nprintf(\"%d\", f1(5));\n}\n```",
+            "answer": "\"100\"",
+            "choices": [
+                "100",
+                "200",
+                "5",
+                "50"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 33,
+            "question": "\"Which is _not_ a correct way to declare a string variable?\"",
+            "body": "",
+            "answer": "\"`char string = \"Hello World\";`\"",
+            "choices": [
+                "`char *string = \"Hello World\";`",
+                "`char string = \"Hello World\";`",
+                "`char string[20] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};`",
+                "`char string[] = \"Hello World\";`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 34,
+            "question": "\"Which choice is an include guard for the header file mylib.h?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\n#ifdef MYLIB_H\n#undef MYLIB_H\n\n// mylib.h content\n\n#endif /* MYLIB_H */\n```",
+                ":",
+                "```c\n#ifndef MYLIB_H\n#define MYLIB_H\n\n// mylib.h content\n\n#endif /* MYLIB_H */\n```",
+                ":",
+                "```c\n#define MYLIB_H\n#include \"mylib.h\"\n\n#undef MYLIB_H\n```",
+                ":",
+                "```c\n#ifdef MYLIB_H\n#define MYLIB_H\n\n// mylib.h content\n\n#endif /* MYLIB_H */\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 35,
+            "question": "\"How many times does the code inside the while loop get executed in this program?\"",
+            "body": "```c\nmain(){\n int x=1;\n while(x++<100){\n    x*=x;\n    if(x<10) continue;\n    if(x>50) break;\n }\n}\n```",
+            "answer": "\"3\"",
+            "choices": [
+                "100",
+                "3",
+                "5",
+                "50"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 36,
+            "question": "\"File input and output (I/O) in C is done through what?\"",
+            "body": "",
+            "answer": "\"function calls\"",
+            "choices": [
+                "syntax-driven components",
+                "native interfaces",
+                "system objects",
+                "function calls"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 37,
+            "question": "\"Directives are translated by the?\"",
+            "body": "",
+            "answer": "\"Pre-processor\"",
+            "choices": [
+                "Pre-processor",
+                "Compiler",
+                "Linker",
+                "Editor"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 38,
+            "question": "\"The main loop structures in C programming are the for loop, the while loop, and which other loop?\"",
+            "body": "",
+            "answer": "\"do...while\"",
+            "choices": [
+                "do...while",
+                "for...in",
+                "repeat...until",
+                "do...until"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 39,
+            "question": "\"By default, C Functions are what type of functions?\"",
+            "body": "",
+            "answer": "\"library\"",
+            "choices": [
+                "global",
+                "static",
+                "library",
+                "system"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 40,
+            "question": "\"You have written a function that you want to include as a member of structure a. How is such as structure member defined?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nstruct a {\nvoid *f1;\n};\n```",
+                ":",
+                "```c\nstruct a {\nvoid (*f1)();\n};\n```",
+                ":",
+                "```c\nstruct a {\n*(void *f1)();\n};\n```",
+                ":",
+                "```c\nstruct a {\nvoid *f1();\n};\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 41,
+            "question": "\"A Stack data structure allows all data operations at one end only, making it what kind of an implementation?\"",
+            "body": "",
+            "answer": "\"LIFO\"",
+            "choices": [
+                "FIFO",
+                "LIFO",
+                "LILO",
+                "LOLI"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 42,
+            "question": "\"What does this program display?\"",
+            "body": "```c\nmain(){\n    char *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    int i;\n    for (i=0;i<5;i++) *p++; *p++;\n    printf(\"%c\",*p++);\n}\n```",
+            "answer": "\"G\"",
+            "choices": [
+                "K",
+                "M",
+                "H",
+                "G"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 43,
+            "question": "\"Describe the relationship between lvalue and rvalue.\"",
+            "body": "",
+            "answer": "\"An lvalue may appear on the left-hand or right-hand side of an assignment; an rvalue may appear only on the right-hand side.\"",
+            "choices": [
+                "An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear only on the right-hand side.",
+                "An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear on either the left-hand or right-hand side.",
+                "An lvalue and an rvalue may appear on either left-hand or right-hand side of an assignment.",
+                "An lvalue may appear on the left-hand or right-hand side of an assignment; an rvalue may appear only on the right-hand side."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 44,
+            "question": "\"Which operator is used to access the address of a variable?\"",
+            "body": "",
+            "answer": "\"`&`\"",
+            "choices": [
+                "`%`",
+                "`**`",
+                "`*`",
+                "`&`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 45,
+            "question": "\"Which add function properly returns the updated value of result?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nvoid add (int a, int b, int *result)\n{\n*result = a+b;\n}\n\nmain()\n{\nint a = 10;\nint b = 20;\nint result = 0;\n\nadd(a,b,&result);\n}\n```",
+                ":",
+                "```c\nvoid add (int a, int b, int result)\n{\nresult = a+b;\n}\n\nmain()\n{\nint a = 10;\nint b = 20;\nint result = 0;\n\nadd(a,b,result);\n}\n```",
+                ":",
+                "```c\nvoid add (int a, int b, int *result)\n{\nresult = a+b;\n}\n\nmain()\n{\nint a = 10;\nint b = 20;\nint result = 0;\n\nadd(a,b,result);\n}\n```",
+                ":",
+                "```c\nvoid add (int *a, int *b, int *result)\n{\nresult = a+b;\n}\n\nmain()\n{\nint a = 10;\nint b = 20;\nint result = 0;\n\nadd(*a,*b,*result);\n}\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 46,
+            "question": "\"Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nvoid fibonacci(int a, int b)\n{\nint c = a+b;\n\nif(a>100)\nreturn;\n\nprintf(\"%d\", a);\n\nfibonacci(a,b);\n}\n\nint main()\n{\nfibonacci(0,1);\n}\n```",
+                ":",
+                "```c\nvoid fibonacci(int a, int b)\n{\nint c = a+b;\n\nif(a>100)\nreturn;\n\nprintf(\"%d\", b);\n\nfibonacci(a,c);\n}\n\nint main()\n{\nfibonacci(0,1);\n}\n```",
+                ":",
+                "```c\nvoid fibonacci(int a, int b)\n{\nint c = a+b;\n\nif(a>100)\nreturn;\n\nprintf(\"%d\", a);\n\nfibonacci(b,c);\n}\n\nint main()\n{\nfibonacci(0,1);\n}\n```",
+                ":",
+                "```c\nvoid fibonacci(int a, int b)\n{\nint c = a+b;\n\nif(a>100)\nreturn;\n\nprintf(\"%d\", c);\n\nfibonacci(b,c);\n}\n\nint main()\n{\nfibonacci(0,1);\n}\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 47,
+            "question": "\"Which is _not_ a storage class specifier?\"",
+            "body": "",
+            "answer": "\"`intern`\"",
+            "choices": [
+                "`intern`",
+                "`extern`",
+                "`register`",
+                "`static`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 48,
+            "question": "\"Which line of code, after execution, results in `i` having the value of 1?\"",
+            "body": "",
+            "answer": "\"`for(i=1; i==10; i++);`\"",
+            "choices": [
+                "`for(i=1; i<=1; i++);`",
+                "`for(i=1; i=10; i++);`",
+                "`for(i=1; i==10; i++);`",
+                "`for(i=10; i>=1; i--);`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 49,
+            "question": "\"What is the value of variable c at the end of this program?\"",
+            "body": "```\n1 main() {\n2   int a, b, c;\n3   a=10; b=50;\n4   c=a * b % a;\n5 }\n```",
+            "answer": "\"0\"",
+            "choices": [
+                "50",
+                "5",
+                "0",
+                "500"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 50,
+            "question": "\"What is _not_ one of the basic data types in C\"",
+            "body": "",
+            "answer": "\"array\"",
+            "choices": [
+                "long double",
+                "unsigned char",
+                "array",
+                "float"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 51,
+            "question": "\"What is the member access operator for a structure?\"",
+            "body": "",
+            "answer": "\".\"",
+            "choices": [
+                ",",
+                "[]",
+                ".",
+                ":"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 52,
+            "question": "\"What standard data type provides the smallest storage size and can be used in computations?\"",
+            "body": "",
+            "answer": "\"char\"",
+            "choices": [
+                "char",
+                "float",
+                "int",
+                "short"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 53,
+            "question": "\"what does the ctype tolower() function do?\"",
+            "body": "",
+            "answer": "\"It converts an uppercase letter of the alphabet to lowercase.\"",
+            "choices": [
+                "It returns TRUE for lowercase letters of the alphabet.",
+                "It ensures that text output uses only ASCII values (0 through 127).",
+                "It returns FALSE for lowercase letters of the alphabet.",
+                "It converts an uppercase letter of the alphabet to lowercase."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 54,
+            "question": "\"Void pointer _vptr_ is assigned the address of float variable _g_. What is a valid way to dereference _vptr_ to assign its pointed value to a float variable named _f_ later in the program?\"",
+            "body": "```c\nfloat g;\nvoid *vptr=&g;\n```",
+            "answer": "\"`f=*(float *)vptr;`\"",
+            "choices": [
+                "`f=(float *)vptr;`",
+                "`f=*(float *)vptr;`",
+                "`f=*(float)vptr;`",
+                "`f=(float)*vptr;`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 55,
+            "question": "\"The dynamic memory allocation functions are defined in which system header file ?\"",
+            "body": "",
+            "answer": "\"stdlib.h\"",
+            "choices": [
+                "stdio.h",
+                "stdlib.h",
+                "limits.h",
+                "stddef.h"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 56,
+            "question": "\"A function is a set of **\\_**.\"",
+            "body": "",
+            "answer": "\"statements\"",
+            "choices": [
+                "declarations",
+                "statements",
+                "variables",
+                "objects"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 57,
+            "question": "\"How are static functions different from global functions?\"",
+            "body": "",
+            "answer": "\"Static functions can be accessed only in the file where they are declared.\"",
+            "choices": [
+                "Static functions must be declared in advance of being defined.",
+                "Static functions must be declared is a separate header file.",
+                "Static functions always return the same value.",
+                "Static functions can be accessed only in the file where they are declared."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 58,
+            "question": "\"Which code example creates the string \"Hello Mars\" in storage buffer `hello`.\"",
+            "body": "",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nchar hello[25];\nstrcpy(hello, \"Hello \");\nstrcpy(hello, \"Mars\");\n```",
+                ":",
+                "```c\nchar hello[25];\nchar *p;\nstrcpy(hello, \"Hello World\");\np = hello;\np +=6;\nstrcpy(p, \"Mars\");\n```",
+                ":",
+                "```c\nchar *hello;\nstrcpy(hello, \"Hello World\");\nhello+=6;\nstrcpy(hello, \"Mars\");\n```",
+                ":",
+                "```c\nchar hello[25];\nstrcpy(hello, \"Hello World\");\nstrcpy(*hello[6], \"Mars\");\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 59,
+            "question": "\"If you use the fopen() function with the \"a\" mode, what happens if the named file doesn't exist?\"",
+            "body": "",
+            "answer": "\"The file is created and opened for writing.\"",
+            "choices": [
+                "The file is created and opened for reading.",
+                "The file is created and opened for writing.",
+                "The fopen() function returns a NULL indicating that the operation has failed.",
+                "The file is created and opened for both writing and reading"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 60,
+            "question": "\"What does this function return?\"",
+            "body": "```c\nint fl(int a, int b) { return(a>b?a:b); }\n```",
+            "answer": "\"the greater value of the two passed parameters\"",
+            "choices": [
+                "compiler error",
+                "the smaller value of the two passed parameters",
+                "runtime error",
+                "the greater value of the two passed parameters"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 61,
+            "question": "\"Which option is a valid function name?\"",
+            "body": "",
+            "answer": "\"draw_star()\"",
+            "choices": [
+                "draw_star()",
+                "5times()",
+                "upper-limit()",
+                "auto()"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 62,
+            "question": "\"What is not a valid type definition of a structure that contains x and y coordinates as integers, and that can be used as shown for the variable named point?\"",
+            "body": "```c\ncoord point;\npoint.x = 9;\npoint.y = 3;\n```",
+            "answer": "\":\"",
+            "choices": [
+                ":",
+                "```c\nstruct coord{\nint x;\nint y;\n};\ntypedef struct coord coord;\n```",
+                ":",
+                "```c\ntypedef struct coord{\nint x;\nint y;\n};\n```",
+                ":",
+                "```c\ntypedef struct coord{\nint x;\nint y;\n} coord;\n```",
+                ":",
+                "```c\ntypedef struct{\nint x;\nint y;\n} coord;\n```"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 63,
+            "question": "\"What is the output of the below program?\"",
+            "body": "```c\n#include <stdio.h>\n#if X == 3\n    #define Y 3\n#else\n    #define Y 5\n#endif\n\nint main()\n{\n    printf(\"%d\", Y);\n    return 0;\n}\n```",
+            "answer": "\"5\"",
+            "choices": [
+                "3",
+                "5",
+                "3 or 5 depending on input",
+                "Compile time error"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 64,
+            "question": "\"What do the functions malloc() and calloc() allocate?\"",
+            "body": "",
+            "answer": "\"dynamic memory\"",
+            "choices": [
+                "reallocatged memory",
+                "static memeory",
+                "dynamic memory",
+                "fragmented memory"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 65,
+            "question": "\"You need to determine if a string variable is a substring of another string. Which standard C library function do you use?\"",
+            "body": "",
+            "answer": "\"strstr(str1, str2);\"",
+            "choices": [
+                "substr(str1, str2);",
+                "strstr(str1, str2);",
+                "substring(str1, str2);",
+                "strspn(str1, str2);"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 66,
+            "question": "\"Find the output of the program?\"",
+            "body": "```c\n#include <stdio.h>\n\n#define L 10\nint main(){\n    int a =10;\n    switch (a,a<<2){\n        case L:printf(\"a==L\");     break;\n        case L*2 : printf(\"a = L* 2\\n\");     break;\n        case L*4 : printf(\"a = L* 4\\n\");    break;\n        default: printf(\"Error\\n\");\n    }\n}\n```",
+            "answer": "\"`a=L*4`\"",
+            "choices": [
+                "`a=L*2`",
+                "`a=L`",
+                "`Error`",
+                "`a=L*4`"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 67,
+            "question": "\"Predict the output of the following code when the **interger** variables x is initialized to 10,y to 2 and z to 0.\"",
+            "body": "```c\nz = x + y * x + 10 / 2 * x;\nprintf(\"value is =%d\",z);\n```",
+            "answer": "\"80\"",
+            "choices": [
+                "80",
+                "170",
+                "31.5",
+                "6"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 68,
+            "question": "\"What will be the output of the following code snippet?\"",
+            "body": "```c\n#include <stdio.h>\nvoid solve() {\n    int x = 2;\n    printf(\"%d\", (x << 1) + (x >> 1));\n}\nint main() {\n    solve();\n\treturn 0;\n}\n```",
+            "answer": "\"5\"",
+            "choices": [
+                "5",
+                "4",
+                "2",
+                "1"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 69,
+            "question": "\"What is the output of this program?\"",
+            "body": "```c\nint a=20, b=10;\nint f1(a) {\n    return(a*b);\n}\nmain() {\n    printf(\"%d\", f1(5));\n}\n```",
+            "answer": "\"50\"",
+            "choices": [
+                "100",
+                "200",
+                "5",
+                "50"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 70,
+            "question": "\"What is /0 character ?\"",
+            "body": "",
+            "answer": "\"NULL Character\"",
+            "choices": [
+                "String",
+                "NULL Character",
+                "ZERO",
+                "Variable"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 71,
+            "question": "\"What is correct output for follwing code ?1\"",
+            "body": "```c\n#include&lt;stdio.h&gt;\n#include&lt;conio.h&gt;\nmain()\n{\n     int a=10, b=20;\n     clrscr();\n     printf(\"Before swapping a=%d b=%d\",a,b);\n     a=a+b;\n     b=a-b;\n     a=a-b;\n     printf(\"nAfter swapping a=%d b=%d\",a,b);\n     getch();\n}\n```",
+            "answer": "\"Before a=10 b=20 , After a=20 b=10\"",
+            "choices": [
+                "Before a=10 b=20 , After a=10 b=10",
+                "Before a=10 b=10 , After a=20 b=10",
+                "Before a=10 b=20 , After a=20 b=20",
+                "Before a=10 b=20 , After a=20 b=10"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 72,
+            "question": "\"What is Incorrect option that explain # pragma directive ?\"",
+            "body": "",
+            "answer": "\"#pragma startup don't allows us to specify functions called upon program startup.\"",
+            "choices": [
+                "#pragma exit allows us to specify functions called upon program exit.",
+                "This is a preprocessor directive that can be used to turn on or off certain features.",
+                "#pragma startup don't allows us to specify functions called upon program startup.",
+                "It is of two types #pragma startup, #pragma exit and pragma warn."
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 73,
+            "question": "\"What will be the output of the following code snippet?\"",
+            "body": "```c\n#include <stdio.h>\nunion School {\n    int age, rollNo;\n    double marks;\n};\nvoid solve() {\n    union School sc;\n    sc.age = 19;\n    sc.rollNo = 82;\n    sc.marks = 19.04;\n    printf(\"%d\", (int)sizeof(sc));\n}\nint main() {\n    solve();\n\treturn 0;\n}\n```",
+            "answer": "\"8\"",
+            "choices": [
+                "2",
+                "4",
+                "8",
+                "10"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 74,
+            "question": "\"What will be the output of the following code snippet?\"",
+            "body": "```c\n#include <stdio.h>\nstruct School {\n    int age, rollNo;\n};\nvoid solve() {\n    struct School sc;\n    sc.age = 19;\n    sc.rollNo = 82;\n    printf(\"%d %d\", sc.age, sc.rollNo);\n}\nint main() {\n    solve();\n\treturn 0;\n}\n```",
+            "answer": "\"19 82\"",
+            "choices": [
+                "19 82",
+                "Compilation Error",
+                "82 19",
+                "None of these"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 75,
+            "question": "\"What is the output of the following code snippet?\"",
+            "body": "```c\nint main() {\n\tint sum = 2 + 4 / 2 + 6 * 2;\n\tprintf(\"%d\", sum);\n\treturn 0;\n}\n```",
+            "answer": "\"16\"",
+            "choices": [
+                "2",
+                "15",
+                "16",
+                "18"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 76,
+            "question": "\"What does the following declaration mean?\"",
+            "body": "```\nint (*ptr)[10];\n```",
+            "answer": "\"ptr is a pointer to an array of 10 integers\"",
+            "choices": [
+                "ptr is array of pointers to 10 integers",
+                "ptr is a pointer to an array of 10 integers",
+                "ptr is an array of 10 integers",
+                "ptr is an pointer to array"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 77,
+            "question": "\"What will be the output of the following code snippet?\"",
+            "body": "```c\n#include <stdio.h>\nvoid change(int,int);\nint main()\n{\n   int a=10,b=20;\n   change(a,b); //calling a function by passing the values of variables.\n   printf(\"Value of a is: %d\",a);\n   printf(\"\\n\");\n   printf(\"Value of b is: %d\",b);\n   return 0;\n}\nvoid change(int x,int y)\n{\n   x=13;\n   y=17;\n}\n```",
+            "answer": "\"10,20\"",
+            "choices": [
+                "10,20",
+                "10,10",
+                "20,20",
+                "20,10"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 78,
+            "question": "\"Choose true or false.When variable is created in C, a memory address is assigned to the variable.\"",
+            "body": "",
+            "answer": "\"True\"",
+            "choices": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 79,
+            "question": "\"What does the following fragment of C-program print?\"",
+            "body": "```c\n#include <stdio.h>\n\nint main()\n{\n    char c[] = \"GATE2011\";\n\n    char *p = c;\n\n    printf(\"%s\", p + p[3] -p[1]);\n\n    return 0;\n}\n```",
+            "answer": "\"2011\"",
+            "choices": [
+                "GATE 2011",
+                "E2011",
+                "2011",
+                "01"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 80,
+            "question": "\"What is the output of the following code snippet?\"",
+            "body": "```c\nint main() {\n\tint a = 5, b = 6, c;\n\tc = a++ + ++b;\n\tprintf(\"%d %d %d\", a, b, c);\n\treturn 0;\n}\n```",
+            "answer": "\"6 7 12\"",
+            "choices": [
+                "5 6 11",
+                "6 7 12",
+                "5 6 12",
+                "6 6 12"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 81,
+            "question": "\"What will be the output of the following C program segment?\"",
+            "body": "```c\nchar inchar = 'A';\nswitch (inchar)\n{\ncase 'A' :\n\tprintf (\"choice A \\n\") ;\ncase 'B' :\n\tprintf (\"choice B \") ;\ncase 'C' :\ncase 'D' :\ncase 'E' :\ndefault:\n\tprintf (\"No Choice\") ;\n}\n\n```",
+            "answer": "\"Choice A\"",
+            "choices": [
+                "No choice",
+                "Choice A",
+                "Choice A",
+                "Program gives no output as it is erroneous"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 82,
+            "question": "\"Which of the following is the correct syntax to print the message in C++ language?\"",
+            "body": "",
+            "answer": "\"cout <<\"Hello world!\";\"",
+            "choices": [
+                "Out <<\"Hello world!",
+                "Cout << Hello world! ;",
+                "cout <<\"Hello world!\";",
+                "None of the above"
+            ]
+        },
+        {
+            "topic": "C (Programming Language)",
+            "id": 83,
+            "question": "\"String variable str1 has the value of \"abc\", and string variable str2 has the value \"xyz\". What are the values of str1 and str2 after this statement is executed?\"",
+            "body": "```c\nstrcpy(str1, str2);\n```",
+            "answer": "\"str1: \"xyz\" ; str2: \"xyz\"\"",
+            "choices": [
+                "str1: \"xyz\" ; str2: \"xyz\"",
+                "str1: \"abc\" ; str2: \"xyz\"",
+                "str1: \"xyz\" ; str2: \"abc\"",
+                "str1: \"abc\" ; str2: \"abc\""
+            ]
+        }
+    ]
+}

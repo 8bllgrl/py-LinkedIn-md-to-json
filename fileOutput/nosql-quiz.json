@@ -1,0 +1,631 @@
+{
+    "questions": [
+        {
+            "topic": "NoSQL",
+            "id": 1,
+            "question": "\"Which types of indexes are available in CosmosDB?\"",
+            "body": "",
+            "answer": "\"range and spatial\"",
+            "choices": [
+                "range and spatial",
+                "secondary and primary key",
+                "secondary and spatial",
+                "range and primary key"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 2,
+            "question": "\"You want to connect a DynamoDB stream to AWS Lambda function. Which one of these object do you create?\"",
+            "body": "",
+            "answer": "\"DynamoDB trigger\"",
+            "choices": [
+                "DynamoDB table",
+                "DynamoDB trigger",
+                "DynamoDB item",
+                "DynamoDB index"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 3,
+            "question": "\"To index a field that holds an array value in MongoDB, which index type do you create?\"",
+            "body": "",
+            "answer": "\"multikey\"",
+            "choices": [
+                "partial",
+                "sparse",
+                "compound",
+                "multikey"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 4,
+            "question": "\"You want to test HBASE on your laptop using the fewest number of steps. What do you do?\"",
+            "body": "",
+            "answer": "\"Set up HBASE in local mode.\"",
+            "choices": [
+                "Set up Hadoop in pseudo-distributed mode.",
+                "Set up HBASE in local mode.",
+                "Set up HBASE in pseudo-distributed mode.",
+                "Set up Hadoop in local mode."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 5,
+            "question": "\"You need to create a document database that supports database triggers. Which NoSQL database should you use?\"",
+            "body": "",
+            "answer": "\"DynamoDB\"",
+            "choices": [
+                "DynamoDB",
+                "BigTable",
+                "Redis",
+                "MongoDB"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 6,
+            "question": "\"What is recommended size for Redis keys?\"",
+            "body": "",
+            "answer": "\"short\"",
+            "choices": [
+                "medium",
+                "short",
+                "single bit",
+                "long"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 7,
+            "question": "\"What does Redis use to sort the elements of a sorted set?\"",
+            "body": "",
+            "answer": "\"Scores\"",
+            "choices": [
+                "Scores",
+                "Ids",
+                "Values",
+                "Keys"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 8,
+            "question": "\"You need to change the shard key of an existing MongoDB collection. What do you do?\"",
+            "body": "",
+            "answer": "\"Dump the collection data, drop the collection, presplit the data, create a new collection and shard key, import the data.\"",
+            "choices": [
+                "Dump the collection data, drop the collection, create a new collection and shard key, import the data.",
+                "Add second shard key and drop the first shard key.",
+                "Dump the collection data, drop the collection, presplit the data, create a new collection and shard key, import the data.",
+                "Drop and recreate the shard key."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 9,
+            "question": "\"Polyglot storage means using multiple types of what in the same application?\"",
+            "body": "",
+            "answer": "\"Storage systems\"",
+            "choices": [
+                "Security systems",
+                "Database systems",
+                "Storage systems",
+                "Query systems"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 10,
+            "question": "\"You need to implement the simplest possible scalable, in-memory cache for your AWS application. Which service do you select?\"",
+            "body": "",
+            "answer": "\"Elasticache using Redis.\"",
+            "choices": [
+                "Elasticache using Memcached.",
+                "DynamoDB.",
+                "DynamoDB Accelerator (DAX).",
+                "Elasticache using Redis."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 11,
+            "question": "\"You are doing data modelling for Google BigTable. Which statement expresses if and when you should split entities across multiple rows?\"",
+            "body": "",
+            "answer": "\"Split entities across multiple rows if the entity data is over hundreds of MBs, or if it does not need atomic updates and reads.\"",
+            "choices": [
+                "Keep all information for an entity in a single row. Store related entities in adjacent rows.",
+                "Keep all information for an entity in a single row.",
+                "Split entities across multiple rows if the entity data is over thousands of MBs, or if it does not need atomic updates and reads.",
+                "Split entities across multiple rows if the entity data is over hundreds of MBs, or if it does not need atomic updates and reads."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 12,
+            "question": "\"Which two characteristics define Amazon Quantum Ledger Database?\"",
+            "body": "",
+            "answer": "\"Document data model; transactionally consistent with ACID semantics.\"",
+            "choices": [
+                "Key-value data model; transactionally consistent with ACID semantics.",
+                "Document data model; transactionally consistent with ACID semantics.",
+                "Key-value data model; transactions with tunable consistency.",
+                "Document data model; transactions with tunable consistency."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 13,
+            "question": "\"You need to design the primary key for DynamoDB based on three attributes. What do you do?\"",
+            "body": "",
+            "answer": "\"Concatenate all three fields into one new field, then designate that new field as the primary key.\"",
+            "choices": [
+                "Designate all three fields as the primary key.",
+                "Concatenate all three fields into one new field, then designate that new field as the primary key.",
+                "Designate two fields of the three fields as the primary key.",
+                "Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 14,
+            "question": "\"Which of these data types should you avoid in designing a Google Bigtable row key?\"",
+            "body": "",
+            "answer": "\"frequently updated identifiers\"",
+            "choices": [
+                "multi-valued identifiers",
+                "string identifiers",
+                "timestamps",
+                "frequently updated identifiers"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 15,
+            "question": "\"Your startup is building a prototype that has an evolving schema. Your data will be eventually consistent. Your application is hosted in AWS. Which database do you choose?\"",
+            "body": "",
+            "answer": "\"DynamoDB\"",
+            "choices": [
+                "Neptune",
+                "DocumentDB",
+                "DynamoDB",
+                "Amazon Aurora"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 16,
+            "question": "\"You need to create a scalable database that allows you to share documents across authorized mobile clients in real time. What Google NoSQL database should you use?\"",
+            "body": "",
+            "answer": "\"Firebase\"",
+            "choices": [
+                "Memorystore",
+                "Datastore",
+                "Firebase",
+                "Bigtable"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 17,
+            "question": "\"You need to design security for DynamoDB to allow users read-only access to certain items and attributes in a table. What do you do?\"",
+            "body": "",
+            "answer": "\"Use IAM policy conditions.\"",
+            "choices": [
+                "Use IAM roles.",
+                "Use IAM policy conditions.",
+                "Use a VPC endpoint.",
+                "Use IAM policies."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 18,
+            "question": "\"Which statement is preferred Cypher code for Neo4j?\"",
+            "body": "",
+            "answer": "\"MATCH (:Person)-->(vehicle:Car)-->(:Company) RETURN count(vehicle)\"",
+            "choices": [
+                "MATCH (:Person)-->(:Card)-->(:Company) RETURN count(vehicle)",
+                "Match (:Person)-->(:Car):(vehicle:Car)-->(:Company) RETURN count(vehicle)",
+                "MATCH (:Person)-->(vehicle:Car)-->(:Company) RETURN count(vehicle)",
+                "MATCH (:Person)-->(:Card), (vehicle:Car)-->(:Company) RETURN count(vehicle)"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 19,
+            "question": "\"You need multi-item ACID transactions with snapshot isolation within a partition for your cloud-based application. Which NoSQL databse do you choose?\"",
+            "body": "",
+            "answer": "\"Cosmos DB\"",
+            "choices": [
+                "Bigtable",
+                "GraphDB",
+                "DynamoDB",
+                "Cosmos DB"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 20,
+            "question": "\"You need to control your application's batch updates destination for your Bigtable multinode cluster. Which action do you take?\"",
+            "body": "",
+            "answer": "\"Update the default app profile to route the natch update from that client.\"",
+            "choices": [
+                "Create a custom app profile to route batch updates.",
+                "Create a custom app profile to route the batch update from that client.",
+                "Update the default app profile to route the natch update from that client.",
+                "Use the default app profile to route batch updates."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 21,
+            "question": "\"Your query to verify that your Redis key is configured to support expiring user information on a defined interval returns -2, What does this value indicate?\"",
+            "body": "",
+            "answer": "\"The queried key value does not exist.\"",
+            "choices": [
+                "The queried key value expired in the last two seconds.",
+                "The queried key value exists, but has no associated expire value.",
+                "The queried key value does not exist.",
+                "There are two expired keys with this value."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 22,
+            "question": "\"You are designing a MongoDB schema to support queries that will include lookups. What should you do?\"",
+            "body": "",
+            "answer": "\"Create a multicolumn index on the key value used as the foreign key and the most unique column in the document.\"",
+            "choices": [
+                "Create an index on the key value used as the primary key.",
+                "Create an index on the key value used as the foreign key.",
+                "Create a multicolumn index on the key value used as the foreign key and the most unique column in the document.",
+                "Create a multicolumn index on the key value used as the primary and also the foreign key."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 23,
+            "question": "\"What is the aggregation operator for a join concept in MongoDB?\"",
+            "body": "",
+            "answer": "\"\\$lookup\"",
+            "choices": [
+                "\\$group",
+                "\\$match",
+                "\\$lookup",
+                "\\$project"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 24,
+            "question": "\"For your mobile application, you need to select a Google cloud database that can support compound, filtered document queries. Which do you choose?\"",
+            "body": "",
+            "answer": "\"Cloud Firestore\"",
+            "choices": [
+                "Cloud SQL",
+                "Cloud Spanner",
+                "Cloud Firestore",
+                "Cloud Firebase"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 25,
+            "question": "\"To bulk load data into Amazon Neptune, what do you do?\"",
+            "body": "",
+            "answer": "\"Upload data to S3 VPC endpoint, Use the Neptune loader to load from s3 into your Neptune instance\"",
+            "choices": [
+                "Upload data to S3 VPC endpoint, Use the Neptune loader to load from s3 into your Neptune instance",
+                "Ad data to a Kinesis stream, and use the Neptune loader to load from S# into your Neptune instance.",
+                "Add data to a Kinesis stream, and create a Kinesis stream VPC endpoint. Use the Neptune loader to load from S3 into your Neptune instance.",
+                "Upload data to S Use the Neptune loader to load from S3 into your Neptune instance."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 26,
+            "question": "\"You need to create a pub/sub server. Which database do you use?\"",
+            "body": "",
+            "answer": "\"Redis\"",
+            "choices": [
+                "Neo4j",
+                "Cassandra",
+                "Redis"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 27,
+            "question": "\"SQL databases and NoSQL are which types of scalable?\"",
+            "body": "",
+            "answer": "\"vertically, horizontally\"",
+            "choices": [
+                "horizontally, infinitely",
+                "vertically, horizontally",
+                "vertically, infinitely",
+                "horizontally, vertically"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 28,
+            "question": "\"You need to create a scalable database that allows you to query data nodes and edges efficiently. What do you use?\"",
+            "body": "",
+            "answer": "\"a graph database\"",
+            "choices": [
+                "a relational database",
+                "a columnstore database",
+                "a document database",
+                "a graph database"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 29,
+            "question": "\"You are developing a model for a graph database. Your data will be moved from a relational database into Neo4j. Which of these transformations apply?\"",
+            "body": "",
+            "answer": "\"Tables become labels: rows become nodes.\"",
+            "choices": [
+                "Rows become labels: bales become nodes.",
+                "Tables become labels: rows become nodes.",
+                "Tables become collections: rows become items.",
+                "Rows become collections: tables become items."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 30,
+            "question": "\"You need to execute a command for MongoDB that does NOT load values from the `.mongorc.js` file. What do you do ?\"",
+            "body": "",
+            "answer": "\"Use the mongo shell to create a command with --nodedefault option.\"",
+            "choices": [
+                "Delete the .monorc.js file and restart mongo shell.",
+                "Use the mongo shell to create a command with --norc option",
+                "Rem all lines in the .mongorc.js file ad restart mongo shell.",
+                "Use the mongo shell to create a command with --nodedefault option."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 31,
+            "question": "\"You need to store an unordered collection of name-value pairs with differing data types in DynamoDB. Which data type should you choose?\"",
+            "body": "",
+            "answer": "\"map\"",
+            "choices": [
+                "map",
+                "set",
+                "list",
+                "stack"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 32,
+            "question": "\"Which statement retrieves an item from the MusicCollection table in DynamoDB?\"",
+            "body": "",
+            "answer": "\"aws dynamodb get-item --table-name MusicCollection --key file://key.json\"",
+            "choices": [
+                "aws dynamodb query --table-name MusicCollection --key file://key.json",
+                "aws dynamodb get-item --table-name MusicCollection --key file://key.json",
+                "aws dynamodb select --table-name MusicCollection --key file://key.json",
+                "aws dynamodb put-item --table-name MusicCollection --key file://key.json"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 33,
+            "question": "\"Database availability is measured by which metric?\"",
+            "body": "",
+            "answer": "\"the number of nines\"",
+            "choices": [
+                "the amount of service calls",
+                "the number of minutes",
+                "the amount of service costs",
+                "the number of nines"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 34,
+            "question": "\"You need to encrypt data at rest in DynamoDB. Which action do you take?\"",
+            "body": "",
+            "answer": "\"None. Data is encrypted by default.\"",
+            "choices": [
+                "You assign a default AWS encryption key to your table to encrypt data.",
+                "You create an AWS encryption key and assign it to your table to encrypt data.",
+                "None. Data is encrypted by default.",
+                "You create an AWS encryption key and assign it to your database to encrypt data."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 35,
+            "question": "\"You need to generate a unique, sequential identifier for each value stored in a Redis cluster. What do you do?\"",
+            "body": "",
+            "answer": "\"Use the INCR keyword to generate a value\"",
+            "choices": [
+                "Implement a SortedSet object to generate a value.",
+                "Use the GUID keyword to generate a value.",
+                "Implement a List object to generate a value.",
+                "Use the INCR keyword to generate a value"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 36,
+            "question": "\"You want to return a list of all elements in two Redis sets. Which keyword do you use?\"",
+            "body": "",
+            "answer": "\"smembers\"",
+            "choices": [
+                "smembers",
+                "returnall",
+                "sunion",
+                "sismember"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 37,
+            "question": "\"Which method shows you whether MongoDB uses any indexes when running a query, and how the indexes are used?\"",
+            "body": "",
+            "answer": "\"explain()\"",
+            "choices": [
+                "detailQueryExecution()",
+                "showPlan()",
+                "explain()",
+                "describe()"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 38,
+            "question": "\"Which statement accurately describes global secondary indexes in DynamoDB?\"",
+            "body": "",
+            "answer": "\"The global secondary indexes in DynamoDB are eventually consistent, and are not guaranteed to return correct results.\"",
+            "choices": [
+                "The global secondary indexes in DynamoDB are consistent, and are not guaranteed to return correct results.",
+                "The global secondary indexes in DynamoDB are transactionally consistent, and are guaranteed to return correct results.",
+                "The global secondary indexes in DynamoDB are partially consistent, and are not guaranteed to return correct results.",
+                "The global secondary indexes in DynamoDB are eventually consistent, and are not guaranteed to return correct results."
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 39,
+            "question": "\"Which command do you use to add a value to a Redis stream named mystream?\"",
+            "body": "",
+            "answer": "\"XADD mystream \\* sensor-id 1234 temperature 9.8 1518951480106-0\"",
+            "choices": [
+                "ADD mystream \\* sensor-id 1234 temperature 19.8 1518951480106-1",
+                "UPDATE mystream \\* sensor-id 1234 temperature 19.8 1518951480106-3",
+                "XADD mystream \\* sensor-id 1234 temperature 9.8 1518951480106-0",
+                "INSERT mystream \\* sensor-d 1234 temperature 19.8 15181480106-2"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 40,
+            "question": "\"Which code example completes this statement and creates an index for a MongoDB object named restaurants, sorted ascending by the field name?\"",
+            "body": "```\nvar indexCollection = function(db) {return co(function*() {...});};\n```",
+            "answer": "\"`const results = yield db.collection('restaurants').createIndex({\"name\": 1}, null); return results;`\"",
+            "choices": [
+                "`const results = yield db.table('restaurants').createIndex({\"name\": 1}, null); return results;`",
+                "`const results = yield db.collection('restaurants').createIndex({\"name\": 0}, null); return results;`",
+                "`const results = yield db.collection('restaurants').createIndex({\"name\": 1}, null); return results;`",
+                "`const results = yield db.table('restaurants').createIndex({\"name\": 0}, null); return results;`"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 41,
+            "question": "\"Which Cypher code executes the multiquery block?\"",
+            "body": "",
+            "answer": "",
+            "choices": [
+                "A",
+                "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
+                "B",
+                "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type\n```",
+                "C",
+                "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c AND MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nAND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
+                "D",
+                "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c;MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p;\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 42,
+            "question": "\"You need to create a scalable database that supports immutable writes. What do you use?\"",
+            "body": "",
+            "answer": "\"A ledger database\"",
+            "choices": [
+                "A ledger database",
+                "A graph database",
+                "A key-value database",
+                "A columnstore database"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 43,
+            "question": "\"You need to create a data store for the catalog for your new ecommerce application. Your company is a startup, so the catalog schema may evolve. Which do you choose?\"",
+            "body": "",
+            "answer": "\"MongoDB\"",
+            "choices": [
+                "Neo4j",
+                "Redis",
+                "MySQL",
+                "MongoDB"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 44,
+            "question": "\"You need to select a NoSQL database for heavy aggregate query workloads. Which type do you choose?\"",
+            "body": "",
+            "answer": "\"columnstore\"",
+            "choices": [
+                "graph",
+                "key-value",
+                "document",
+                "columnstore"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 45,
+            "question": "\"You need to select a columnstore database that enforce built-in data types. You want to add indexes to improve performance for known workloads. Which do you choose?\"",
+            "body": "",
+            "answer": "\"Redis\"",
+            "choices": [
+                "Cassandra",
+                "Bigtable",
+                "Redis",
+                "HBase"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 46,
+            "question": "\"In DynamoDB, the partition key and sort key are also known as which type of attributes?\"",
+            "body": "",
+            "answer": "\"hash, range\"",
+            "choices": [
+                "range, hash",
+                "primary, range",
+                "hash, range",
+                "range, secondary"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 47,
+            "question": "\"What is a popular, open-source key-value store database?\"",
+            "body": "",
+            "answer": "\"Redis\"",
+            "choices": [
+                "MongoDB",
+                "Redis",
+                "MySQL",
+                "Cassandra"
+            ]
+        },
+        {
+            "topic": "NoSQL",
+            "id": 48,
+            "question": "\"You need to create a scalable database to store and query JSON data. What do you use?\"",
+            "body": "",
+            "answer": "\"a document database\"",
+            "choices": [
+                "a relational database",
+                "a document database",
+                "a graph database",
+                "a ledger database"
+            ]
+        }
+    ]
+}

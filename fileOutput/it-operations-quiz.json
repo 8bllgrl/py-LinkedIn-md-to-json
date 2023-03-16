@@ -1,0 +1,975 @@
+{
+    "questions": [
+        {
+            "topic": "IT Operations",
+            "id": 1,
+            "question": "\"You are configuring a Wi-Fi base station using DHCP. Which items should you set or change?\"",
+            "body": "",
+            "answer": "\"A\"",
+            "choices": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 2,
+            "question": "\"Can you connect a DisplayPort monitor to a USB-C port on your computer?\"",
+            "body": "",
+            "answer": "\"Yes. An adapter or dongle may be required.\"",
+            "choices": [
+                "Yes. The DisplayPort cable plugs directly into the USB connector.",
+                "Yes. An adapter or dongle may be required.",
+                "No. While you can rig a connection, video quality will be poor.",
+                "No. The two standards are incompatible."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 3,
+            "question": "\"What is the I/O panel?\"",
+            "body": "",
+            "answer": "\"a cluster of ports and connectors found on the back of the computer case\"",
+            "choices": [
+                "the location where expansion cards can connect to peripherals",
+                "a cluster of ports and connectors found on the back of the computer case",
+                "the switches that turn on, sleep, and turn off the computer",
+                "the portion of the motherboard where non-power cables connect"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 4,
+            "question": "\"The computer consistently boots into Safe Mode. How would you address this issue?\"",
+            "body": "",
+            "answer": "\"Fix the issue in Safe Mode that is causing the system to restart in this mode.\"",
+            "choices": [
+                "Edit the Registry key that controls the boot sequence.",
+                "Hold the Shift key as Windows boots.",
+                "Check the MSCONFIG utility to ensure that Normal boot is selected.",
+                "Fix the issue in Safe Mode that is causing the system to restart in this mode."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 5,
+            "question": "\"Which choice is not a typical adjustment found on a monitor?\"",
+            "body": "",
+            "answer": "\"resolution\"",
+            "choices": [
+                "resolution",
+                "color temperature",
+                "contrast",
+                "brightness"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 6,
+            "question": "\"Assuming that the gateway, modem, and switch are separate units, in what order should a small office or home office LAN be restarted?\"",
+            "body": "",
+            "answer": "\"A\"",
+            "choices": [
+                "A",
+                "B",
+                "C",
+                "The order is not important."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 7,
+            "question": "\"A client needs to secure their cafe's wireless network, which is used only by employees. What is the best approach for a finite list of devices?\"",
+            "body": "",
+            "answer": "\"Limit access to specific MAC addresses.\"",
+            "choices": [
+                "Limit access to specific MAC addresses.",
+                "Do not broadcast the SSID.",
+                "Apply a metered connection.",
+                "Apply a password."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 8,
+            "question": "\"Which hardware port would not be found on a typical gateway?\"",
+            "body": "",
+            "answer": "\"uplink\"",
+            "choices": [
+                "WAN",
+                "USB",
+                "LAN",
+                "uplink"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 9,
+            "question": "\"The recent Windows update introduced some quirks in the system. How can you enter the Windows Recovery Environment to recover from the update?\"",
+            "body": "",
+            "answer": "\"Hold the Shift key when selecting the **Restart** command.\"",
+            "choices": [
+                "Hold the Shift key when selecting the **Restart** command.",
+                "Restart in Safe Mode where the Recovery item is located on the Start menu.",
+                "Press the any key at the boot screen.",
+                "Go to the Task Manager **Startup** tab."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 10,
+            "question": "\"Which components are typically found on the motherboard?\"",
+            "body": "",
+            "answer": "",
+            "choices": []
+        },
+        {
+            "topic": "IT Operations",
+            "id": 11,
+            "question": "\"What does the acronym RAID refer to?\"",
+            "body": "",
+            "answer": "\"Redundant Array of Independent Disks\"",
+            "choices": [
+                "Repeating Architecture for Internal Drives",
+                "Recoverable Advanced Integration and Duplication",
+                "Redundant Array of Independent Disks",
+                "Replicated Array of Internal Devices"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 12,
+            "question": "\"To which internal component does the illustrated (P1) connector attach?\"",
+            "body": "![Q12](images/Q12.jpg)",
+            "answer": "\"motherboard\"",
+            "choices": [
+                "motherboard",
+                "I/O panel",
+                "power supply",
+                "primary mass storage"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 13,
+            "question": "\"Your computer boots at very low resolution that cannot be increased through display settings. What is the most likely solution?\"",
+            "body": "",
+            "answer": "\"You need to reinstall the display drivers.\"",
+            "choices": [
+                "The connection between the display and the computer is loose.",
+                "You need to reinstall the display drivers.",
+                "You need to replace your monitor.",
+                "Some of your RAM is failing."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 14,
+            "question": "\"To which choice can the wget program be considered similar?\"",
+            "body": "",
+            "answer": "\"cURL\"",
+            "choices": [
+                "tracert",
+                "netstat",
+                "ping",
+                "cURL"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 15,
+            "question": "\"Does an incognito window prevent websites from tracking your activity on the web?\"",
+            "body": "",
+            "answer": "\"No. Some websites track by ID, and if you sign into a site even in incognito, your activity is known.\"",
+            "choices": [
+                "No. Incognito mode only prevents the site from appearing in your browser history.",
+                "Yes. Incognito mode encrypts data packets, making it difficult for websites to track your activity.",
+                "No. Some websites track by ID, and if you sign into a site even in incognito, your activity is known.",
+                "Yes. Incognito mode blocks all cookies and tracking IDs and suppresses browser history."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 16,
+            "question": "\"What must you confirm before performing a processor upgrade?\"",
+            "body": "",
+            "answer": "\"The new processor is compatible with the current motherboard.\"",
+            "choices": [
+                "The new processor is compatible with the current motherboard.",
+                "The new processor is the same type as the old.",
+                "The new processor is compatible with the operating system.",
+                "The new processor fits into the old processor's slot."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 17,
+            "question": "\"Which type of storage has the fastest data access speeds?\"",
+            "body": "",
+            "answer": "\"solid-state drive\"",
+            "choices": [
+                "Secure Sockets Layer drive",
+                "solid-state drive",
+                "serial attached storage device",
+                "SCSI drive"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 18,
+            "question": "\"A Bluetooth peripheral is prompting for a passcode to complete the pairing/connection process. What is the peripheral, most likely?\"",
+            "body": "",
+            "answer": "\"all of these answers\"",
+            "choices": [
+                "keyboard",
+                "all of these answers",
+                "mouse",
+                "headset"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 19,
+            "question": "\"Walt's computer is several years old and he wants to ensure that the system works until he gets a replacement. What should he do first?\"",
+            "body": "",
+            "answer": "\"Back up his data.\"",
+            "choices": [
+                "Run a file check daily.",
+                "Obtain an extended warranty.",
+                "Back up his data.",
+                "Ensure that the system is protected against malware."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 20,
+            "question": "\"What is one difference between a drive and media?\"",
+            "body": "",
+            "answer": "\"A drive is hardware that reads media.\"",
+            "choices": [
+                "The drive is where the data is stored and the media is the data itself.",
+                "A drive is hardware that reads media.",
+                "These are two terms for the same thing: storage.",
+                "The terms apply only to removable storage, where the drive is the slot and the media is the thumb drive or media card inserted into the slot."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 21,
+            "question": "\"Mass storage inside a desktop computer case is usually found where?\"",
+            "body": "",
+            "answer": "\"in a drive cage\"",
+            "choices": [
+                "in an expansion slot",
+                "attached to the front of the case",
+                "in a drive cage",
+                "on the motherboard"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 22,
+            "question": "\"Which statement about a modular power supply is true?\"",
+            "body": "",
+            "answer": "\"Its cables are detachable.\"",
+            "choices": [
+                "It is built from a cluster of smaller, easier-to-install power supplies.",
+                "Its power output can be varied to save electricity.",
+                "Its cables are detachable.",
+                "It has dedicated power reserved for different computer components."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 23,
+            "question": "\"Which program controls the Windows startup sequence?\"",
+            "body": "",
+            "answer": "\"MSCONFIG\"",
+            "choices": [
+                "MSCONFIG",
+                "Task Manager",
+                "the Computer Management Console",
+                "the UEFI"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 24,
+            "question": "\"Angela ran a diagnostic that shows an ever-decreasing amount of memory in her computer. What could be the problem?\"",
+            "body": "",
+            "answer": "\"A program has a memory leak.\"",
+            "choices": [
+                "DRAM is failing.",
+                "A program has a memory leak.",
+                "There is no problem. It's normal for available memory to decrease the longer you use the system.",
+                "Another user has signed into the system"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 25,
+            "question": "\"Which type of power connector is this?\"",
+            "body": "![Q24](images/Q24.png?raw=png)",
+            "answer": "\"Molex\"",
+            "choices": [
+                "Edison",
+                "Molex",
+                "SATA",
+                "PCI"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 26,
+            "question": "\"What is the most important thing to do before opening a computer case?\"",
+            "body": "",
+            "answer": "\"Turn off and unplug the computer.\"",
+            "choices": [
+                "Turn off and unplug the computer.",
+                "Disconnect all of the cables.",
+                "Close your programs, sign out of your account, and turn off the computer.",
+                "Ground yourself."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 27,
+            "question": "\"On a trackpad, what gesture commonly replaces \"center mouse wheel\" for things like scrolling through documents?\"",
+            "body": "",
+            "answer": "\"two-finger swipe\"",
+            "choices": [
+                "pinch outward",
+                "scroll with thumb instead",
+                "two-finger swipe",
+                "force click and drag"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 28,
+            "question": "\"What is the name of the hardware that provides a computer with network access?\"",
+            "body": "",
+            "answer": "\"NIC\"",
+            "choices": [
+                "BIOS",
+                "RJ-45",
+                "NIC",
+                "Router"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 29,
+            "question": "\"Networking wire is referred to as **\\_**\"",
+            "body": "",
+            "answer": "\"CAT-5 or CAT-6 Ethernet cable\"",
+            "choices": [
+                "CAT-5 or CAT-6 Ethernet cable",
+                "thin pair or twisted pair",
+                "asynchronous digital (AD) cable",
+                "coax cable"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 30,
+            "question": "\"Miguel is working on the computer, and Jen needs to use it for a moment. What can Miguel do to provide for an easy transition?\"",
+            "body": "",
+            "answer": "\"Sign out.\"",
+            "choices": [
+                "Shut down the system.",
+                "Sign out.",
+                "Restart the computer.",
+                "Let Jen take over."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 31,
+            "question": "\"A **\\_** allows you to plug computers into a central location to communicate on the same local area network.\"",
+            "body": "",
+            "answer": "\"layer 2 switch\"",
+            "choices": [
+                "server",
+                "layer 2 switch",
+                "wireless access point",
+                "firewall"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 32,
+            "question": "\"After plugging in an external 3.5mm microphone, you stop hearing sound from the speakers. What is the most likely source of the problem?\"",
+            "body": "",
+            "answer": "\"You have plugged the microphone into the 3.5mm audio output jack.\"",
+            "choices": [
+                "You have plugged the microphone into the 3.5mm audio output jack.",
+                "The sound is muted.",
+                "The sound card has crashed.",
+                "The computer has connected to a nearby Bluetooth headset."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 33,
+            "question": "\"You think that the Internet is down. How can you know for certain?\"",
+            "body": "",
+            "answer": "\"all of these answers.\"",
+            "choices": [
+                "all of these answers.",
+                "You cannot reach any websites.",
+                "The power is out.",
+                "The lights on the modem are off."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 34,
+            "question": "\"An application is unresponsive. How can you effectively close it down?\"",
+            "body": "",
+            "answer": "\"Use the Task Manager (Windows) or use Force Quit (Mac).\"",
+            "choices": [
+                "Restart the computer.",
+                "Sign out.",
+                "Wait or set the application aside until it quits eventually on its own.",
+                "Use the Task Manager (Windows) or use Force Quit (Mac)."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 35,
+            "question": "\"How can you tell that the website you are visiting is sending and receiving data that has been encrypted?\"",
+            "body": "",
+            "answer": "\"The URL is HTTPS.\"",
+            "choices": [
+                "The URL is HTTPS.",
+                "You are using an incognito window.",
+                "The site requires a login and password.",
+                "You can't tell because a website's security settings are not readily apparent in a browser window."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 36,
+            "question": "\"The client/server model best represents **\\_**.\"",
+            "body": "",
+            "answer": "\"multiple hosts interacting with a single computer\"",
+            "choices": [
+                "multiple hosts interacting with a single computer",
+                "an application consisting of cooperating programs across the Internet",
+                "any program run by a user",
+                "a subscription service on the web"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 37,
+            "question": "\"The primary mass storage device is divided into two partitions. What would explain this arrangement?\"",
+            "body": "",
+            "answer": "\"There is one partition for the operating system and a separate partition for user data.\"",
+            "choices": [
+                "There is one partition for the operating system and a separate partition for user data.",
+                "All drives contain a second partition for the MBR (Master Boot Record).",
+                "The drive is partitioned to maintain compatibility with older versions of the operating system.",
+                "The system has two users who are each getting a partition."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 38,
+            "question": "\"You are replacing a processor. How do you build the processor \"sandwich\", top-down?\"",
+            "body": "",
+            "answer": "\"fan, paste, processor, socket\"",
+            "choices": [
+                "fan, paste, processor, socket",
+                "fan, processor, socket",
+                "fan, paste, processor, paste, socket",
+                "fan, processor, paste, socket"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 39,
+            "question": "\"The operating system tells you that a file is busy. What is the fastest way to attempt to make the file un-busy?\"",
+            "body": "",
+            "answer": "\"Close open programs.\"",
+            "choices": [
+                "Run a disk-checking utility.",
+                "Close open programs.",
+                "Restart the computer.",
+                "Review the output of the netstat utility to check for incoming connections to the file."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 40,
+            "question": "\"Which service allows clients to work remotely and supplies the clients with an IP address on the same local area network as the offce?\"",
+            "body": "",
+            "answer": "\"VPN\"",
+            "choices": [
+                "DNS",
+                "FTP",
+                "VPN",
+                "HTTP"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 41,
+            "question": "\"Al is about to update a software driver. What would be a wise thing to do first?\"",
+            "body": "",
+            "answer": "\"Back up all files.\"",
+            "choices": [
+                "Back up all files.",
+                "Save data and close programs.",
+                "Remove the older driver.",
+                "Sign out of the operating system."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 42,
+            "question": "\"What is the process of moving data and programs from an old computer to a new one called?\"",
+            "body": "",
+            "answer": "\"migration\"",
+            "choices": [
+                "migration",
+                "An official term does not exist, though it is colloquieally referred to as a \"brain transplant.\"",
+                "profile transfer",
+                "account cloning"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 43,
+            "question": "\"The local network is up, but the computers cannot access the Internet. Your Internet configuration includes a modem, gateway (router), and a switch as separate devices. What should you do?\"",
+            "body": "",
+            "answer": "\"Restart the modem.\"",
+            "choices": [
+                "Do nothing. Wait until service is restored.",
+                "Restart all computers on the network.",
+                "Restart the gateway (router).",
+                "Restart the modem."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 44,
+            "question": "\"You notice that a program crashes at a specific time. Which tool can you use in Windows to discover the cause?\"",
+            "body": "",
+            "answer": "\"Event Viewer\"",
+            "choices": [
+                "Task Manager",
+                "Event Viewer",
+                "Perfomance Monitor",
+                "Resource Monitor"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 45,
+            "question": "\"While planning a conference at a center in the mountains, you call ahead to ensure that it has broadband Internet access. Which connection type would be an unsuitable choice?\"",
+            "body": "",
+            "answer": "\"dial-up\"",
+            "choices": [
+                "DSL",
+                "fiber optic",
+                "cable",
+                "dial-up"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 46,
+            "question": "\"What is a fixed disk\"",
+            "body": "",
+            "answer": "\"nonremovable mass storage\"",
+            "choices": [
+                "mass storage that has been repaired",
+                "nonremovable mass storage",
+                "any internal mass storage device",
+                "any mass storage device that is not a SSD"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 47,
+            "question": "\"What are the long-term and short-term categories of storage in a computer?\"",
+            "body": "",
+            "answer": "\"memory and permanent (drive) storage\"",
+            "choices": [
+                "memory and permanent (drive) storage",
+                "SSD and HDD",
+                "RAM and ROM",
+                "standard memory and cache memory"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 48,
+            "question": "\"What is referred to by SSID?\"",
+            "body": "",
+            "answer": "\"Service Set Identifier, a wireless network's name\"",
+            "choices": [
+                "Service Set Identifier, a wireless network's name",
+                "an older security protocol for Wi-Fi networks",
+                "the server-side ID used to identify devices on a network",
+                "the MAC address broadcast for a wireless network"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 49,
+            "question": "\"Which is the standard color coding for audio jacks?\"",
+            "body": "",
+            "answer": "\"Green: speakers / Pink: microphone\"",
+            "choices": [
+                "Gray: microphone / Black: speakers",
+                "Red: microphone / Green: speakers",
+                "Green: microphone / Pink: speakers",
+                "Green: speakers / Pink: microphone"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 50,
+            "question": "\"Which key assists limited keyboard layouts (such as on a laptop) with accessing the full range of keys?\"",
+            "body": "",
+            "answer": "\"Fn\"",
+            "choices": [
+                "Alt (Windows) or Option (Mac)",
+                "Meta",
+                "Fn",
+                "Shift"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 51,
+            "question": "\"You power up your computer and it starts in Safe Mode. What should you do?\"",
+            "body": "",
+            "answer": "\"Determine the cause and address the issue\"",
+            "choices": [
+                "Restart the computer",
+                "Work as you normally do until the problem is resolved",
+                "Reconfigure the startup sequence so that the system starts again normally",
+                "Determine the cause and address the issue"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 52,
+            "question": "\"Which security tool can be doubled up to offer additional protection without being redundant?\"",
+            "body": "",
+            "answer": "\"backup\"",
+            "choices": [
+                "account protection",
+                "firewall",
+                "antivirus",
+                "backup"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 53,
+            "question": "\"The mouse pointer is behaving erratically. What should you do first?\"",
+            "body": "",
+            "answer": "\"Clean the mouse, specifically its optical sensor, and ensure that you are using it on the proper surface\"",
+            "choices": [
+                "Use the keyboard instead",
+                "Restart the computer",
+                "Clean the mouse, specifically its optical sensor, and ensure that you are using it on the proper surface",
+                "Disassemble the mouse to look for loose parts or corrosion"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 54,
+            "question": "\"How many wire pairs are in a CAT-5 cable?\"",
+            "body": "",
+            "answer": "\"4\"",
+            "choices": [
+                "8",
+                "4",
+                "5",
+                "16"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 55,
+            "question": "\"What is the difference between a USB hub and a powered USB hub?\"",
+            "body": "",
+            "answer": "\"The powered hub has a power supply and is suitable for running powered peripherals.\"",
+            "choices": [
+                "The powered hub has a power supply and is suitable for running powered peripherals.",
+                "A powered USB hub is found on the computer case; all other hubs are non-powered.",
+                "The powered hub supplies 12V of power, whereas the standard hub only 5V.",
+                "Powered hubs are external to the computer case."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 56,
+            "question": "\"Which user has the smartest approach to online security?\"",
+            "body": "",
+            "answer": "\"Jason uses a unique password for each site along with two-factor authentication.\"",
+            "choices": [
+                "Jarred uses a unique password for each site.",
+                "Jen uses the same password on each site, but with two-factor authentication.",
+                "Jason uses a unique password for each site along with two-factor authentication.",
+                "Jackie uses the same password on each site, but with a different user name."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 57,
+            "question": "\"Which is an example of a phishing attach?\"",
+            "body": "",
+            "answer": "\"Bob receives an email from his bank, asking him to click a link to verify his account.\"",
+            "choices": [
+                "Yousef sees an onscreen notification indicating that an operating system is pending and instructing him to click a link to continue.",
+                "After visiting a website, Carla notices that her computer is running slowly.",
+                "Bob receives an email from his bank, asking him to click a link to verify his account.",
+                "Ellen's email inbox is flooded with unwanted advertising."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 58,
+            "question": "\"You receive a malware warning regarding a specific file. Which approach should you take to ensure you do not have false positive?\"",
+            "body": "",
+            "answer": "\"Run a thorough scan to validate the results.\"",
+            "choices": [
+                "Restart in Safe Mode to remove the file.",
+                "Remove the file.",
+                "Run a thorough scan to validate the results.",
+                "Quarantine the file."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 59,
+            "question": "\"What are the best tools to use for cleaning a computer?\"",
+            "body": "",
+            "answer": "\"handheld vacuum cleaner, ammonia, alcohol, microfiber cloth.\"",
+            "choices": [
+                "Handheld vacuum cleaner, air can, soft flashlight.",
+                "air can, microfiber cloth, alcohol wipes, flashlight.",
+                "handheld vacuum cleaner, ammonia, alcohol, microfiber cloth.",
+                "air can, screwdriver, soft cloth, household cleaner."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 60,
+            "question": "\"A computer power supply is measured in \\_.\"",
+            "body": "",
+            "answer": "\"watts\"",
+            "choices": [
+                "watts",
+                "hertz",
+                "amperes",
+                "volts"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 61,
+            "question": "\"If you had a 255.255.255.0 subnet mask, how many usable IP addresses would you have for hosts?\"",
+            "body": "",
+            "answer": "\"254\"",
+            "choices": [
+                "24",
+                "255",
+                "254",
+                "256"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 62,
+            "question": "\"Tania was told to address an issue in the UEFI. How is it accessed?\"",
+            "body": "",
+            "answer": "\"from the BIOS\"",
+            "choices": [
+                "by using the System Configuration Utility (MSCONFIG)",
+                "from the BIOS",
+                "from the computer's startup menu",
+                "on the network"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 63,
+            "question": "\"Tania was told to change a setting in the UEFI. How is it accessed?\"",
+            "body": "",
+            "answer": "\"from the computer's startup menu\"",
+            "choices": [
+                "by using the System Configuration Utility (MSCONFIG)",
+                "from the BIOS",
+                "from the computer's startup menu",
+                "on the network",
+                "```\nQ62. Tania was told to address an issue in the UEFI. How is it accessed?\n\nAnd the answer changed from\n\"from the BIOS\" to\n\"from the computer's startup menu\"\n\nThe phrase \"to adress an issues in UEFI\" could be interpreted as to alter something about the UEFI. For example, a employee at Asus found that in some cases your not able to adjust how much voltage the CPU can get, that employees has now been tasked with addressing this issue.\n\nI changed the answer because you would not access the UEFI from the BIOS. Only in rare cases or manufacturing testing experimental stuff, does a system have both UEFI and BIOS.\n\nTo get to either UEFI or BIOS on a system you usually go via the computer's boot menu or press a certain key to boot straight into that mode.\n```"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 64,
+            "question": "\"Which part of the network assigns an IP address?\"",
+            "body": "",
+            "answer": "\"the gateway/router using DHCP\"",
+            "choices": [
+                "the modem using TCP/IP protocol",
+                "the gateway/router using DHCP",
+                "the device's NIC based on the MAC address",
+                "IP addresses are always assigned manually"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 65,
+            "question": "\"Expansion cards follow which current interface standard?\"",
+            "body": "",
+            "answer": "\"PCIe\"",
+            "choices": [
+                "MCA",
+                "PCMCIA",
+                "ISA",
+                "PCIe"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 66,
+            "question": "\"Which action triggers a UAC warning?\"",
+            "body": "",
+            "answer": "\"an attempt to change a setting with consequences that affect the entire system\"",
+            "choices": [
+                "all settings changes in Windows",
+                "any unauthorized access to the computer system",
+                "an attempt to change a setting with consequences that affect the entire system",
+                "any action involving the user account, such as a password reset"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 67,
+            "question": "\"Which choice is not a current mass storage type?\"",
+            "body": "",
+            "answer": "\"NVMe\"",
+            "choices": [
+                "SSD",
+                "MO",
+                "HDD",
+                "NVMe"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 68,
+            "question": "\"Which statement most accurately describes the northbridge or host bridge?\"",
+            "body": "",
+            "answer": "\"It is a high priority connection to the processor, also called the Memory Controller Hub.\"",
+            "choices": [
+                "It is a high priority connection to the processor, also called the Memory Controller Hub.",
+                "It has been integrated into the southbridge to provide support for the CPU.",
+                "It is the peripheral and I/O controller, connected to the processor via the southbridge.",
+                "It provides mathematical and 3D physics support for the CPU in the absence of a GPU."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 69,
+            "question": "\"Which characters are not allowed in a filename?\"",
+            "body": "",
+            "answer": "\"`\\, /, :, ?, and *`\"",
+            "choices": [
+                "anything other than a letter, number, or space",
+                "spaces, periods, and commas",
+                "`\\, /, :, ?, and *`",
+                "`!, ^, &, (,), and \"`"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 70,
+            "question": "\"What is the most direct way to change the desktop background in Windows OS?\"",
+            "body": "",
+            "answer": "\"Right-click a blank part of the desktop.\"",
+            "choices": [
+                "Alter your user account settings or preferences.",
+                "Right-click a blank part of the desktop.",
+                "Run programs full-screen.",
+                "Use Settings (Windows) or Preferences (Mac)."
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 71,
+            "question": "\"Which I/O components are typically found in a chipset on the motherboard?\"",
+            "body": "",
+            "answer": "\"USB, SATA and internal communications\"",
+            "choices": [
+                "USB, SATA and internal communications",
+                "display adapter, networking, audio, and basic I/O",
+                "the processor, RAM, and expansion cards",
+                "I/O components are not on the motherboard. They are located on the rear of the case"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 72,
+            "question": "\"What does the acronym RAID refer to?\"",
+            "body": "",
+            "answer": "\"Redudant Array of Independent Disk\"",
+            "choices": [
+                "Redudant Array of Independent Disk",
+                "Repeating Architecture for Internal Drives",
+                "Recoverable Advanced Integration and Duplication",
+                "Replicated Array of Internal Devices"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 73,
+            "question": "\"What is an example of a top-level domain (TLD)?\"",
+            "body": "",
+            "answer": "\"//\"",
+            "choices": [
+                "NET",
+                "HTTP",
+                "//",
+                "DNS"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 74,
+            "question": "\"Jan is setting up a coffee shop's wireless network. Given the number of Wi-Fi networks within range, which are the best choices for a 2.4GHz Wi-Fi channel?\"",
+            "body": "",
+            "answer": "\"1, 6, 11\"",
+            "choices": [
+                "3, 6, 9",
+                "3, 10, 12",
+                "1, 6, 11",
+                "1, 2, 8"
+            ]
+        },
+        {
+            "topic": "IT Operations",
+            "id": 75,
+            "question": "\"What is the technical reason why you must properly eject media?\"",
+            "body": "",
+            "answer": "\"File I/O is buffered. If you remove the media before the buffer is cleared, files remain open and potentially corrupt.\"",
+            "choices": [
+                "File I/O is buffered. If you remove the media before the buffer is cleared, files remain open and potentially corrupt.",
+                "The Storage Inventory Manager (SIM) can lose its drive references, which may corrupt other storage in the system.",
+                "The drive must receive the eject signal and turn itself off, dropping the DTR signal and indicating the media is safe to remove.",
+                "The computer must stop the 5-volt signal to media, otherwise the drive may short."
+            ]
+        }
+    ]
+}

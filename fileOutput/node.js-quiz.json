@@ -1,0 +1,1044 @@
+{
+    "questions": [
+        {
+            "topic": "Node.js",
+            "id": 1,
+            "question": "\"When a javaScript function is invoked (called) in Node, where is a new frame placed?\"",
+            "body": "",
+            "answer": "\"the call stack\"",
+            "choices": [
+                "the call stack",
+                "the event loop",
+                "the poll phase",
+                "the events queue"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 2,
+            "question": "\"Which of the following is a core module in Node?\"",
+            "body": "",
+            "answer": "\"crypto\"",
+            "choices": [
+                "webpack",
+                "crypto",
+                "request",
+                "chalk"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 3,
+            "question": "\"Which of the following Buffer class methods returns an uninitialized buffer?\"",
+            "body": "",
+            "answer": "\"allocUnsafe\"",
+            "choices": [
+                "allocUnsafe",
+                "concat",
+                "from",
+                "alloc"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 4,
+            "question": "\"Which of the following modules is NOT a built-in module in Node?\"",
+            "body": "",
+            "answer": "\"ftp\"",
+            "choices": [
+                "ftp",
+                "events",
+                "dgram",
+                "http2"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 5,
+            "question": "\"Which fs module method can be used to read the content of a file without buffering it in memory?\"",
+            "body": "",
+            "answer": "\"createReadStream\"",
+            "choices": [
+                "read",
+                "readFile",
+                "createReadStream",
+                "readFileSync"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 6,
+            "question": "\"Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?\"",
+            "body": "",
+            "answer": "\"lookup\"",
+            "choices": [
+                "lookup",
+                "resolve",
+                "resolve4",
+                "reverse"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 7,
+            "question": "\"How do you check that a value is a date object in Node?\"",
+            "body": "",
+            "answer": "\"util.types.isDate(value)\"",
+            "choices": [
+                "util.types.isDate(value)",
+                "assert.isDate(value)",
+                "console.isDate(value)",
+                "util.date(value)"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 8,
+            "question": "\"Can you create an https web server with Node.js?\"",
+            "body": "",
+            "answer": "\"yes, with the https or http2 modules\"",
+            "choices": [
+                "no, there are no modules supporting it yet",
+                "yes, with the https or http2 modules",
+                "yes, through the path module",
+                "yes, with the http module"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 9,
+            "question": "\"What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?\"",
+            "body": "",
+            "answer": "\"N-API\"",
+            "choices": [
+                "A-API",
+                "Z-API",
+                "N-API",
+                "X-API"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 10,
+            "question": "\"Which CLI option can you use to debug a node script in Chrome DevTools?\"",
+            "body": "",
+            "answer": "\"--inspect\"",
+            "choices": [
+                "--dev-tools",
+                "--inspect",
+                "--chrome",
+                "--debug"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 11,
+            "question": "\"How can you count the number of logical CPUs on the machine that is running Node?\"",
+            "body": "",
+            "answer": "\"node -p \"os.cpus().length\"\"",
+            "choices": [
+                "node -p \"process.cpus\"",
+                "node -p \"util.cpus().size\"",
+                "node -p \"process.os.cpus\"",
+                "node -p \"os.cpus().length\""
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 12,
+            "question": "\"Which of the following is a method on the console object?\"",
+            "body": "",
+            "answer": "\"time\"",
+            "choices": [
+                "exit",
+                "test",
+                "time",
+                "print"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 13,
+            "question": "\"Which object is used to manage the cache of required modules?\"",
+            "body": "",
+            "answer": "\"require.cache\"",
+            "choices": [
+                "global.cache",
+                "module.cache",
+                "process.cache",
+                "require.cache"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 14,
+            "question": "\"What is the command to silence all process warnings?\"",
+            "body": "",
+            "answer": "\"node --no-warnings\"",
+            "choices": [
+                "node index.js --trace-warnings",
+                "node --no-warnings",
+                "node -trace-warnings",
+                "node index.js --no-warnings"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 15,
+            "question": "\"How can you use the promise API with a callback-based function such as child_process.exec?\"",
+            "body": "",
+            "answer": "\"util.promisify(child_process.exec)\"",
+            "choices": [
+                "new Promise(child_process.exec())",
+                "util.promisify(child_process.exec())",
+                "util.promisify(child_process.exec)",
+                "new Promise(child_process.exec)"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 16,
+            "question": "\"Which of the following is NOT a Node repl command?\"",
+            "body": "",
+            "answer": "\".history\"",
+            "choices": [
+                ".break",
+                ".history",
+                ".editor",
+                ".save"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 17,
+            "question": "\"Which statement is true when you run the code shown below?\"",
+            "body": "`require('child_process').fork('script.js');`",
+            "answer": "\"The forked process will have its own VM instance.\"",
+            "choices": [
+                "The forked process shares the event loop with the parent process",
+                "A new VM instance is created and the two VM instances will be shared between the forked process and the parent process.",
+                "The forked process will have its own VM instance.",
+                "The forked process shares the same VM thread with the parent process."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 18,
+            "question": "\"If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?\"",
+            "body": "",
+            "answer": "\"EventEmitter.emit('change');\"",
+            "choices": [
+                "EventEmitter.emit('change');",
+                "EventEmitter.new().emit('change');",
+                "(new EventEmitter()).emit('change');",
+                "new EventEmitter('change');"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 19,
+            "question": "\"Which of the following objects is a stream\"",
+            "body": "",
+            "answer": "\"process.stdout\"",
+            "choices": [
+                "process.uptime",
+                "process.stdout",
+                "process",
+                "Buffer"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 20,
+            "question": "\"Which module variable holds the resolved absolute path of the current module file?\"",
+            "body": "",
+            "answer": "\"`__filename`\"",
+            "choices": [
+                "`__pathname`",
+                "`__location`",
+                "`__flder`",
+                "`__filename`"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 21,
+            "question": "\"If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?\"",
+            "body": "",
+            "answer": "\"exec(\"ps -ef\")\"",
+            "choices": [
+                "spawn(\"ps -ef\")",
+                "exec(\"ps -ef\")",
+                "exec(\"ps\", \"-ef\")",
+                "fork(\"ps -ef\")"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 22,
+            "question": "\"Which console method can be used to print the stack trace to the point of its execution?\"",
+            "body": "",
+            "answer": "\"trace\"",
+            "choices": [
+                "stack",
+                "trace",
+                "debug",
+                "print"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 23,
+            "question": "\"When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?\"",
+            "body": "",
+            "answer": "\"the VM (like VS or Chakra)\"",
+            "choices": [
+                "the libuv library",
+                "the c-ares library",
+                "the VM (like VS or Chakra)",
+                "the repl module"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 24,
+            "question": "\"Looking at the code below, what does the console show?\"",
+            "body": "```\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n```",
+            "answer": "\"server running at http://127.0.0.1:3000/\"",
+            "choices": [
+                "server running at http://localhost:3000/",
+                "server running at port 3000",
+                "server running at http://localhost:4000/",
+                "server running at http://127.0.0.1:3000/"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 25,
+            "question": "\"What is the purpose of the path module?\"",
+            "body": "",
+            "answer": "\"to provide utilities to play with file and directory paths\"",
+            "choices": [
+                "to provide utilities to play with file and directory paths",
+                "to provide utilities to add and remove files",
+                "It is a retiring module.",
+                "to provide utilities to test files"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 26,
+            "question": "\"How do you make an HTTP server object active and listen to requests on certain ports?\"",
+            "body": "",
+            "answer": "\"server.listen\"",
+            "choices": [
+                "server. start",
+                "server.activate",
+                "server.listen",
+                "server. run"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 27,
+            "question": "\"What does the code shown below do?\"",
+            "body": "```\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n```",
+            "answer": "\"creates a text file hello.txt and appends customized text\"",
+            "choices": [
+                "creates a text file hello.txt and appends customized text",
+                "creates an image file",
+                "console logs system information",
+                "creates a file named data and append numbers"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 28,
+            "question": "\"How do you start a Node application, if the entry file is indexjs?\"",
+            "body": "",
+            "answer": "\"node index.js\"",
+            "choices": [
+                "nodemon start",
+                "start index.js",
+                "node index.js",
+                "node start"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 29,
+            "question": "\"What is the purpose of the file system (fs) module?\"",
+            "body": "",
+            "answer": "\"to provide methods to work with files\"",
+            "choices": [
+                "to provide methods to work with requests and responses",
+                "to provide methods to work with files",
+                "to provide methods to work with databases",
+                "to find new file systems"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 30,
+            "question": "\"What is the Node LTS version?\"",
+            "body": "",
+            "answer": "\"It is the safest version for long-term support.\"",
+            "choices": [
+                "It is the current unstable version and is to be avoided.",
+                "It is the version that will be retired soon.",
+                "It is the version with the latest features.",
+                "It is the safest version for long-term support."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 31,
+            "question": "\"Which of the following is NOT a valid stream in Node?\"",
+            "body": "",
+            "answer": "\"process. stdinfo\"",
+            "choices": [
+                "process. stdinfo",
+                "process. stdin",
+                "process. stdout",
+                "process. stderr"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 32,
+            "question": "\"You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?\"",
+            "body": "`console.log(arguments);`",
+            "answer": "\"an object representing an array that has five elements\"",
+            "choices": [
+                "ReferenceError: arguments is not defined",
+                "an empty string",
+                "undefined",
+                "an object representing an array that has five elements"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 33,
+            "question": "\"Which choice is not a valid method on event emitters?\"",
+            "body": "",
+            "answer": "\"start\"",
+            "choices": [
+                "start",
+                "on",
+                "once",
+                "off"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 34,
+            "question": "\"Which special object is an instance of EventEmitter?Which special object is an instance of null?\"",
+            "body": "",
+            "answer": "\"process\"",
+            "choices": [
+                "process",
+                "Buffer",
+                "root",
+                "require"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 35,
+            "question": "\"What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?\"",
+            "body": "",
+            "answer": "\"node -h\"",
+            "choices": [
+                "node index.js -x",
+                "node -v",
+                "node -h",
+                "node index.js -h"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 36,
+            "question": "\"When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?\"",
+            "body": "",
+            "answer": "\"http.IncomingMessage\"",
+            "choices": [
+                "http.IncomingMessage",
+                "http.ServerRequest",
+                "http.ClientRequest",
+                "http.ServerResponse"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 37,
+            "question": "\"What are the arguments passed to the module wrapper function?\"",
+            "body": "",
+            "answer": "\"`exports, require, module, __filename, __dirname`\"",
+            "choices": [
+                "`exports, __filename, __dirname`",
+                "`exports, process, require, module, __filename, __dirname`",
+                "`exports, module, __filename, __dirname`",
+                "`exports, require, module, __filename, __dirname`"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 38,
+            "question": "\"Which library provides Node.js with the event loop?\"",
+            "body": "",
+            "answer": "\"libuv\"",
+            "choices": [
+                "V8",
+                "c-ares",
+                "libuv",
+                "events"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 39,
+            "question": "\"What does the .node file extension represent?\"",
+            "body": "",
+            "answer": "\"a C++ Addon file that is built with node-gyp\"",
+            "choices": [
+                "a C++ file that can have a .node extension and that Node will be able to execute directly.",
+                "a C++ Addon file that is built with node-gyp",
+                "a JSON file that can have a .node extension as well as the .json extension",
+                "a JavaScript file that can have a .node extension as well as the .js extension"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 40,
+            "question": "\"What can you export with module.exports?\"",
+            "body": "",
+            "answer": "\"functions, objects, arrays, or anything you assign to the module\"",
+            "choices": [
+                "only objects.",
+                "only functions",
+                "only variables and arrays",
+                "functions, objects, arrays, or anything you assign to the module"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 41,
+            "question": "\"Which core module in Node can you use to take advantage of multicore systems?\"",
+            "body": "",
+            "answer": "\"cluster\"",
+            "choices": [
+                "os",
+                "util",
+                "cluster",
+                "net"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 42,
+            "question": "\"Which core Node module has wrappers for OpenSSL methods?\"",
+            "body": "",
+            "answer": "\"crypto\"",
+            "choices": [
+                "SSL",
+                "hash",
+                "crypto",
+                "TLS"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 43,
+            "question": "\"Which line imports a promise-based version of the readFile method?\"",
+            "body": "",
+            "answer": "\"const { readFile } = require(fs).promises\"",
+            "choices": [
+                "const { readFile } = require(fs).promises",
+                "const { readFile } = require(fs)",
+                "const { readFilePromises: readFile } = require(fs)",
+                "const { readFile } = require(promises)"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 44,
+            "question": "\"According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?\"",
+            "body": "",
+            "answer": "\"Changes are just bug fixes and no new features were added.\"",
+            "choices": [
+                "Changes are not backwards compatible.",
+                "Changes might not be backward compatible and might break existing code.",
+                "Changes are just bug fixes and no new features were added.",
+                "Changes will add new functionality but will not break any existing code."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 45,
+            "question": "\"What does REPL stand for?\"",
+            "body": "",
+            "answer": "\"read, eval, print, loop\"",
+            "choices": [
+                "run, examine, put, loop",
+                "read, eval, print, loop",
+                "run, edit, print, loop",
+                "read, extend, print, loop"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 46,
+            "question": "\"Which file does node-gyp use to read the build configuration of a module?\"",
+            "body": "",
+            "answer": "\"binding.gyp\"",
+            "choices": [
+                ".gyprc",
+                "binding.gyp",
+                "gyp.json",
+                "package.gyp"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 47,
+            "question": "\"Which core module in Node can you use for testing?\"",
+            "body": "",
+            "answer": "\"assert\"",
+            "choices": [
+                "chai",
+                "jest",
+                "assert",
+                "mocha"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 48,
+            "question": "\"Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?\"",
+            "body": "",
+            "answer": "\"async_hooks\"",
+            "choices": [
+                "cluster",
+                "async_hooks",
+                "dgram",
+                "inspector"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 49,
+            "question": "\"Which Node.js module should you use when you need to decode raw data into strings?\"",
+            "body": "",
+            "answer": "\"string_decoder\"",
+            "choices": [
+                "buffer",
+                "util",
+                "string_decoder",
+                "string_buffer"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 50,
+            "question": "\"Which global object acts like a bridge between a Node script and the host operating system?\"",
+            "body": "",
+            "answer": "\"process\"",
+            "choices": [
+                "v8",
+                "env",
+                "process",
+                "child_process"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 51,
+            "question": "\"Which statement is true about Node.js and threads?\"",
+            "body": "",
+            "answer": "\"The event loop is single-threaded, but a JavaScript VM can use multiple threads.\"",
+            "choices": [
+                "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
+                "Every Node process gets four threads that it can share between its JavaScript VM and the event loop.",
+                "The event loop is single-threaded, but a JavaScript VM can use multiple threads.",
+                "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 52,
+            "question": "\"Which statement about event emitters is false?\"",
+            "body": "",
+            "answer": "\"Event names must be camelCase strings.\"",
+            "choices": [
+                "Event names must be camelCase strings.",
+                "The emit method allows a arbitrary set of arguments to be passed to the listener functions.",
+                "Any values returned by the listeners for an emitted events are ignored.",
+                "When an event emitter object emits an event, all of the functions attached to that specific event are called synchronously."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 53,
+            "question": "\"Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?\"",
+            "body": "",
+            "answer": "\"vm\"",
+            "choices": [
+                "sandbox",
+                "buffer",
+                "vm",
+                "v8"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 54,
+            "question": "\"How would you determine the number of cluster instances to start when using the cluster module?\"",
+            "body": "",
+            "answer": "\"const numInstances = require('os').cpus().length;\"",
+            "choices": [
+                "const numInstances = cluster.instances().length;",
+                "const numInstances = cluster.instances();",
+                "const numInstances = require('os').cpus().length;",
+                "const numInstances = process.cpus().length;"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 55,
+            "question": "\"You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?\"",
+            "body": "",
+            "answer": "\"Use readline together with streams to read and transform and write the file contents line by line.\"",
+            "choices": [
+                "Use regular expressions directly on the file.",
+                "Use Promises and async/await to offload the task to libuv.",
+                "Copy the file into a database and perform the operations there.",
+                "Use readline together with streams to read and transform and write the file contents line by line."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 56,
+            "question": "\"Which choice is `not` a Node global object?\"",
+            "body": "",
+            "answer": "\"exports\"",
+            "choices": [
+                "process",
+                "exports",
+                "setTimeout",
+                "Buffer"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 57,
+            "question": "\"What is the correct way to pipe a readable stream and a writable stream?\"",
+            "body": "",
+            "answer": "\"readableStream.pipe(writableStream)\"",
+            "choices": [
+                "readableStream.pipe(writableStream)",
+                "readableStream.on(pipe, writableStream)",
+                "writableStream.pipe(readableStream)",
+                "writableStream.on(pipe, readableStream)"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 58,
+            "question": "\"How can you convert path segments into a string using the platform-specific separator as a delimiter?\"",
+            "body": "",
+            "answer": "\"path.join\"",
+            "choices": [
+                "path.concat",
+                "path.join",
+                "path.format",
+                "path.parse"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 59,
+            "question": "\"What is the purpose of N-API?\"",
+            "body": "",
+            "answer": "\"to insulate Addons from changes in the underlying JavaScript engine\"",
+            "choices": [
+                "to allow users to make requests to the server",
+                "to insulate Addons from changes in the underlying JavaScript engine",
+                "to execute multi-threaded code in the Node environment",
+                "to provide a quick way for users to create REST APIs"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 60,
+            "question": "\"What is a process object and its role?\"",
+            "body": "",
+            "answer": "\"a global object that provides information about the current node process\"",
+            "choices": [
+                "a locally scoped object that provides information about the current node process",
+                "a global object that provides information about files",
+                "a global object that provides information about the database",
+                "a global object that provides information about the current node process"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 61,
+            "question": "\"What will this code log to the console?\"",
+            "body": "```\n// File: person.js\nexports.name = \"Jane\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
+            "answer": "\"`{ name: 'Jane' }`\"",
+            "choices": [
+                "`{'Jane'}`",
+                "`{ name: 'Jane' }`",
+                "`{}`",
+                "`Jane`"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 62,
+            "question": "\"What will this code log to the console?\"",
+            "body": "```\n// File: person.js\nexports = \"John\";\n\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
+            "answer": "\"`{}`\"",
+            "choices": [
+                "`John`",
+                "`Undefined`",
+                "`{'John'}`",
+                "`{}`"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 63,
+            "question": "\"Is it possible to write tests in Node.js without an external library?\"",
+            "body": "",
+            "answer": "\"yes, through the assert module\"",
+            "choices": [
+                "yes, through the assert module",
+                "yes, through the debugger module",
+                "yes, through the console module",
+                "no"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 64,
+            "question": "\"Which assert module method is usually used to test the error-first argument in callbacks?\"",
+            "body": "",
+            "answer": "\"ifError\"",
+            "choices": [
+                "fail",
+                "doesNotThrow",
+                "deepStrictEqual",
+                "ifError"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 65,
+            "question": "\"Which choice is not a method on the util module?\"",
+            "body": "",
+            "answer": "\"asyncify\"",
+            "choices": [
+                "promisify",
+                "asyncify",
+                "types",
+                "callbackify"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 66,
+            "question": "\"Which choice is not a subclass of the Error class?\"",
+            "body": "",
+            "answer": "\"GlobalError\"",
+            "choices": [
+                "GlobalError",
+                "TypeError",
+                "RangeError",
+                "AssertionError"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 67,
+            "question": "\"What is Node built on?\"",
+            "body": "",
+            "answer": "\"V8 JavaScript engine\"",
+            "choices": [
+                "Python",
+                "V8 JavaScript engine",
+                "PHP",
+                "c"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 68,
+            "question": "\"How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?\"",
+            "body": "",
+            "answer": "\"The current thread will block until the execution is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time.\"",
+            "choices": [
+                "As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.",
+                "As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.",
+                "As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.",
+                "The current thread will block until the execution is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 69,
+            "question": "\"What is used for parsing and running Javascript in Node.js?\"",
+            "body": "",
+            "answer": "\"Google V8\"",
+            "choices": [
+                "EventLoop",
+                "Libuv",
+                "Google V8",
+                "Express.js"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 70,
+            "question": "\"What is the importance of having good practices around status code in your response?\"",
+            "body": "",
+            "answer": "\"It indicates success or failure to the client and helps with testing.\"",
+            "choices": [
+                "It indicates success or failure to the client and helps with testing.",
+                "It is not important to have good practices regarding status codes",
+                "Response codes are the only way you can tell what is happening on the server.",
+                "It contains information about the current performance of the server."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 71,
+            "question": "\"How can ECMAScript modules be used natively in Node?\"",
+            "body": "",
+            "answer": "\"ECMAScript modules can be used natively in Node with the .mjs file extension\"",
+            "choices": [
+                "ECMAScript modules cannot be used natively in Node.",
+                "ECMAScript modules can be used natively in Node with the .mjs file extension",
+                "ECMAScript modules can be used natively in Node only by using a compiler like Babel.",
+                "ECMAScript modules can be used natively in Node only by using a bundle like webpack."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 72,
+            "question": "\"When exploring the Node documentation's features, what are the stability ratings?\"",
+            "body": "",
+            "answer": "\"They are an indication of the stability of Nodejs modules and usage recommendations.\"",
+            "choices": [
+                "They are an indication of the stability of Nodejs modules and usage recommendations.",
+                "They tell if a feature is ES6 compliant.",
+                "They are a Node command to validate stability of your code.",
+                "They tell if a feature is LTS (Long Term Supported)."
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 73,
+            "question": "\"Which choice is a core module in Node?\"",
+            "body": "",
+            "answer": "\"crypto\"",
+            "choices": [
+                "crypto",
+                "chalk",
+                "webpack",
+                "request"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 74,
+            "question": "\"Which DNS module method uses the underlying OS facilities and does not necessarily perform any network communication?\"",
+            "body": "",
+            "answer": "\"lookup\"",
+            "choices": [
+                "resolve",
+                "reverse",
+                "lookup",
+                "resolve4"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 75,
+            "question": "\"What is one way to check that a value is a date object in Node?\"",
+            "body": "",
+            "answer": "\"util.types.isDate(value)\"",
+            "choices": [
+                "console.isDate(value)",
+                "util.date(value)",
+                "assert.isDate(value)",
+                "util.types.isDate(value)"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 76,
+            "question": "\"When you `require(something)`, where will Node.js attempt to `resolve(something)`?\"",
+            "body": "",
+            "answer": "\"the local node_modules folder, then the parents' node_modules folder\"",
+            "choices": [
+                "the local .modules folder, then the parents' node_modules folder",
+                "the local node_modules folder, then the parents' node_modules folder",
+                "the .modules folder under the home directory",
+                "a \"something.js\" file or a \"something\" folder, which exist on the same level as the requiring file"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 77,
+            "question": "\"An external library has its own codebase and license. It is not managed by the Node.js core team. Which choice is an external library that Node.js uses?\"",
+            "body": "",
+            "answer": "\"openssl\"",
+            "choices": [
+                "net",
+                "openssl",
+                "cluster",
+                "events"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 78,
+            "question": "\"What is the main purpose of the package-lock.json file?\"",
+            "body": "",
+            "answer": "\"to provide an exact, single representation of the dependency tree\"",
+            "choices": [
+                "to be a system file",
+                "to provide an exact, single representation of the dependency tree",
+                "to serve as a module to export dependencies",
+                "to be a log for the application"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 79,
+            "question": "\"What response will you get when you send a get requests to the server with this code?\"",
+            "body": "```\nconst http = require('http');\nconst hostname = '127.0.0.1';\nconst port = 3000;\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World\\n');\n});\n\nserver.listen(port, hostname, () => {\n  console.log(`Server running at http://${hostname}:${port}/`);\n});\n```",
+            "answer": "\"`server running at http://127.0.0.1:3000`\"",
+            "choices": [
+                "`server running at http://127.0.0.1:3000`",
+                "`server running at port 3000`",
+                "`server running at http://localhost:3000/`",
+                "`server running at http://localhost:4000/`"
+            ]
+        },
+        {
+            "topic": "Node.js",
+            "id": 80,
+            "question": "\"Which choice is not a Node global object?\"",
+            "body": "",
+            "answer": "\"exports\"",
+            "choices": [
+                "process",
+                "exports",
+                "setTimeout",
+                "Buffer"
+            ]
+        }
+    ]
+}

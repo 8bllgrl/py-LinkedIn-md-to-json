@@ -1,0 +1,1714 @@
+{
+    "questions": [
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 1,
+            "question": "\"According to the shared responsibility model, which cloud computing model places the most responsibility on the cloud service provider (CSP)?\"",
+            "body": "",
+            "answer": "\"Software as a Service (SaaS)\"",
+            "choices": [
+                "Hybrid Cloud",
+                "Software as a Service (SaaS)",
+                "Platform as a Service (PaaS)",
+                "Infrastructure as a Service (IaaS)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 2,
+            "question": "\"Which option removes the risk of multitenancy in cloud computing?\"",
+            "body": "",
+            "answer": "\"private cloud\"",
+            "choices": [
+                "PaaS",
+                "public cloud",
+                "private cloud",
+                "IaaS"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 3,
+            "question": "\"Your organization recently implemented a unified messaging solution and VoIP phones on every desktop. You are responsible for researching the vulnerabilities of the VoIP system. Which type of attack are VoIP phones most vulnerable to experiencing?\"",
+            "body": "",
+            "answer": "\"denial-of-service\"",
+            "choices": [
+                "denial-of-service",
+                "brute force attacks",
+                "malware",
+                "buffer overflow"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 4,
+            "question": "\"Which security control cannot produce an active response to a security event?\"",
+            "body": "",
+            "answer": "\"intrusion detection system (IDS)\"",
+            "choices": [
+                "cloud access security broker (CASB)",
+                "intrusion prevention system (IPS)",
+                "intrusion detection system (IDS)",
+                "next generation firewall"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 5,
+            "question": "\"Packet sniffer is also called **\\_**.\"",
+            "body": "",
+            "answer": "\"protocol analyzer\"",
+            "choices": [
+                "SIEM",
+                "UTM",
+                "protocol analyzer",
+                "data sink"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 6,
+            "question": "\"Which option tests code while it is in operation?\"",
+            "body": "",
+            "answer": "\"dynamic analysis\"",
+            "choices": [
+                "code review",
+                "code analysis",
+                "static analysis",
+                "dynamic analysis"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 7,
+            "question": "\"Which option describes testing that individual software developers can conduct on their own code?\"",
+            "body": "",
+            "answer": "\"unit testing\"",
+            "choices": [
+                "gray box testing",
+                "integration testing",
+                "white box testing",
+                "unit testing"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 8,
+            "question": "\"In black box penetration testing, what information is provided to the tester about the target environment?\"",
+            "body": "",
+            "answer": "\"none\"",
+            "choices": [
+                "none",
+                "limited details of server and network infrastructure",
+                "all information",
+                "limited details of server infrastructure"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 9,
+            "question": "\"Which security control can best protect against shadow IT by identifying and preventing use of unsanctioned cloud apps and services?\"",
+            "body": "",
+            "answer": "\"cloud access security broker (CASB)\"",
+            "choices": [
+                "intrusion prevention system (IPS)",
+                "next generation firewall",
+                "cloud access security broker (CASB)",
+                "intrusion detection system (IDS)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 10,
+            "question": "\"Which option describes the best defense against collusion?\"",
+            "body": "",
+            "answer": "\"separation of duties and job rotation\"",
+            "choices": [
+                "monitoring of normal employee system and data access patterns",
+                "applying system and application updates regularly",
+                "fault tolerant infrastructure and data redundancy",
+                "separation of duties and job rotation"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 11,
+            "question": "\"During a penetration test, you find a file containing hashed passwords for the system you are attempting to breach. Which type of attack is most likely to succeed in accessing the hashed passwords in a reasonable amount of time?\"",
+            "body": "",
+            "answer": "\"rainbow table attack\"",
+            "choices": [
+                "rainbow table attack",
+                "pass-the-hash attack",
+                "password spray attack",
+                "brute force attack"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 12,
+            "question": "\"Which area is DMZ?\"",
+            "body": "![image](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png?raw=png)",
+            "answer": "\"2\"",
+            "choices": [
+                "4",
+                "1",
+                "2",
+                "3"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 13,
+            "question": "\"You configure an encrypted USB drive for a user who needs to deliver a sensitive file at an in-person meeting. What type of encryption is typically used to encrypt the file?\"",
+            "body": "",
+            "answer": "\"symmetric encryption\"",
+            "choices": [
+                "file hash",
+                "asymmetric encryption",
+                "digital signature",
+                "symmetric encryption"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 14,
+            "question": "\"What is the difference between DRP and BCP\"",
+            "body": "",
+            "answer": "\"DRP works to keep a business up and running despite a disaster. BCP works to restore the original business capabilities.\"",
+            "choices": [
+                "DRP works to keep a business up and running despite a disaster. BCP works to restore the original business capabilities.",
+                "BCP works to keep a business up and running despite a disaster. DRP works to restore the original business capabilities.",
+                "BCP is part of DRP.",
+                "DRP is part of BCP."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 15,
+            "question": "\"Which aspect of cybersecurity do Distributed Denial of Service (DDoS) attacks affect the most?\"",
+            "body": "",
+            "answer": "\"availability\"",
+            "choices": [
+                "non-repudiation",
+                "integrity",
+                "availability",
+                "confidentiality"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 16,
+            "question": "\"You need to recommend a solution to automatically assess your cloud-hosted VMs against CIS benchmarks to identify deviations from security best practices. What type of solution should you recommend?\"",
+            "body": "",
+            "answer": "\"Cloud Security Posture Management (CSPM)\"",
+            "choices": [
+                "Cloud Security Posture Management (CSPM)",
+                "Intrusion Detection and Prevention System (IDPS)",
+                "Cloud Workload Protection Platforms (CWPP)",
+                "Cloud Access Security Brokers (CASBs)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 17,
+            "question": "\"**\\_** validates the integrity of data files.\"",
+            "body": "",
+            "answer": "\"Hashing\"",
+            "choices": [
+                "Compression",
+                "Hashing",
+                "Symmetric encryption",
+                "Stenography"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 18,
+            "question": "\"Which is an example of privacy regulation at the state government level in the U.S.?\"",
+            "body": "",
+            "answer": "\"CCPA\"",
+            "choices": [
+                "CCPA",
+                "GDPR",
+                "NIST Privacy Framework",
+                "OSPF"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 19,
+            "question": "\"what is the term for the policies and technologies implemented to protect, limit, monitor, audit, and govern identities with access to sensitive data and resources?\"",
+            "body": "",
+            "answer": "\"identity and access management (IAM)\"",
+            "choices": [
+                "identity and access management (IAM)",
+                "privileged account management (PAM)",
+                "authentication and authorization",
+                "least privilege"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 20,
+            "question": "\"You have configured audit settings in your organization's cloud services in the event of a security incident. What type of security control is an audit trail?\"",
+            "body": "",
+            "answer": "\"corrective control\"",
+            "choices": [
+                "preventive control",
+                "detective control",
+                "directive control",
+                "corrective control"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 21,
+            "question": "\"What is the name for a short-term interruption in electrical power supply?\"",
+            "body": "",
+            "answer": "\"blackout\"",
+            "choices": [
+                "grayout",
+                "blackout",
+                "brownout",
+                "whiteout"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 22,
+            "question": "\"Your security team recommends adding a layer of defense against emerging persistent threats and zero-day exploits for all endpoints on your network. The solution should offer protection from external threats for network-connected devices, regardless of operating system. Which solution is best suited to meet this requirement?\"",
+            "body": "",
+            "answer": "\"next generation firewall (NGFW)\"",
+            "choices": [
+                "Security Information Event Management (SIEM)",
+                "Extended Detection and Response (XDR)",
+                "next generation firewall (NGFW)",
+                "Cloud App Security Broker (CASB)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 23,
+            "question": "\"Which is _not_ a threat modeling methodology?\"",
+            "body": "",
+            "answer": "\"TOGAF\"",
+            "choices": [
+                "TRIKE",
+                "TOGAF",
+                "STRIDE",
+                "MITRE ATT&CK"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 24,
+            "question": "\"You organization is conducting a pilot deployment of a new e-commerce application being considered for purchase. You need to recommend a strategy to evaluate the security of the new software. Your organization does not have access to the application's source code.\"",
+            "body": "#### Which strategy should you choose?",
+            "answer": "",
+            "choices": []
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 25,
+            "question": "\"You need to disable the camera on corporate devices to prevent screen capture and recording of sensitive documents, meetings, and conversations. Which solution would be be suited to the task?\"",
+            "body": "",
+            "answer": "\"Mobile Device Management (MDM)\"",
+            "choices": [
+                "Mobile Device Management (MDM)",
+                "Data Loss Prevention (DLP)",
+                "Intrusion Detection and Prevention System (IDPS)",
+                "Cloud Access Security Broker (CASB)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 26,
+            "question": "\"How many keys would be necessary to accomodate 100 users in an asymmetric cryptography system?\"",
+            "body": "",
+            "answer": "\"200\"",
+            "choices": [
+                "200",
+                "400",
+                "100",
+                "300"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 27,
+            "question": "\"Two competing online retailers process credit card transactions for customers in countries on every continent. One organization is based in the United States. The other is based in the Netherlands. With which regulation must both countries comply while ensuring the security of these transactions?\"",
+            "body": "",
+            "answer": "\"Payment Card Industry Data Security Standard (PCI-DSS)\"",
+            "choices": [
+                "Federal Information Security Managment Act (FISMA)",
+                "Payment Card Industry Data Security Standard (PCI-DSS)",
+                "General Data Protection Regulation (GDPR)",
+                "International Organization for Standardization and International Electrotechnical Commission (ISO/IEC 27018)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 28,
+            "question": "\"What provides a common language for describing security incidents in a structures and repeatable manner?\"",
+            "body": "",
+            "answer": "\"common vulnerabilties and exposures\"",
+            "choices": [
+                "Common event format",
+                "common weakness enumeration",
+                "common vulnerabilties and exposures",
+                "common vulnerability scoring system"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 29,
+            "question": "\"Which type of application can intercept sensative information such as passwords on a network segment?\"",
+            "body": "",
+            "answer": "\"protocol analyzer\"",
+            "choices": [
+                "log server",
+                "network scanner",
+                "firewall",
+                "protocol analyzer"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 30,
+            "question": "\"An attacker has discovered that they can deduce a sensitive piece of confidential information by analyzing multiple pieces of less sensitive public data. What type of security issue exists?\"",
+            "body": "",
+            "answer": "\"inference\"",
+            "choices": [
+                "aggregation",
+                "inference",
+                "SQL injection",
+                "cross-origin resouce sharing"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 31,
+            "question": "\"What act grants an authenticated party permission to perform an action or access a resource?\"",
+            "body": "",
+            "answer": "\"authorization\"",
+            "choices": [
+                "Zero Trust Security",
+                "Role-Based Access Control (RBAC)",
+                "authorization",
+                "Single Sign-On"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 32,
+            "question": "\"According to GDPR, a data \\_ is the person about whom data is being collected.\"",
+            "body": "",
+            "answer": "\"subject\"",
+            "choices": [
+                "processor",
+                "object",
+                "subject",
+                "controller"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 33,
+            "question": "\"Which is not a principle of zero trust security?\"",
+            "body": "",
+            "answer": "\"trust but verify\"",
+            "choices": [
+                "use least privilege access",
+                "verify explicitly",
+                "trust but verify",
+                "assume breach"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 34,
+            "question": "\"Which attack exploits input validation vulnerabilities?\"",
+            "body": "",
+            "answer": "\"cross-site scripting (XSS)\"",
+            "choices": [
+                "ARP spoofing",
+                "pharming attacks",
+                "cross-site scripting (XSS)",
+                "DNS poisoning"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 35,
+            "question": "\"You are a security analyst, and you receive a text message alerting you of a possible attack. Which security control is the _least_ likely to produce this type of alert?\"",
+            "body": "",
+            "answer": "\"packet sniffer\"",
+            "choices": [
+                "IDS",
+                "SIEM",
+                "packet sniffer",
+                "IPS"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 36,
+            "question": "\"SQL injection inserts a code fragment that makes a database statement universally true, like **\\_**.\"",
+            "body": "",
+            "answer": "\"`SELECT * FROM users WHERE username = \" OR 1=1--'`\"",
+            "choices": [
+                "`SELECT * FROM users WHERE username = \" AND 1=1--'`",
+                "`SELECT * FROM users WHERE username = \" AND 1!=1--'`",
+                "`SELECT * FROM users WHERE username = \" OR 1=1--'`",
+                "`SELECT * FROM users WHERE username = \" OR 1!=1--'`"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 37,
+            "question": "\"Which type of security assessment requires access to source code?\"",
+            "body": "",
+            "answer": "\"static analysis\"",
+            "choices": [
+                "static analysis",
+                "black box testing",
+                "dynamic analysis",
+                "penetration testing"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 38,
+            "question": "\"Which option is an open-source solution to scanning a network for active hosts and open ports?\"",
+            "body": "",
+            "answer": "\"Nmap\"",
+            "choices": [
+                "Autopsy",
+                "Snort",
+                "Nmap",
+                "Wireshark"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 39,
+            "question": "\"When implementing a data loss prevention (DLP) strategy, what is the first step in the process?\"",
+            "body": "",
+            "answer": "\"Evaluate the features of available DLP products to determine which best meet your organizations's needs.\"",
+            "choices": [
+                "Evaluate the features of available DLP products to determine which best meet your organizations's needs.",
+                "Examine the flow of sensitive data in your organization to better understand usage patterns.",
+                "Conduct an inventory of all the data in your organization to establish classifications based on sensitivity.",
+                "Conduct a risk assessment to determine the best data labeling strategy for your organization."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 40,
+            "question": "\"Which malware changes an operating system and conceals its tracks?\"",
+            "body": "",
+            "answer": "\"rootkit\"",
+            "choices": [
+                "virus",
+                "worm",
+                "rootkit",
+                "Trojan horse"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 41,
+            "question": "\"Virtual Private Networks (VPNs) use **\\_** to create a secure connection between two networks.\"",
+            "body": "",
+            "answer": "\"encryption\"",
+            "choices": [
+                "encryption",
+                "a metropolitan area network",
+                "a virtual local area network",
+                "a wide area network"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 42,
+            "question": "\"What is the process of challenging a user to prove their identity?\"",
+            "body": "",
+            "answer": "\"authentication\"",
+            "choices": [
+                "authentication",
+                "Single Sign-On",
+                "authorization",
+                "Role-Based Access Control (RBAC)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 43,
+            "question": "\"Which cyberattack aims to exhaust an application's resources, making the application unavailable to legitimate users?\"",
+            "body": "",
+            "answer": "\"Distributed Denial of Service (DDoS)\"",
+            "choices": [
+                "SQL injection",
+                "dictionary attack",
+                "Distributed Denial of Service (DDoS)",
+                "rainbow table attack"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 44,
+            "question": "\"You are a recent cybersecurity hire, and your first assignment is to present on the possible threats to your organization. Which of the following best describes the task?\"",
+            "body": "",
+            "answer": "\"risk management\"",
+            "choices": [
+                "risk mitigation",
+                "threat assessment",
+                "risk management",
+                "enumeration"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 45,
+            "question": "\"You are at a coffee shop and connect to a public wireless access point (WAP). What a type of cybersecurity attack are you most likely to experience?\"",
+            "body": "",
+            "answer": "\"man-in-the-middle attack\"",
+            "choices": [
+                "man-in-the-middle attack",
+                "back door",
+                "logic bomb",
+                "virus"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 46,
+            "question": "\"You have been tasked with recommending a solution to centrally manage mobile devices used throughout your organization. Which technology would best meet this need?\"",
+            "body": "",
+            "answer": "\"Mobile Device Management (MDM)\"",
+            "choices": [
+                "Extended Detection and Responde (XDR)",
+                "Security Information Event Management (SIEM)",
+                "Intrusion Detection and Prevention System (IDPS)",
+                "Mobile Device Management (MDM)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 47,
+            "question": "\"Which type of vulnerability cannot be discovered in the course of a typical vulnerability assessment?\"",
+            "body": "",
+            "answer": "\"zero-day vulnerability\"",
+            "choices": [
+                "file permissions",
+                "buffer overflow",
+                "zero-day vulnerability",
+                "cross-site scripting"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 48,
+            "question": "\"The DLP project team is about to classify your organization's data. Whats is the primary purpose of classifying data?\"",
+            "body": "",
+            "answer": "\"It quantifies the potential cost of a data breach.\"",
+            "choices": [
+                "It identifies regulatory compliance requirements.",
+                "It prioritizes IT budget expenditures.",
+                "It quantifies the potential cost of a data breach.",
+                "It establishes the value of data to the organization."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 49,
+            "question": "\"You are responsible for managing security of your organization's public cloud infrastructure. You need to implement security to protect the data and applications running in a variety of IaaS and PaaS services, including a new Kubernetes cluster. What type of solution is best suited to this requirement?\"",
+            "body": "",
+            "answer": "\"Cloud Access Security Brokers (CASBs)\"",
+            "choices": [
+                "Cloud Workload Protection Platforms (CWPP)",
+                "Cloud Security Posture Management (CSPM)",
+                "Cloud Access Security Brokers (CASBs)",
+                "Intrusion Detection and Prevention System (IDPS)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 50,
+            "question": "\"Sharing account credentials violates the **\\_** aspect of access control.\"",
+            "body": "",
+            "answer": "\"authorization\"",
+            "choices": [
+                "identification",
+                "authorization",
+                "accounting",
+                "authentication"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 51,
+            "question": "\"You have recovered a server that was compromised in a malware attack to its previous state. What is the final step in the incident response process?\"",
+            "body": "",
+            "answer": "\"Lessons Learned\"",
+            "choices": [
+                "Eradication / Remediation",
+                "Certification",
+                "Reporting",
+                "Lessons Learned"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 52,
+            "question": "\"Which encryption type uses a public and private key pair for encrypting and decrypting data?\"",
+            "body": "",
+            "answer": "\"asymmetric\"",
+            "choices": [
+                "asymmetric",
+                "symmetric",
+                "hashing",
+                "all of these answers"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 53,
+            "question": "\"You have just identified and mitigated an active malware attack on a user's computer, in which command and control was established. What is the next step in the process?\"",
+            "body": "",
+            "answer": "\"Eradiction / Remediation\"",
+            "choices": [
+                "Reporting",
+                "Recovery",
+                "Eradiction / Remediation",
+                "Lessons Learned"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 54,
+            "question": "\"Which programming language is most susceptible to buffer overflow attacks?\"",
+            "body": "",
+            "answer": "\"C\"",
+            "choices": [
+                "C",
+                "Java",
+                "Ruby",
+                "Python"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 55,
+            "question": "\"Which list correctly describes risk management techniques?\"",
+            "body": "",
+            "answer": "\"risk avoidance, risk transference, risk mitigation, and risk acceptance\"",
+            "choices": [
+                "risk acceptance, risk mitigation, risk containment, and risk qualification",
+                "risk avoidance, risk transference, risk containment, and risk quantification",
+                "risk avoidance, risk mitigation, risk containment, and risk acceptance",
+                "risk avoidance, risk transference, risk mitigation, and risk acceptance"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 56,
+            "question": "\"To implement encryption in transit, such as with the HTTPS protocol for secure web browsing, which type(s) of encryption is/are used?\"",
+            "body": "",
+            "answer": "\"both symmetric and asymmetric\"",
+            "choices": [
+                "asymmetric",
+                "both symmetric and asymmetric",
+                "neither symmetric or asymmetric",
+                "symmetric"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 57,
+            "question": "\"Which type of program uses Windows Hooks to capture keystrokes typed by the user, hides in the process list, and can compromise their system as well as their online access codes and password?\"",
+            "body": "",
+            "answer": "\"keylogger\"",
+            "choices": [
+                "trojan",
+                "keystroke collector",
+                "typethief",
+                "keylogger"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 58,
+            "question": "\"How does ransomware affect a victim's files?\"",
+            "body": "",
+            "answer": "\"by encrypting them\"",
+            "choices": [
+                "by destroying them",
+                "by encrypting them",
+                "by stealing them",
+                "by selling them"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 59,
+            "question": "\"Your computer has been infected, and is sending out traffic to a targeted system upon receiving a command from a botmaster. What condition is your computer currently in?\"",
+            "body": "",
+            "answer": "\"It has become a zombie.\"",
+            "choices": [
+                "It has become a money mule.",
+                "It has become a zombie.",
+                "It has become a bastion host.",
+                "It has become a botnet."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 60,
+            "question": "\"You choose a cybersecurity framework for your financial organization that implements an effective and auditable set of governance and management processes for IT. Which framework are you choosing?\"",
+            "body": "",
+            "answer": "\"NIST SP 800-37\"",
+            "choices": [
+                "C2M2",
+                "NIST SP 800-37",
+                "ISO/IEC 27001",
+                "COBIT"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 61,
+            "question": "\"NIST issued a revision to SP 800-37 in December 2018. It provides a disciplined, structured, and flexible process for managing security and privacy risk. Which type of document is SP 800-37?\"",
+            "body": "",
+            "answer": "\"a risk management framework\"",
+            "choices": [
+                "a risk management framework",
+                "a guide to risk assessments",
+                "a guideline for vulnerability testing",
+                "a step-by-step guide for performing business impact analyses"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 62,
+            "question": "\"The most notorious military-grade advanced persistent threat was deployed in 2010, and targeted centrifuges in Iran. What was this APT call?\"",
+            "body": "",
+            "answer": "\"stuxnet\"",
+            "choices": [
+                "duqu",
+                "agent BTZ",
+                "stuxnet",
+                "flame"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 63,
+            "question": "\"Where would you record risks that have been identified and their details, such as their ID and name, classification of information, and the risk owner?\"",
+            "body": "",
+            "answer": "\"in the risk register\"",
+            "choices": [
+                "in the risk assessment documentation",
+                "in the risk register",
+                "in the business impact ledger",
+                "in the Orange Book"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 64,
+            "question": "\"To prevent an incident from overwhelming resources, \\_ is necessary.\"",
+            "body": "",
+            "answer": "\"early containment\"",
+            "choices": [
+                "disconnection from the network",
+                "early containment",
+                "continuation of monitoring for other incidents",
+                "eradication of the issues"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 65,
+            "question": "\"FUD is expensive and often causes high drama over low risk. Which computer chip exploits were reported by CNN as needing to be completely replaced, but were later fixed with firmware updates?\"",
+            "body": "",
+            "answer": "\"meltdown and spectre exploits\"",
+            "choices": [
+                "fire and ice exploits",
+                "meltdown and spectre exploits",
+                "Intel and STMicro CPU exploits",
+                "super microboard and Apple iPhone exploits"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 66,
+            "question": "\"The ASD Top Four are application whitelisting, patching of applications, patching of operating systems, and limiting administrative privileges. What percent of breaches do these account for?\"",
+            "body": "",
+            "answer": "\"85 percent\"",
+            "choices": [
+                "40 percent",
+                "60 percent",
+                "85 percent",
+                "100 percent"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 67,
+            "question": "\"You are working in the security operations center analyzing traffic on your network. You detect what you believe to be a port scan. What does this mean?\"",
+            "body": "",
+            "answer": "\"This could be a precursor to an attack.\"",
+            "choices": [
+                "This could be a specific program being run by your accounting department.",
+                "This is an in-progress attack and should be reported immediately",
+                "This is normal operation for your business.",
+                "This could be a precursor to an attack."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 68,
+            "question": "\"How often is the ISF Standard of Good Practice updated?\"",
+            "body": "",
+            "answer": "\"annual\"",
+            "choices": [
+                "annual",
+                "biannually",
+                "bimonthly",
+                "monthly"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 69,
+            "question": "\"Your incident response team is unable to contain an incident because they lack authority to take action without management approval. Which critical step in the preparation phase did your team skip?\"",
+            "body": "",
+            "answer": "\"Get preauthorized to take unilateral action and make or direct emergency changes.\"",
+            "choices": [
+                "From an incident response committee to oversee any incidents that may occur.",
+                "Get preauthorized to take unilateral action and make or direct emergency changes.",
+                "Bring management in as leadership on the incident response team.",
+                "Assign a head of the emergency response team who has the correct authority"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 70,
+            "question": "\"NIST SP 800-53 is one of two important control frameworks used in cybersecurity. What is the other one?\"",
+            "body": "",
+            "answer": "\"ISO 27002\"",
+            "choices": [
+                "ISO 27001",
+                "NIST SP 800-54",
+                "ISO 27002",
+                "NIST SP 751-51"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 71,
+            "question": "\"Which organization, established by NIST in 1990, runs workshops to foster coordination in incident prevention, stimulate rapid reaction to incidents, and allow experts to share information?\"",
+            "body": "",
+            "answer": "\"Forum of Incident Response and Security Teams\"",
+            "choices": [
+                "Forum of Incident Response and Security Teams",
+                "Crest UK Response Teams",
+                "Community of Computer Incident Response Teams",
+                "NIST Special Publication 800-61 Response Teams"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 72,
+            "question": "\"You have implemented controls to mitigate the threats, vulnerabilities, and impact to your business. Which type of risk is left over?\"",
+            "body": "",
+            "answer": "\"residual risk\"",
+            "choices": [
+                "inherent risk",
+                "residual risk",
+                "applied risk",
+                "leftover risk"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 73,
+            "question": "\"There are four possible treatments once an assessment has identified a risk. Which risk treatment implements controls to reduce risk?\"",
+            "body": "",
+            "answer": "\"risk mitigation\"",
+            "choices": [
+                "risk mitigation",
+                "risk acceptance",
+                "risk avoidance",
+                "risk transfer"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 74,
+            "question": "\"Which security control scheme do vendors often submit their products to for evaluation, to provide an independent view of product assurance?\"",
+            "body": "",
+            "answer": "\"Common Criteria\"",
+            "choices": [
+                "Common Criteria",
+                "risk management certification board",
+                "OWASP security evaluation",
+                "ISO 27000"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 75,
+            "question": "\"Which organization has published the most comprehensive set of controls in its security guideline for the Internet of Things?\"",
+            "body": "",
+            "answer": "\"IoT Security Foundation\"",
+            "choices": [
+                "IoT ISACA",
+                "IoT Security Foundation",
+                "OWASP",
+                "GSMA"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 76,
+            "question": "\"Which main reference coupled with the Cloud Security Alliance Guidance comprise the Security Guidance for Critical Areas of Focus in Cloud Computing?\"",
+            "body": "",
+            "answer": "\"Cloud Controls Matrix\"",
+            "choices": [
+                "ISO 27001",
+                "ISO 27017",
+                "Cloud Security Guidelines",
+                "Cloud Controls Matrix"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 77,
+            "question": "\"What are the essential characteristics of the reference monitor?\"",
+            "body": "",
+            "answer": "\"It is tamper-proof, can always be invoked, and must be small enough to test.\"",
+            "choices": [
+                "It is versatile, accurate, and operates at a very high speed.",
+                "It is tamper-proof, can always be invoked, and must be small enough to test.",
+                "It is restricted, confidential, and top secret"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 78,
+            "question": "\"According to NIST, what is the first action required to take advantage of the cybersecurity framework?\"",
+            "body": "",
+            "answer": "\"Identify the key business outcomes.\"",
+            "choices": [
+                "Identify the key business outcomes.",
+                "Understand the threats and vulnerabilities.",
+                "Conduct a risk assessment.",
+                "Analyze and prioritize gaps to create the action plan."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 79,
+            "question": "\"You are implementing a cybersecurity program in your organization and want to use the \"de facto standard\" cybersecurity framework. Which option would you choose?\"",
+            "body": "",
+            "answer": "\"the NIST Cybersecurity Framework\"",
+            "choices": [
+                "the ISACA Cybersecurity Framework",
+                "the COBIT Cybersecurity Framework",
+                "the ISC2 Cybersecurity Framework",
+                "the NIST Cybersecurity Framework"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 80,
+            "question": "\"In 2014, 4,278 IP addresses of zombie computers were used to flood a business with over one million packets per minute for about one hour. What is this type of attack called?\"",
+            "body": "",
+            "answer": "\"a DDoS (Distributed Denial of Service) attack\"",
+            "choices": [
+                "a salami attack",
+                "a DoS (Denial of Service) attack",
+                "a DDoS (Distributed Denial of Service) attack",
+                "a botnet attack"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 81,
+            "question": "\"The regulatory requirements for notifications of data breaches, particularly the European General Data Protection Regulations, have had what sort of effect on business?\"",
+            "body": "",
+            "answer": "\"an increased business liability in the event of a data breach\"",
+            "choices": [
+                "an increased business liability in the event of a data breach",
+                "an increased consumer liability in the event of a data breach",
+                "a decreased consumer liability in the event of a data breach",
+                "a decreased business liability in the event of a data breach"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 82,
+            "question": "\"Which compliance framework governs requirements for the U.S. healthcare industry?\"",
+            "body": "",
+            "answer": "\"HIPAA\"",
+            "choices": [
+                "FedRAMP",
+                "GDPR",
+                "PCI-DSS",
+                "HIPAA"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 83,
+            "question": "\"What is the difference between DevOps and DevSecOps?\"",
+            "body": "",
+            "answer": "\"DevSecOps requires the inclusion of cybersecurity engineers in the CI/CD process of DevOps.\"",
+            "choices": [
+                "DevSecOps requires the inclusion of cybersecurity engineers in the CI/CD process of DevOps.",
+                "DevSecOps slows down the CI/CD process of DevOps.",
+                "DevSecOps places security controls in the CI/CD process of DevOps.",
+                "DevSecOps lets cybersecurity engineers dictate the CI/CD process of DevOps."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 84,
+            "question": "\"When does static application security testing require access to source code?\"",
+            "body": "",
+            "answer": "\"always\"",
+            "choices": [
+                "always",
+                "only when assessing regulatory compliance",
+                "only if following the Agile model",
+                "never"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 85,
+            "question": "\"Your organization service customer orders with a custom ordering system developed in-hose. You are responsible for recommending a cloud model to meet the following requirements:\"",
+            "body": "Control of security required for regulatory compliance\n    Legacy application and database support\n    Scalability to meet seasonal increases in demand\n\nWhich cloud model is the best option for these requirements?",
+            "answer": "\"hybrid cloud\"",
+            "choices": [
+                "government cloud",
+                "public cloud",
+                "hybrid cloud",
+                "private cloud"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 86,
+            "question": "\"You have just conducted a port scan of a network. There is no well-known port active. How do you find a webserver running on a host, which uses a random port number?\"",
+            "body": "",
+            "answer": "\"Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports.\"",
+            "choices": [
+                "Give up on the current target network and move on to the next one.",
+                "Switch to another network scanning tool. Resort to more resource-intensive probing, like launching random attacks to all open ports.",
+                "Turn on the stealth mode in your network scanning tool. Check whether you missed any other active ports associated with web servers.",
+                "Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 87,
+            "question": "\"Executives in your organization exchange emails with external business partners when negotiating valuable business contracts. To ensure that these communications are legally defensible, the security team has recommended that a digital signature be added to these message.\"",
+            "body": "What are the primary goals of the digital signature in this scenario? (Choose the best answer.)",
+            "answer": "\"integrity and non-repudiation\"",
+            "choices": [
+                "integrity and non-repudiation",
+                "privacy and non-repudiation",
+                "privacy and confidentiality",
+                "integrity and privacy"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 88,
+            "question": "\"Which option is a mechanism to ensure non-repudiation?\"",
+            "body": "",
+            "answer": "\"asymmetric-key encryption\"",
+            "choices": [
+                "MD5",
+                "Caesar cipher",
+                "symmetric-key encryption",
+                "asymmetric-key encryption"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 89,
+            "question": "\"Which software development lifecycle approach is most compatible with DevSecOps?\"",
+            "body": "",
+            "answer": "\"Agile\"",
+            "choices": [
+                "Agile",
+                "Model-Driven Development",
+                "Waterfall",
+                "Model-Driven Architecture"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 90,
+            "question": "\"Which information security principle states that organizations should defend systems against any particular attack using several independent methods?\"",
+            "body": "",
+            "answer": "\"defense-in-depth\"",
+            "choices": [
+                "separation of duties",
+                "privileged account management (PAM)",
+                "defense-in-depth",
+                "least privilege"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 91,
+            "question": "\"Which option describes a core principle of DevSecOps?\"",
+            "body": "",
+            "answer": "\"Testing and release should be 100% automated\"",
+            "choices": [
+                "Testing and release should be 100% automated",
+                "Role separation is the key to software security",
+                "Final responsibility for security rests with the architect of the application",
+                "Everyone in the process is responsible for security"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 92,
+            "question": "\"You need to implement a solution to protect internet-facing applications from common attacks like XSSm CSRF, and SQL injection. Which option is best suited to the task?\"",
+            "body": "",
+            "answer": "\"a web application firewall (WAF)\"",
+            "choices": [
+                "Security Information Event Management (SIEM)",
+                "an Instruction Detection and Prevention System (IDPS) appliance",
+                "a web application firewall (WAF)",
+                "a stateful packet inspection firewall"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 93,
+            "question": "\"Which phase of the incident response process happens immediately following identification?\"",
+            "body": "",
+            "answer": "\"Reporting\"",
+            "choices": [
+                "Eradication / Remediation",
+                "Reporting",
+                "Containment / Mitigation",
+                "Recovery"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 94,
+            "question": "\"How can a data retention policy reduce your organization's legal liability?\"",
+            "body": "",
+            "answer": "\"by ensuring that data is not retained beyond its necessary retention date\"",
+            "choices": [
+                "by reducing DLP licensing costs",
+                "by ensuring that data is not retained beyond its necessary retention date",
+                "by destroying data that may implicate company executives in dishonest behavior",
+                "by reducing cost associated with data storage and protection"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 95,
+            "question": "\"You believe a recent service outage due to a denial-of-service attack from a disgruntled inside source. What is the name for the malicious act this employee has committed?\"",
+            "body": "",
+            "answer": "\"sabotage\"",
+            "choices": [
+                "espionage",
+                "sabotage",
+                "fraud",
+                "confidentiality breach"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 96,
+            "question": "\"Which option is a framework widely utilized by organizations in the development of security governance standards?\"",
+            "body": "",
+            "answer": "\"Control Objectives for Information and Related Technologies (COBIT)\"",
+            "choices": [
+                "Software Capability Maturity Model (SW-CMM)",
+                "Control Objectives for Information and Related Technologies (COBIT)",
+                "The Open Group Architecture Framework (TOGAF)",
+                "Software Development Life Cycle (SDLC)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 97,
+            "question": "\"There are connection-oriented and connectionless protocols in networking. What do web browsers use to ensure the integrity of the data it sends and receives?\"",
+            "body": "",
+            "answer": "\"TCP that is connection-oriented\"",
+            "choices": [
+                "UDP that is connection-oriented",
+                "TCP that is connection-oriented",
+                "UDP that is connectionless",
+                "TCP that is connectionless"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 98,
+            "question": "\"Which type of attack targets vulnerabilities associated with translating MAC addresses into IP addresses in computer networking?\"",
+            "body": "",
+            "answer": "\"ARP spoofing\"",
+            "choices": [
+                "DNS poisoning",
+                "CRL trapping",
+                "ARP spoofing",
+                "DDoS"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 99,
+            "question": "\"You are part of an incident response team at your company. While sifting through log files collected by a SIEM, you discover some suspicious log entries that you want to investigate further. Which type of the following best refers to those recorded activities demanding additional scrutiny?\"",
+            "body": "",
+            "answer": "\"event\"",
+            "choices": [
+                "attack",
+                "information",
+                "threat",
+                "event"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 100,
+            "question": "\"You are responsible for forensic investigations in your organization.You have been tasked with investigating a compromised virtual application server. Becase a revenue generating application runs on the server, the server needs to be returned to service as quickly as possible.\"",
+            "body": "What is the next step you should take to best fulfill your responsibilities and meet the needs of the business?",
+            "answer": "\"Take a snapshot of the compromised virtual server for your investigation.\"",
+            "choices": [
+                "Restore the server from backup immediately.",
+                "Take the server offline until your investigation is complete.",
+                "Take a snapshot of the compromised virtual server for your investigation.",
+                "Restart the server. Remediate the issue after business hours."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 101,
+            "question": "\"Site-to-site VPN provides access from one network address space (192.168.0.0/24) to another network address space _ site-to-site VPN provides access from one network address space (192.168.0.0/24) to another network address space _.\"",
+            "body": "",
+            "answer": "\"192.168.0.1/24\"",
+            "choices": [
+                "192.168.0.1/24",
+                "192.168.0.3/24",
+                "10.10.0.0/24",
+                "192.168.0.2/24"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 102,
+            "question": "\"You are researching probable threats to your company\u2019s internet-facing web applications. Which organization should you reference as an authoritative source for information on web-based attack vectors?\"",
+            "body": "",
+            "answer": "\"OWASP\"",
+            "choices": [
+                "EC-Council",
+                "ISACA",
+                "NIST",
+                "OWASP"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 103,
+            "question": "\"Which action is most likely to simplify security staff training, improve integration between security components, and reduce risk to the business? (Choose the best answer.)\"",
+            "body": "",
+            "answer": "\"adopting a \"trust but verify\" approach to security\"",
+            "choices": [
+                "adopting a \"best-in-suite\" approach to security",
+                "adopting a \"trust but verify\" approach to security",
+                "adopting a \"best-of-breed\" approach to security",
+                "adopting a \"defense-in-depth\" approach to security"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 104,
+            "question": "\"**\\_** attacks can execute the code injected by attackers as part of user inputs.\"",
+            "body": "",
+            "answer": "\"Buffer overflow\"",
+            "choices": [
+                "Ping of death",
+                "Buffer overflow",
+                "Distributed Denial of Service",
+                "Denial of Service"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 105,
+            "question": "\"Which activity is _not_ part of risk assessment?\"",
+            "body": "",
+            "answer": "\"discontinuing activities that introduce risk\"",
+            "choices": [
+                "identifying and valuing assets",
+                "analyzing risks by criticality and cost",
+                "discontinuing activities that introduce risk",
+                "identifying threats and analyzing vulnerabilities"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 106,
+            "question": "\"In response to an alert regarding a possible security incident, you are analyzing the logs for a web application. In the process, you see the following string: `./../../../var/secrets` What type of attack was most likely attempted against the application?\"",
+            "body": "",
+            "answer": "\"directory traversal\"",
+            "choices": [
+                "brute force",
+                "session hijacking",
+                "cross-site scripting",
+                "directory traversal"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 107,
+            "question": "\"Which quadrant should be the focus of risk management?\"",
+            "body": "- ![Which quadrant should be the focus of risk management?](Q107-risk-quadrant.jpg)",
+            "answer": "\"2\"",
+            "choices": [
+                "2",
+                "1",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 108,
+            "question": "\"Which option will not actively identify a security incident?\"",
+            "body": "",
+            "answer": "\"Cloud Security Posture Management (CSPM)\"",
+            "choices": [
+                "Extended Detection and Response (XDR)",
+                "Cloud Security Posture Management (CSPM)",
+                "Security Information Event Management (SEIM)",
+                "Endpoint Detection and Response (EDR)"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 109,
+            "question": "\"A website is asking for a password and also sending an authentication code to your phone. What factors are used in this multi-factor authentication scenario?\"",
+            "body": "",
+            "answer": "\"what you have and what you do\"",
+            "choices": [
+                "what you have and what you do",
+                "what you know and what you are",
+                "what you have and what you know",
+                "what you do and what you know"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 110,
+            "question": "\"Which option is a list of publicly disclosed information security defects?\"",
+            "body": "",
+            "answer": "\"CWE\"",
+            "choices": [
+                "DBIR",
+                "CVE",
+                "CWE",
+                "CERT"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 111,
+            "question": "\"What is cryptovirology?\"",
+            "body": "",
+            "answer": "\"Design powerful malicious software\"",
+            "choices": [
+                "Plain cryptography",
+                "Antivirus",
+                "Design powerful malicious software",
+                "Asymmetric backdoor"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 112,
+            "question": "\"What does a metamorphic virus do?\"",
+            "body": "",
+            "answer": "\"Generates a whole variable code using a variable encryptor\"",
+            "choices": [
+                "Static analyser",
+                "Antivirus",
+                "Generates a whole variable code using a variable encryptor",
+                "Mutation function"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 113,
+            "question": "\"What is the most common cause of cyber incidents in organisations?\"",
+            "body": "",
+            "answer": "\"Social Engineering\"",
+            "choices": [
+                "Vulnerabilities in softwares",
+                "Social Engineering",
+                "Ransomware",
+                "Phishing"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 114,
+            "question": "\"Which of the following terms is used to describe a collection of unrelated patches?\"",
+            "body": "",
+            "answer": "\"Hotfix\"",
+            "choices": [
+                "Hotfix",
+                "Update",
+                "Security Fix",
+                "Service Pack"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 115,
+            "question": "\"How often should security teams conduct a review of the privileged access that a user has to sensitive systems?\"",
+            "body": "",
+            "answer": "\"On a periodic basis\"",
+            "choices": [
+                "On a periodic basis",
+                "When a User leaves the organisation",
+                "When a User changes roles",
+                "On a daily basis"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 116,
+            "question": "\"What Term is used to descrbe the defualt set of privileges assigned to a user when a new account is created?\"",
+            "body": "",
+            "answer": "\"Entitlement\"",
+            "choices": [
+                "Aggregation",
+                "Transitivity",
+                "Baseline",
+                "Entitlement"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 117,
+            "question": "\"Who is the father of computer security??\"",
+            "body": "",
+            "answer": "\"August Kerckhoffs\"",
+            "choices": [
+                "August Kerckhoffs",
+                "Bob Thomas",
+                "Charles Thomas",
+                "Robert Kerckhoffs"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 118,
+            "question": "\"Which type of attack uses formal emails to entice specific individuals into signing in and changing their passwords?\"",
+            "body": "",
+            "answer": "\"spear phishing\"",
+            "choices": [
+                "vishing",
+                "spear phishing",
+                "brute force attack",
+                "password spray attack"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 119,
+            "question": "\"A data asset register should contain which of the following?\"",
+            "body": "",
+            "answer": "\"All of these options.\"",
+            "choices": [
+                "the location of the data.",
+                "The value of the asset.",
+                "The owner of the asset.",
+                "All of these options."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 120,
+            "question": "\"Once you have confirmed that Burpsuite is intercepting website requests, where can you check to see if you have credentials in cleartext to access the target webpage?\"",
+            "body": "",
+            "answer": "\"Check for a login.php line in the Proxy tab\"",
+            "choices": [
+                "Select Go on the Repeater tab",
+                "See the loopback address and port are on in the Options tab",
+                "Check the Raw section in the Intercept tab",
+                "Check for a login.php line in the Proxy tab"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 121,
+            "question": "\"Threat actors will attempt to find an attack vector on their target by mapping the attack **\\_**.\"",
+            "body": "",
+            "answer": "\"surface\"",
+            "choices": [
+                "surface",
+                "infrastructure",
+                "threat",
+                "door"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 122,
+            "question": "\"How would an organisation ensure software product support in the event a supplier goes out of business or is sold to a competitor?\"",
+            "body": "",
+            "answer": "\"They could ensure support through an escrow agreement.\"",
+            "choices": [
+                "They could employ the software developers once the supplier organisation has gone out of business.",
+                "They could ensure support by acquiring the supplier organisation.",
+                "They could ensure support through an escrow agreement.",
+                "They could reverse engineer the product so that it could be supported in-house."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 123,
+            "question": "\"Which of the following is the security standard that applies to the certification of security controls within products?\"",
+            "body": "",
+            "answer": "\"ISO/IEC 15408.\"",
+            "choices": [
+                "ISO/IEC 27001.",
+                "ISO/IEC 9000.",
+                "ISO/IEC 15408.",
+                "ISO/IEC 13335."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 124,
+            "question": "\"What is the main role of the board member known as the information security manager?\"",
+            "body": "",
+            "answer": "\"To ensure appropriate security controls are implemented across the organisation.\"",
+            "choices": [
+                "To ensure appropriate security controls are implemented across the organisation.",
+                "To provide day-to-day management of the information assurance function.",
+                "To have a detailed understanding of the organisation's vulnerabilities.",
+                "To have a detailed understanding of threats faced by the organisation."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 125,
+            "question": "\"What are the two main approaches used to determine the likelihood of a threat occurring?\"",
+            "body": "",
+            "answer": "\"Qualitative and quantitative\"",
+            "choices": [
+                "Qualitative and statistical",
+                "Statistical and quantitative",
+                "Statistical and assumptive",
+                "Qualitative and quantitative"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 126,
+            "question": "\"Which type of hackers are often organized and funded by a nation's military intelligence or security services, and attempt to gain access to a foreign adversary's state secrets or military intelligence?\"",
+            "body": "",
+            "answer": "\"state-sponsored hackers\"",
+            "choices": [
+                "hacktivists",
+                "competitors",
+                "black hat hackers",
+                "state-sponsored hackers"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 127,
+            "question": "\"Which of the following methods combines two binary streams to create one new stream that contains hidden information that cannot be retrieved without the other stream that was used to create it?\"",
+            "body": "",
+            "answer": "\"XOR encryption\"",
+            "choices": [
+                "substitution cipher",
+                "weaponization",
+                "transposition cipher",
+                "XOR encryption"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 128,
+            "question": "\"What is Drupalgeddon?\"",
+            "body": "",
+            "answer": "\"a SQL injection flaw\"",
+            "choices": [
+                "A web app proxy tool",
+                "A DDoS bot",
+                "A network packet capturing device",
+                "a SQL injection flaw"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 129,
+            "question": "\"The algorithm used by an encryption technique to hide information is known as the **\\_**.\"",
+            "body": "",
+            "answer": "\"cipher\"",
+            "choices": [
+                "cipher",
+                "XOR",
+                "encoding",
+                "cyber kill chain"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 130,
+            "question": "\"Which of these is not an issue that could arise as a result of outsourcing software development?\"",
+            "body": "",
+            "answer": "\"The laws on the protection of data do not apply to information sent to a third party.\"",
+            "choices": [
+                "The accidental or deliberate introduction of malicious code.",
+                "The loss of intellectual property or trade secrets.",
+                "Legal disputes could develop between the customer and the supplier.",
+                "The laws on the protection of data do not apply to information sent to a third party."
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 131,
+            "question": "\"A **\\_** hat is a hacker who may not operate according to ethical testing standards, but does not have malicious intent.\"",
+            "body": "",
+            "answer": "\"gray\"",
+            "choices": [
+                "gray",
+                "blue",
+                "red",
+                "purple"
+            ]
+        },
+        {
+            "topic": "Cybersecurity Assessment",
+            "id": 132,
+            "question": "\"Understanding that multifactor authentication (MFA) is a best practice, which option should be avoided as a secondary authentication factor in MFA whenever possible?.\"",
+            "body": "",
+            "answer": "\"SMS message\"",
+            "choices": [
+                "biometric authentication",
+                "OAUTH Token",
+                "authenticator apps",
+                "SMS message"
+            ]
+        }
+    ]
+}
